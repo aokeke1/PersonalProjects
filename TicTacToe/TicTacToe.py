@@ -140,7 +140,7 @@ def playGame():
     return history
                 
 
-def trainOneGame(moveScoreDict={},temp=1,reinf=0):
+def trainOneGame(moveScoreDict={},temp=1,reinf=0,chanceToRandom = 0.5):
     """
     moveScoreDict - dictionary that maps a game to a dictionary of moves mapping to their score and number of times that board was seen
     
@@ -166,7 +166,7 @@ def trainOneGame(moveScoreDict={},temp=1,reinf=0):
             moveScoreDict[game] = {"scores":tempScores,"timesSeen":0}
         
         #Semirandomly choose a move
-        moveSelected = chooseMove(game,moveScoreDict,temp=temp)
+        moveSelected = chooseMove(game,moveScoreDict,temp=temp,chanceToRandom = chanceToRandom)
         history[player].append((game,moveSelected))
         game = game.makeMove(moveSelected,player)
 
@@ -189,7 +189,7 @@ def trainOneGame(moveScoreDict={},temp=1,reinf=0):
         moveScoreDict = reinforce(winner,history,moveScoreDict)
     return moveScoreDict,winner
 
-def chooseMove(game,moveScoreDict,temp=20):
+def chooseMove(game,moveScoreDict,temp=1,chanceToRandom = 0.5):
     """
     game            - TicTacBoard
     moveScoreDict   - dictionary that maps a game to a dictionary of moves mapping to their score
@@ -202,6 +202,8 @@ def chooseMove(game,moveScoreDict,temp=20):
     for m in scoresMapped:
         scores.append(scoresMapped[m])
         moves.append(m)
+    if np.random.random()<chanceToRandom:
+        scores = np.zeros((len(scores),))
     softmax = np.exp((scores - np.max(scores))/temp)/(np.sum(np.exp((scores - np.max(scores))/temp)))
 #    print ("moves\t",moves)
 #    print ("scores\t",scores)
@@ -370,12 +372,12 @@ def reinforce2(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeig
             moveScoreDict[b]["scores"][m] += drawWeight*adj 
     return moveScoreDict
 
-def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0):
-    print ("temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf),flush=True)
+def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0,chanceToRandom = 0.5):
+    print ("temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf)+",chanceToRandom="+str(chanceToRandom),flush=True)
     winnerInfo = [[0],[0],[0],[0]]
     winnerInfo2 = [[0],[0],[0],[0]]
     for i in range(n):
-        moveScoreDict,winner = trainOneGame(moveScoreDict,temp=temp,reinf=reinf)
+        moveScoreDict,winner = trainOneGame(moveScoreDict,temp=temp,reinf=reinf,chanceToRandom=chanceToRandom)
         winnerInfo[0].append(winnerInfo[0][-1]+1)
         for j in range(1,4):
             if j==winner:
@@ -400,7 +402,7 @@ def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0):
     plt.plot(winnerInfo2[0], winnerInfo2[3],label="Draws")
     plt.legend()
     print (len(moveScoreDict),"game boards seen")
-    fileName = "temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf)+","+time.ctime().replace(":","_")+".pkl"
+    fileName = "temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf)+",chanceToRandom="+str(chanceToRandom)+","+time.ctime().replace(":","_")+".pkl"
     print ("data saved in fileName:",fileName)
     info = {"temp":temp,"n":n,"moveScoreDict":moveScoreDict}
     output = open(fileName,"wb")
@@ -459,7 +461,7 @@ def playAI(fileName,AIPlayer="X"):
                 moveScoreDict[game] = {"scores":tempScores,"timesSeen":0}
             
             #Semirandomly choose a move
-            moveSelected = chooseMove(game,moveScoreDict,temp=0.001)
+            moveSelected = chooseMove(game,moveScoreDict,temp=0.0001,chanceToRandom=0)
             game = game.makeMove(moveSelected,player)
     print (game)
     winner = game.gameOver()
@@ -475,10 +477,13 @@ def playAI(fileName,AIPlayer="X"):
 
 if __name__=="__main__":
 #    playGame()
-    np.random.seed(0)
 #    moveScoreDict,winner = trainOneGame()
-    moveScoreDict = trainNTimes(n=100000,temp=20,reinf=2)
+#    np.random.seed(0)
+#    moveScoreDict = trainNTimes(n=10000,temp=2,reinf=1,chanceToRandom=0.15) #standard ~3733 boards seen
+    np.random.seed(0)
+    moveScoreDict = trainNTimes(n=1000000,temp=20,reinf=1,chanceToRandom=0.15)
 #    fileName = "temp=20,n=100000,Thu Aug 10 11_46_39 2017.pkl"
 #    fileName = "temp=40,n=1000000,Thu Aug 10 12_27_40 2017.pkl"
+#    fileName = "temp=20,n=100000,reinf=2,Thu Aug 10 16_38_57 2017.pkl"
 #    playAI(fileName,AIPlayer="O")
     pass
