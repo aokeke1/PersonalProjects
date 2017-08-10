@@ -136,6 +136,79 @@ def playGame():
         print ("Error?")
     return history
                 
+
+def trainOneGame(moveScoreDict):
+    """
+    moveScoreDict - dictionary that maps a game to a dictionary of moves mapping to their score and number of times that board was seen
+    
+    Plays one game and adjusts the moveScoreDict to make better moves more likely.
+    """
+    XToMove = True
+    game = TicTacToeBoard()
+    history = {"X":[],"O":[]}
+    while game.gameOver()==0:
+        history.append(game)
+        if XToMove:
+            player = "X"
+        else:
+            player = "O"
+        print(player,"turn to move.")
+        XToMove = not XToMove
+        moves = game.getMoves()
+        
+        #Add a new game and its moves to the dictionary
+        if game not in moveScoreDict:
+            tempScores= {}
+            for m in moves:
+                tempScores[m] = 0
+            moveScoreDict[game] = {"scores":tempScores,"timesSeen":0}
+        
+        #Semirandomly choose a move
+        moveSelected = chooseMove(game,moveScoreDict)
+        history[player].append((game,moveSelected))
+        game = game.makeMove(moveSelected,player)
+
+    winner = game.gameOver()
+    if winner==1:
+        print("X Wins")
+    elif winner==2:
+        print ("O Wins")
+    elif winner==3:
+        print ("Draw")
+    else:
+        print ("Error?")
+        
+    #adjust moveScoreDict based on who won
+    moveScoreDict = reinforce(winner,history,moveScoreDict)
+    return moveScoreDict
+
+def chooseMove(game,moveScoreDict):
+    """
+    game            - TicTacBoard
+    moveScoreDict   - dictionary that maps a game to a dictionary of moves mapping to their score
+    
+    Semi-randomly chooses a move using a softmax function and moveScoreDict
+    """
+    #TODO
+    pass
+def reinforce(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeight=0):
+    """
+    winner          - 1 = X Won, 2 = O won, 3 = Draw
+    history         - dictionary that maps "X" and "O" to a list of [move,TicTacToeBoard]
+    moveScoreDict   - dictionary that maps a game to a dictionary of moves mapping to their score
+    
+    Positively reinforces winning and negatively reinforces losing.
+    """
+    #TODO
+    pass
+
+def trainNTimes(n=10,moveScoreDict = {}):
+    
+    for i in range(n):
+        moveScoreDict = trainOneGame(moveScoreDict)
+    
+    return moveScoreDict
+
 if __name__=="__main__":
     playGame()
     
