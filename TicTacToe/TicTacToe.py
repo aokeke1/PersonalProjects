@@ -373,10 +373,15 @@ def reinforce2(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeig
     return moveScoreDict
 
 def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0,chanceToRandom = 0.5):
+    start = time.time()
     print ("temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf)+",chanceToRandom="+str(chanceToRandom),flush=True)
     winnerInfo = [[0],[0],[0],[0]]
     winnerInfo2 = [[0],[0],[0],[0]]
     for i in range(n):
+        if i%(n//50)==0:
+            print (100*i/n,"% complete",flush=True)
+            print (len(moveScoreDict),"boards seen so far",flush=True)
+            print (time.time()-start,"seconds have elapsed")
         moveScoreDict,winner = trainOneGame(moveScoreDict,temp=temp,reinf=reinf,chanceToRandom=chanceToRandom)
         winnerInfo[0].append(winnerInfo[0][-1]+1)
         for j in range(1,4):
@@ -408,7 +413,7 @@ def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0,chanceToRandom = 0.5):
     output = open(fileName,"wb")
     pkl.dump(info,output)
     output.close()
-
+    print ("This took",time.time()-start,"seconds")
     return moveScoreDict
 
 def playAI(fileName,AIPlayer="X"):
@@ -480,8 +485,8 @@ if __name__=="__main__":
 #    moveScoreDict,winner = trainOneGame()
 #    np.random.seed(0)
 #    moveScoreDict = trainNTimes(n=10000,temp=2,reinf=1,chanceToRandom=0.15) #standard ~3733 boards seen
-    np.random.seed(0)
-    moveScoreDict = trainNTimes(n=1000000,temp=20,reinf=1,chanceToRandom=0.15)
+#    np.random.seed(0)
+    moveScoreDict = trainNTimes(n=5000000,temp=20,reinf=1,chanceToRandom=0.15)
 #    fileName = "temp=20,n=100000,Thu Aug 10 11_46_39 2017.pkl"
 #    fileName = "temp=40,n=1000000,Thu Aug 10 12_27_40 2017.pkl"
 #    fileName = "temp=20,n=100000,reinf=2,Thu Aug 10 16_38_57 2017.pkl"
