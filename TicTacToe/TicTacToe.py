@@ -6,6 +6,7 @@ Created on Wed Aug  9 15:21:37 2017
 """
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 class TicTacToeBoard:
     def __init__(self,xPos = [],oPos = []):
@@ -137,7 +138,7 @@ def playGame():
     return history
                 
 
-def trainOneGame(moveScoreDict={}):
+def trainOneGame(moveScoreDict={},temp=1):
     """
     moveScoreDict - dictionary that maps a game to a dictionary of moves mapping to their score and number of times that board was seen
     
@@ -163,25 +164,25 @@ def trainOneGame(moveScoreDict={}):
             moveScoreDict[game] = {"scores":tempScores,"timesSeen":0}
         
         #Semirandomly choose a move
-        moveSelected = chooseMove(game,moveScoreDict)
+        moveSelected = chooseMove(game,moveScoreDict,temp=temp)
         history[player].append((game,moveSelected))
         game = game.makeMove(moveSelected,player)
 
     winner = game.gameOver()
-    if winner==1:
-        print("X Wins")
-    elif winner==2:
-        print ("O Wins")
-    elif winner==3:
-        print ("Draw")
+#    if winner==1:
+#        print("X Wins")
+#    elif winner==2:
+#        print ("O Wins")
+#    elif winner==3:
+#        print ("Draw")
     if winner not in [1,2,3]:
         print ("Error?")
         
     #adjust moveScoreDict based on who won
     moveScoreDict = reinforce(winner,history,moveScoreDict)
-    return moveScoreDict
+    return moveScoreDict,winner
 
-def chooseMove(game,moveScoreDict,temp=5):
+def chooseMove(game,moveScoreDict,temp=20):
     """
     game            - TicTacBoard
     moveScoreDict   - dictionary that maps a game to a dictionary of moves mapping to their score
@@ -210,7 +211,6 @@ def reinforce(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeigh
     
     Positively reinforces winning and negatively reinforces losing.
     """
-    #TODO
     if winner==1:
         winPlayer = "X"
         losePlayer = "O"
@@ -246,15 +246,39 @@ def reinforce(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeigh
             moveScoreDict[b]["scores"][m] += drawWeight   
     return moveScoreDict
 
-def trainNTimes(n=1000,moveScoreDict = {}):
-    
+def trainNTimes(n=1000,moveScoreDict = {},temp=1):
+    winnerInfo = [[0],[0],[0],[0]]
+    winnerInfo2 = [[0],[0],[0],[0]]
     for i in range(n):
-        moveScoreDict = trainOneGame(moveScoreDict)
-    
+        moveScoreDict,winner = trainOneGame(moveScoreDict,temp=temp)
+        winnerInfo[0].append(winnerInfo[0][-1]+1)
+        for j in range(1,4):
+            if j==winner:
+                winnerInfo[j].append(winnerInfo[j][-1]+1)
+            else:
+                winnerInfo[j].append(winnerInfo[j][-1])
+    for i in range(1,n+1):
+        winnerInfo2[0].append(i)
+        for j in range(1,4):
+            winnerInfo2[j].append(winnerInfo[j][i]/i)
+            
+    plt.figure(1)                # the first figure
+    plt.subplot(211)             # the first subplot in the first figure
+    plt.plot(winnerInfo[0], winnerInfo[1],label="X Wins")
+    plt.plot(winnerInfo[0], winnerInfo[2],label="O Wins")
+    plt.plot(winnerInfo[0], winnerInfo[3],label="Draws")
+    plt.legend()
+
+    plt.subplot(212)             # the second subplot in the first figure
+    plt.plot(winnerInfo2[0], winnerInfo2[1],label="X Wins")
+    plt.plot(winnerInfo2[0], winnerInfo2[2],label="O Wins")
+    plt.plot(winnerInfo2[0], winnerInfo2[3],label="Draws")
+    plt.legend()
+    print (len(moveScoreDict),"game boards seen")
     return moveScoreDict
 
 if __name__=="__main__":
 #    playGame()
     np.random.seed(0)
-#    moveScoreDict = trainOneGame()
-    moveScoreDict = trainNTimes(n=10000)
+#    moveScoreDict,winner = trainOneGame()
+    moveScoreDict = trainNTimes(n=10000,temp=5)
