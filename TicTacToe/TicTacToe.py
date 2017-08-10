@@ -137,7 +137,7 @@ def playGame():
     return history
                 
 
-def trainOneGame(moveScoreDict):
+def trainOneGame(moveScoreDict={}):
     """
     moveScoreDict - dictionary that maps a game to a dictionary of moves mapping to their score and number of times that board was seen
     
@@ -147,12 +147,11 @@ def trainOneGame(moveScoreDict):
     game = TicTacToeBoard()
     history = {"X":[],"O":[]}
     while game.gameOver()==0:
-        history.append(game)
         if XToMove:
             player = "X"
         else:
             player = "O"
-        print(player,"turn to move.")
+#        print(player,"turn to move.")
         XToMove = not XToMove
         moves = game.getMoves()
         
@@ -175,22 +174,34 @@ def trainOneGame(moveScoreDict):
         print ("O Wins")
     elif winner==3:
         print ("Draw")
-    else:
+    if winner not in [1,2,3]:
         print ("Error?")
         
     #adjust moveScoreDict based on who won
     moveScoreDict = reinforce(winner,history,moveScoreDict)
     return moveScoreDict
 
-def chooseMove(game,moveScoreDict):
+def chooseMove(game,moveScoreDict,temp=5):
     """
     game            - TicTacBoard
     moveScoreDict   - dictionary that maps a game to a dictionary of moves mapping to their score
     
     Semi-randomly chooses a move using a softmax function and moveScoreDict
     """
-    #TODO
-    pass
+    scoresMapped = moveScoreDict[game]["scores"]
+    scores = []
+    moves = []
+    for m in scoresMapped:
+        scores.append(scoresMapped[m])
+        moves.append(m)
+    softmax = np.exp((scores - np.max(scores))/temp)/(np.sum(np.exp((scores - np.max(scores))/temp)))
+#    print (game)
+#    print ("softmax:",softmax)
+#    print ("moves:",moves)
+#    print ("list(range(len(moves))):",list(range(len(moves))))
+    chosenIndex = np.random.choice(list(range(len(moves))),p=softmax)
+    chosenMove = moves[chosenIndex]
+    return chosenMove
 def reinforce(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeight=0):
     """
     winner          - 1 = X Won, 2 = O won, 3 = Draw
@@ -200,9 +211,42 @@ def reinforce(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeigh
     Positively reinforces winning and negatively reinforces losing.
     """
     #TODO
-    pass
+    if winner==1:
+        winPlayer = "X"
+        losePlayer = "O"
+        drawPlayer1 = "-"
+        drawPlayer2 = "-"
+    elif winner==2:
+        winPlayer = "O"
+        losePlayer = "X"
+        drawPlayer1 = "-"
+        drawPlayer2 = "-"
+    elif winner==3:
+        winPlayer = "-"
+        losePlayer = "-"
+        drawPlayer1 = "X"
+        drawPlayer2 = "O"
+    
+    if winPlayer != "-":
+        for b,m in history[winPlayer]:
+            moveScoreDict[b]["timesSeen"] += 1
+            moveScoreDict[b]["scores"][m] += winWeight
+            
+    if losePlayer != "-":
+        for b,m in history[losePlayer]:
+            moveScoreDict[b]["timesSeen"] += 1
+            moveScoreDict[b]["scores"][m] += loseWeight
+    if drawPlayer1 != "-":
+        for b,m in history[drawPlayer1]:
+            moveScoreDict[b]["timesSeen"] += 1
+            moveScoreDict[b]["scores"][m] += drawWeight
+    if drawPlayer2 != "-":
+        for b,m in history[drawPlayer2]:
+            moveScoreDict[b]["timesSeen"] += 1
+            moveScoreDict[b]["scores"][m] += drawWeight   
+    return moveScoreDict
 
-def trainNTimes(n=10,moveScoreDict = {}):
+def trainNTimes(n=1000,moveScoreDict = {}):
     
     for i in range(n):
         moveScoreDict = trainOneGame(moveScoreDict)
@@ -210,5 +254,7 @@ def trainNTimes(n=10,moveScoreDict = {}):
     return moveScoreDict
 
 if __name__=="__main__":
-    playGame()
-    
+#    playGame()
+    np.random.seed(0)
+#    moveScoreDict = trainOneGame()
+    moveScoreDict = trainNTimes(n=10000)
