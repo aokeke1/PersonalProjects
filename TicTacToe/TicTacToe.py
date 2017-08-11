@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 import pickle as pkl
+import operator
 
 class TicTacToeBoard:
     def __init__(self,xPos = [],oPos = []):
@@ -185,6 +186,8 @@ def trainOneGame(moveScoreDict={},temp=1,reinf=0,chanceToRandom = 0.5):
         moveScoreDict = reinforce1(winner,history,moveScoreDict)
     elif reinf==2:
         moveScoreDict = reinforce2(winner,history,moveScoreDict)
+    elif reinf==3:
+        moveScoreDict = reinforce3(winner,history,moveScoreDict)
     else:
         moveScoreDict = reinforce(winner,history,moveScoreDict)
     return moveScoreDict,winner
@@ -372,7 +375,7 @@ def reinforce2(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeig
             moveScoreDict[b]["scores"][m] += drawWeight*adj 
     return moveScoreDict
 
-def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0,chanceToRandom = 0.5):
+def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0,chanceToRandom = 0.5,shouldSave=True):
     start = time.time()
     print ("temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf)+",chanceToRandom="+str(chanceToRandom),flush=True)
     winnerInfo = [[0],[0],[0],[0]]
@@ -407,12 +410,14 @@ def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0,chanceToRandom = 0.5):
     plt.plot(winnerInfo2[0], winnerInfo2[3],label="Draws")
     plt.legend()
     print (len(moveScoreDict),"game boards seen")
-    fileName = "temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf)+",chanceToRandom="+str(chanceToRandom)+","+time.ctime().replace(":","_")+".pkl"
-    print ("data saved in fileName:",fileName)
-    info = {"temp":temp,"n":n,"moveScoreDict":moveScoreDict}
-    output = open(fileName,"wb")
-    pkl.dump(info,output)
-    output.close()
+
+    if shouldSave:
+        fileName = "temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf)+",chanceToRandom="+str(chanceToRandom)+","+time.ctime().replace(":","_")+".pkl"
+        print ("data saved in fileName:",fileName)
+        info = {"temp":temp,"n":n,"moveScoreDict":moveScoreDict}
+        output = open(fileName,"wb")
+        pkl.dump(info,output)
+        output.close()
     print ("This took",time.time()-start,"seconds")
     return moveScoreDict
 
@@ -466,7 +471,7 @@ def playAI(fileName,AIPlayer="X"):
                 moveScoreDict[game] = {"scores":tempScores,"timesSeen":0}
             
             #Semirandomly choose a move
-            moveSelected = chooseMove(game,moveScoreDict,temp=0.0001,chanceToRandom=0)
+            moveSelected = chooseMove(game,moveScoreDict,temp=0.00001,chanceToRandom=0)
             game = game.makeMove(moveSelected,player)
     print (game)
     winner = game.gameOver()
@@ -480,13 +485,30 @@ def playAI(fileName,AIPlayer="X"):
         print ("Error?")
     return history
 
+def examineMoveScoreDict(moveScoreDict,shouldReverse=True):
+    secondaryDict = {}
+    for b in moveScoreDict:
+        secondaryDict[b] = moveScoreDict[b]["timesSeen"]
+        
+    boards_sorted = sorted(secondaryDict.items(), key=operator.itemgetter(1),reverse=shouldReverse)
+    
+    for b,times in boards_sorted:
+        print ("-----------------")
+        print ("Seen",times,"times")
+        print (b)
+        print ("Move Scores:",moveScoreDict[b]["scores"])
+        cont = input("contine? (y/n)")
+        if cont=="n":
+            return
+    
 if __name__=="__main__":
 #    playGame()
 #    moveScoreDict,winner = trainOneGame()
 #    np.random.seed(0)
 #    moveScoreDict = trainNTimes(n=10000,temp=2,reinf=1,chanceToRandom=0.15) #standard ~3733 boards seen
 #    np.random.seed(0)
-    moveScoreDict = trainNTimes(n=5000000,temp=20,reinf=1,chanceToRandom=0.15)
+#    moveScoreDict = trainNTimes(n=5000000,temp=20,reinf=1,chanceToRandom=0.15)
+#    examineMoveScoreDict(moveScoreDict,shouldReverse=True)
 #    fileName = "temp=20,n=100000,Thu Aug 10 11_46_39 2017.pkl"
 #    fileName = "temp=40,n=1000000,Thu Aug 10 12_27_40 2017.pkl"
 #    fileName = "temp=20,n=100000,reinf=2,Thu Aug 10 16_38_57 2017.pkl"
