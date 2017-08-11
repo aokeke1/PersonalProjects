@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import time
 import pickle as pkl
 import operator
-
+import cProfile
 class TicTacToeBoard:
     def __init__(self,xPos = [],oPos = []):
         self.board = np.empty((3,3),dtype=str)
@@ -18,6 +18,7 @@ class TicTacToeBoard:
             self.board[tuple(p)] = "X"
         for p in oPos:
             self.board[tuple(p)] = "O"
+        self.checkIfOneCalced = {}
     
     def __hash__(self):
         return hash(self.board.tostring())
@@ -43,15 +44,22 @@ class TicTacToeBoard:
         return newBoard
     
     def checkIfWon(self,player):
+        if player in self.checkIfOneCalced:
+            return self.checkIfOneCalced[player]
         for i in range(3):
             if np.all(self.board[:,i]==player):
+                self.checkIfOneCalced[player] = True
                 return True
             if np.all(self.board[i,:]==player):
+                self.checkIfOneCalced[player] = True
                 return True
         if np.all(self.board[(0,1,2),(0,1,2)]==player):
+            self.checkIfOneCalced[player] = True
             return True
         if np.all(self.board[(0,1,2),(2,1,0)]==player):
+            self.checkIfOneCalced[player] = True
             return True
+        self.checkIfOneCalced[player] = False
         return False
     def gameOver(self):
         if self.checkIfWon("X"):
@@ -421,7 +429,7 @@ def reinforce3(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeig
             moveScoreDict[b]["scores"][m] += drawWeight*(gamma**(len(history[drawPlayer2])-1-i))
     return moveScoreDict
 
-def reinforce4(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeight=0.75):
+def reinforce4(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeight=0.5):
     """
     winner          - 1 = X Won, 2 = O won, 3 = Draw
     history         - dictionary that maps "X" and "O" to a list of [move,TicTacToeBoard]
@@ -444,7 +452,7 @@ def reinforce4(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeig
         losePlayer = "-"
         drawPlayer1 = "X"
         drawPlayer2 = "O"
-    gamma = 0.2
+    gamma = 0.5
     if winPlayer != "-":
         for i,(b,m) in enumerate(history[winPlayer]):
             moveScoreDict[b]["timesSeen"] += 1
@@ -487,18 +495,18 @@ def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0,chanceToRandom = 0.5,sh
         for j in range(1,4):
             winnerInfo2[j].append(winnerInfo[j][i]/i)
             
-    plt.figure(1)                # the first figure
-    plt.subplot(211)             # the first subplot in the first figure
-    plt.plot(winnerInfo[0], winnerInfo[1],label="X Wins")
-    plt.plot(winnerInfo[0], winnerInfo[2],label="O Wins")
-    plt.plot(winnerInfo[0], winnerInfo[3],label="Draws")
-    plt.legend()
-
-    plt.subplot(212)             # the second subplot in the first figure
-    plt.plot(winnerInfo2[0], winnerInfo2[1],label="X Wins")
-    plt.plot(winnerInfo2[0], winnerInfo2[2],label="O Wins")
-    plt.plot(winnerInfo2[0], winnerInfo2[3],label="Draws")
-    plt.legend()
+#    plt.figure(1)                # the first figure
+#    plt.subplot(211)             # the first subplot in the first figure
+#    plt.plot(winnerInfo[0], winnerInfo[1],label="X Wins")
+#    plt.plot(winnerInfo[0], winnerInfo[2],label="O Wins")
+#    plt.plot(winnerInfo[0], winnerInfo[3],label="Draws")
+#    plt.legend()
+#
+#    plt.subplot(212)             # the second subplot in the first figure
+#    plt.plot(winnerInfo2[0], winnerInfo2[1],label="X Wins")
+#    plt.plot(winnerInfo2[0], winnerInfo2[2],label="O Wins")
+#    plt.plot(winnerInfo2[0], winnerInfo2[3],label="Draws")
+#    plt.legend()
     print (len(moveScoreDict),"game boards seen")
 
     if shouldSave:
@@ -597,7 +605,7 @@ if __name__=="__main__":
 #    np.random.seed(0)
 #    moveScoreDict = trainNTimes(n=10000,temp=2,reinf=1,chanceToRandom=0.15) #standard ~3733 boards seen
 #    np.random.seed(0)
-    moveScoreDict = trainNTimes(n=10000,temp=1,reinf=4,chanceToRandom=0,shouldSave=True)
+#    moveScoreDict = trainNTimes(n=1000000,temp=1,reinf=4,chanceToRandom=0.15,shouldSave=True)
 #    examineMoveScoreDict(moveScoreDict,shouldReverse=True)
 #    examineMoveScoreDict(moveScoreDict,shouldReverse=False)
 #    fileName = "temp=20,n=100000,Thu Aug 10 11_46_39 2017.pkl"
@@ -609,5 +617,5 @@ if __name__=="__main__":
 #    info = pkl.load(open(fileName,"rb"))
 #    moveScoreDict = info["moveScoreDict"]
 #    examineMoveScoreDict(moveScoreDict,shouldReverse=False)
-    
+    cProfile.run(statement = "moveScoreDict = trainNTimes(n=10000,temp=1,reinf=4,chanceToRandom=0.15,shouldSave=False)")
     pass
