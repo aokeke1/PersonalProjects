@@ -375,6 +375,50 @@ def reinforce2(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeig
             moveScoreDict[b]["scores"][m] += drawWeight*adj 
     return moveScoreDict
 
+def reinforce3(winner,history,moveScoreDict,winWeight = 1,loseWeight=-1,drawWeight=0):
+    """
+    winner          - 1 = X Won, 2 = O won, 3 = Draw
+    history         - dictionary that maps "X" and "O" to a list of [move,TicTacToeBoard]
+    moveScoreDict   - dictionary that maps a game to a dictionary of moves mapping to their score
+    
+    Positively reinforces winning and negatively reinforces losing. Exponential Progression
+    """
+    if winner==1:
+        winPlayer = "X"
+        losePlayer = "O"
+        drawPlayer1 = "-"
+        drawPlayer2 = "-"
+    elif winner==2:
+        winPlayer = "O"
+        losePlayer = "X"
+        drawPlayer1 = "-"
+        drawPlayer2 = "-"
+    elif winner==3:
+        winPlayer = "-"
+        losePlayer = "-"
+        drawPlayer1 = "X"
+        drawPlayer2 = "O"
+    gamma = 0.05
+    if winPlayer != "-":
+        for i,(b,m) in enumerate(history[winPlayer]):
+            moveScoreDict[b]["timesSeen"] += 1
+            moveScoreDict[b]["scores"][m] += winWeight*(gamma**(len(history[winPlayer])-1-i))
+            
+    if losePlayer != "-":
+        for i,(b,m) in enumerate(history[losePlayer]):
+            moveScoreDict[b]["timesSeen"] += 1
+            moveScoreDict[b]["scores"][m] += loseWeight*(gamma**(len(history[losePlayer])-1-i))
+
+    if drawPlayer1 != "-":
+        for i,(b,m) in enumerate(history[drawPlayer1]):
+            moveScoreDict[b]["timesSeen"] += 1
+            moveScoreDict[b]["scores"][m] += drawWeight*(gamma**(len(history[drawPlayer1])-1-i))
+    if drawPlayer2 != "-":
+        for i,(b,m) in enumerate(history[drawPlayer2]):
+            moveScoreDict[b]["timesSeen"] += 1
+            moveScoreDict[b]["scores"][m] += drawWeight*(gamma**(len(history[drawPlayer2])-1-i))
+    return moveScoreDict
+
 def trainNTimes(n=1000,moveScoreDict = {},temp=1,reinf=0,chanceToRandom = 0.5,shouldSave=True):
     start = time.time()
     print ("temp="+str(temp)+",n="+str(n)+",reinf="+str(reinf)+",chanceToRandom="+str(chanceToRandom),flush=True)
@@ -507,10 +551,17 @@ if __name__=="__main__":
 #    np.random.seed(0)
 #    moveScoreDict = trainNTimes(n=10000,temp=2,reinf=1,chanceToRandom=0.15) #standard ~3733 boards seen
 #    np.random.seed(0)
-#    moveScoreDict = trainNTimes(n=5000000,temp=20,reinf=1,chanceToRandom=0.15)
+    moveScoreDict = trainNTimes(n=5000000,temp=1,reinf=3,chanceToRandom=0.1,shouldSave=True)
 #    examineMoveScoreDict(moveScoreDict,shouldReverse=True)
+#    examineMoveScoreDict(moveScoreDict,shouldReverse=False)
 #    fileName = "temp=20,n=100000,Thu Aug 10 11_46_39 2017.pkl"
 #    fileName = "temp=40,n=1000000,Thu Aug 10 12_27_40 2017.pkl"
 #    fileName = "temp=20,n=100000,reinf=2,Thu Aug 10 16_38_57 2017.pkl"
 #    playAI(fileName,AIPlayer="O")
+
+#    fileName = "temp=20,n=5000000,reinf=1,chanceToRandom=0.15,Thu Aug 10 23_21_51 2017.pkl"
+#    info = pkl.load(open(fileName,"rb"))
+#    moveScoreDict = info["moveScoreDict"]
+#    examineMoveScoreDict(moveScoreDict,shouldReverse=False)
+    
     pass
