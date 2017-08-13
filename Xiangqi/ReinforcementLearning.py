@@ -94,15 +94,15 @@ def trainOneGame(moveScoreDict={},temp=1,chanceToRandom = 0.5,reinforceParameter
             
             game = game.make_move(moveSelected[0],moveSelected[1])
     
-        print (moveCount,"moves made")
-        if winner==1:
-            print("R Wins")
-        elif winner==2:
-            print ("B Wins")
-        elif winner==3:
-            print ("Draw")
-        else:
-            print ("Error?")
+#        print (moveCount,"moves made")
+#        if winner==1:
+#            print("R Wins")
+#        elif winner==2:
+#            print ("B Wins")
+#        elif winner==3:
+#            print ("Draw")
+#        else:
+#            print ("Error?")
             
         #adjust moveScoreDict based on who won
         moveScoreDict = reinforce(winner,history,moveScoreDict,reinforceParameters)
@@ -276,7 +276,7 @@ if __name__=="__main__":
 #    print (moveScoreDict)
 #    print (winner)
     
-    reinforceParameters = {"winWeight":10,"loseWeight":-10,"drawWeight":0.5,"gamma":0.95}
+    reinforceParameters = {"winWeight":50,"loseWeight":-50,"drawWeight":0.5,"gamma":0.95}
 #    reinforceParameters = None
     moveScoreDict = trainNTimes(n=100,temp=1,chanceToRandom = 0,shouldSave=True,startingDictFileName = None,reinforceParameters=reinforceParameters)
     myBoard = XQ.Xiangqi()
