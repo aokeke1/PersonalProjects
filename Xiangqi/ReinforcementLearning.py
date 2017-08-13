@@ -261,6 +261,103 @@ def trainNTimes(n=1000,temp=1,chanceToRandom = 0.5,shouldSave=False,startingDict
     print ("This took",time.time()-start,"seconds")
     return moveScoreDict
 
+def playAI(fileName,AIPlayer="R"):
+    
+    #Load moveScoreDict
+    info = pkl.load(open(fileName,"rb"))
+    moveScoreDict = info["moveScoreDict"]
+            
+    RToMove = True
+    game = XQ.Xiangqi()
+    history = []
+    history2 = {"R":{},"B":{}}
+    while True:
+        print (game)
+        history.append(game)
+        
+        if RToMove:
+            player = "R"
+            moves = game.get_valid_red_moves()
+            moves = reformatMoves(moves)
+            if len(moves)==0:
+                winner = 2
+                #Player who just made the move wins
+                break
+        else:
+            player = "B"
+            moves = game.get_valid_black_moves()
+            moves = reformatMoves(moves)
+            if len(moves)==0:
+                winner = 1
+                #Player who just made the move wins
+                break
+        RToMove = not RToMove
+        print(player,"turn to move.")
+
+        if AIPlayer!=player:
+            validMoveSelected = False
+#            print (game)
+            while not validMoveSelected:
+                m = input("Type 'quit' to exit.\nEnter a move in the form of x,y from [0,2]: ")
+                try:
+                    if m=="quit":
+                        return history
+                    elif m=="undo" and len(history)>1:
+                        history.pop()
+                        game = history.pop()
+                        validMoveSelected = True
+                    else:
+                        m = m.split(",")
+                        m = ((int(m[0]),int(m[1])),(int(m[2]),int(m[3])))
+                        if m in moves:
+                            validMoveSelected = True
+                                        
+                            if (game,m) not in history2[player]:
+                                history2[player][(game,m)] = 1
+                            elif history2[player][(game,m)]>=3:
+                                #Draw?
+                                winner = 3
+                                break
+                            else:
+                                history2[player][(game,m)] += 1
+                                
+                            game = game.make_move(m[0],m[1])
+                        else:
+                            print ("This is not a valid move. Valid moves are:\n",moves)
+                except:
+                    print("Invalid selection. Try again. (eg '1,0')")
+        else:
+            #Add a new game and its moves to the dictionary
+            if (game,player) not in moveScoreDict:
+                print ("Game not previously seen!!!!!!!")
+                tempScores= {}
+                for m in moves:
+                    tempScores[m] = 0
+                moveScoreDict[(game,player)] = {"scores":tempScores,"timesSeen":0}
+            
+            #Semirandomly choose a move
+            moveSelected = chooseMove((game,player),moveScoreDict,temp=0.00001,chanceToRandom=0)
+
+            if (game,moveSelected) not in history2[player]:
+                history2[player][(game,moveSelected)] = 1
+            elif history2[player][(game,moveSelected)]>=3:
+                #Draw?
+                winner = 3
+                break
+            else:
+                history2[player][(game,moveSelected)] += 1
+            
+            game = game.make_move(moveSelected[0],moveSelected[1])
+    print (game)
+    if winner==1:
+        print("X Wins")
+    elif winner==2:
+        print ("O Wins")
+    elif winner==3:
+        print ("Draw")
+    else:
+        print ("Error?")
+    return history
 if __name__=="__main__":
     np.random.seed(1)
 #    myBoard = XQ.Xiangqi()
@@ -276,8 +373,10 @@ if __name__=="__main__":
 #    print (moveScoreDict)
 #    print (winner)
     
-    reinforceParameters = {"winWeight":50,"loseWeight":-50,"drawWeight":0.5,"gamma":0.95}
-#    reinforceParameters = None
-    moveScoreDict = trainNTimes(n=100,temp=1,chanceToRandom = 0,shouldSave=True,startingDictFileName = None,reinforceParameters=reinforceParameters)
-    myBoard = XQ.Xiangqi()
-    print (moveScoreDict[(myBoard,"R")])
+#    reinforceParameters = {"winWeight":50,"loseWeight":-50,"drawWeight":0.5,"gamma":0.95}
+##    reinforceParameters = None
+#    moveScoreDict = trainNTimes(n=100,temp=1,chanceToRandom = 0,shouldSave=True,startingDictFileName = None,reinforceParameters=reinforceParameters)
+#    myBoard = XQ.Xiangqi()
+#    print (moveScoreDict[(myBoard,"R")])
+    fileName = "temp=1,n=100,chanceToRandom=0,Sun Aug 13 11_44_51 2017.pkl"
+    playAI(fileName,AIPlayer="R")
