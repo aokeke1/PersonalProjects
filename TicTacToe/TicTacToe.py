@@ -611,11 +611,12 @@ if __name__=="__main__":
 #    fileName = "temp=20,n=100000,Thu Aug 10 11_46_39 2017.pkl"
 #    fileName = "temp=40,n=1000000,Thu Aug 10 12_27_40 2017.pkl"
 #    fileName = "temp=20,n=100000,reinf=2,Thu Aug 10 16_38_57 2017.pkl"
-#    playAI(fileName,AIPlayer="O")
+    fileName = "temp=1,n=1000000,reinf=4,chanceToRandom=0.15,Fri Aug 11 09_53_17 2017.pkl"
+    playAI(fileName,AIPlayer="O")
 
 #    fileName = "temp=20,n=5000000,reinf=1,chanceToRandom=0.15,Thu Aug 10 23_21_51 2017.pkl"
 #    info = pkl.load(open(fileName,"rb"))
 #    moveScoreDict = info["moveScoreDict"]
 #    examineMoveScoreDict(moveScoreDict,shouldReverse=False)
-    cProfile.run(statement = "moveScoreDict = trainNTimes(n=10000,temp=1,reinf=4,chanceToRandom=0.15,shouldSave=False)")
+#    cProfile.run(statement = "moveScoreDict = trainNTimes(n=10000,temp=1,reinf=4,chanceToRandom=0.15,shouldSave=False)")
     pass
