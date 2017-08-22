@@ -5,6 +5,7 @@ Created on Sun Aug 20 02:05:30 2017
 @author: arinz
 """
 import numpy as np
+import cv2
 #Pins
 left_encoder_pins = (8,9) #(white,yellow)
 right_encoder_pins = (6,7) #(white,yellow)
@@ -37,4 +38,5 @@ rg = 1.7
 rb = 1.7
 gr = 1.1
 gb = 1.1
+obj_cascade = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
 
