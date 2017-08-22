@@ -1,2 +1,0 @@
-C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe qc ..\..\lib\libopencv_test_calib3d_pch_dephelp.a  CMakeFiles/opencv_test_calib3d_pch_dephelp.dir/opencv_test_calib3d_pch_dephelp.cxx.obj
-C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ranlib.exe ..\..\lib\libopencv_test_calib3d_pch_dephelp.a

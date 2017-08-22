@@ -1,1 +1,0 @@
-opencv_createsamples -info info.dat -num 935 -w 100 -h 100 -vec vecFiles/trainingBlocks_100-100.vec
