@@ -1,0 +1,21 @@
+# Target labels
+ Main
+ opencv_dnn
+ PerfTest
+# Source files and their labels
+C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/modules/dnn/perf/perf_convolution.cpp
+ Main
+ opencv_dnn
+ PerfTest
+C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/modules/dnn/perf/perf_halide_net.cpp
+ Main
+ opencv_dnn
+ PerfTest
+C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/modules/dnn/perf/perf_main.cpp
+ Main
+ opencv_dnn
+ PerfTest
+C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/modules/dnn/perf/perf_precomp.hpp
+ Main
+ opencv_dnn
+ PerfTest

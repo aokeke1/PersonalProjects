@@ -1,0 +1,935 @@
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img1.jpg	1	105 99 212 203
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img2.jpg	1	0 122 220 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img3.jpg	1	8 113 222 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img4.jpg	1	12 106 222 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img5.jpg	1	0 104 241 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img6.jpg	1	22 108 222 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img7.jpg	1	24 111 221 215
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img8.jpg	1	0 113 248 215
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img9.jpg	1	0 116 252 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img10.jpg	1	0 118 256 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img11.jpg	1	44 120 218 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img12.jpg	1	48 118 218 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img13.jpg	1	0 118 270 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img14.jpg	1	55 118 217 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img15.jpg	1	0 117 278 219
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img16.jpg	1	0 118 285 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img17.jpg	1	15 120 275 221
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img18.jpg	1	84 124 218 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img19.jpg	1	97 124 215 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img20.jpg	1	24 119 304 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img21.jpg	1	146 119 212 221
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img22.jpg	1	194 96 214 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img23.jpg	1	228 101 216 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img24.jpg	1	238 110 218 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img25.jpg	1	243 119 217 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img26.jpg	1	243 128 217 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img27.jpg	1	246 132 221 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img28.jpg	1	258 131 218 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img29.jpg	1	272 126 224 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img30.jpg	1	296 123 225 243
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img31.jpg	1	326 124 222 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img32.jpg	1	349 121 227 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img33.jpg	1	356 122 238 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img34.jpg	1	356 124 236 255
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img35.jpg	1	354 126 236 254
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img36.jpg	1	362 133 230 253
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img37.jpg	1	374 142 228 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img38.jpg	1	386 156 224 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img39.jpg	1	424 172 216 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img40.jpg	1	442 178 198 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img41.jpg	1	452 186 188 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img42.jpg	1	463 194 177 242
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img43.jpg	1	480 200 160 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img44.jpg	1	492 199 148 237
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img45.jpg	1	490 196 150 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img46.jpg	1	470 192 170 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img47.jpg	1	432 186 197 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img48.jpg	1	418 178 196 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img49.jpg	1	396 178 192 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img50.jpg	1	368 184 188 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img51.jpg	1	342 188 190 223
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img52.jpg	1	322 186 194 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img53.jpg	1	306 180 198 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img54.jpg	1	275 189 209 225
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img55.jpg	1	268 192 210 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img56.jpg	1	247 194 215 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img57.jpg	1	222 202 220 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img58.jpg	1	206 202 228 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img59.jpg	1	204 202 232 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img60.jpg	1	208 194 235 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img61.jpg	1	240 202 234 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img62.jpg	1	264 198 238 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img63.jpg	1	286 180 242 242
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img71.jpg	1	350 110 218 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img72.jpg	1	338 94 222 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img73.jpg	1	322 70 210 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img74.jpg	1	268 44 217 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img75.jpg	1	210 0 208 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img76.jpg	1	148 0 222 186
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img77.jpg	1	112 0 228 162
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img78.jpg	1	77 0 231 146
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img79.jpg	1	66 0 226 154
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img80.jpg	1	94 0 234 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img81.jpg	1	130 0 228 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img82.jpg	1	146 6 230 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img83.jpg	1	173 32 225 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img84.jpg	1	184 48 226 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img85.jpg	1	193 54 227 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img86.jpg	1	200 54 230 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img87.jpg	1	198 44 234 263
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img88.jpg	1	196 32 235 268
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img89.jpg	1	202 30 234 268
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img90.jpg	1	204 29 236 271
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img91.jpg	1	204 30 238 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img92.jpg	1	204 40 240 275
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img93.jpg	1	205 48 239 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img94.jpg	1	207 61 239 271
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img95.jpg	1	212 70 239 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img96.jpg	1	214 81 240 271
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img97.jpg	1	215 90 241 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img98.jpg	1	212 106 240 268
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img99.jpg	1	208 118 240 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img100.jpg	1	206 126 240 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img101.jpg	1	198 138 242 261
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img102.jpg	1	194 148 241 262
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img103.jpg	1	190 160 242 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img104.jpg	1	188 164 244 259
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img105.jpg	1	184 162 244 261
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img106.jpg	1	174 158 248 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img107.jpg	1	174 160 246 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img108.jpg	1	164 162 250 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img109.jpg	1	162 172 252 262
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img110.jpg	1	162 180 254 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img111.jpg	1	160 194 258 263
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img112.jpg	1	162 204 258 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img113.jpg	1	150 206 266 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img114.jpg	1	130 222 276 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img115.jpg	1	156 242 282 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img116.jpg	1	200 258 294 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img117.jpg	1	222 268 304 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img118.jpg	1	225 260 307 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img119.jpg	1	220 248 300 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img120.jpg	1	216 230 299 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img121.jpg	1	219 204 299 276
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img122.jpg	1	222 172 292 308
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img123.jpg	1	214 148 292 330
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img124.jpg	1	208 134 284 326
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img125.jpg	1	192 128 280 318
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img126.jpg	1	169 126 275 314
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img127.jpg	1	154 124 274 312
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img128.jpg	1	146 120 282 306
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img129.jpg	1	146 112 288 311
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img130.jpg	1	148 108 290 310
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img131.jpg	1	146 104 294 312
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img132.jpg	1	159 104 293 306
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img133.jpg	1	176 102 294 305
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img134.jpg	1	190 106 300 296
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img135.jpg	1	224 104 292 294
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img136.jpg	1	230 98 288 280
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img137.jpg	1	242 74 286 285
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img138.jpg	1	256 78 278 284
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img139.jpg	1	220 114 278 276
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img140.jpg	1	190 144 264 283
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img141.jpg	1	186 176 260 280
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img142.jpg	1	192 187 258 287
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img143.jpg	1	230 201 257 279
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img144.jpg	1	264 206 256 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img145.jpg	1	302 218 256 262
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img146.jpg	1	334 218 260 262
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img147.jpg	1	334 176 267 268
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img148.jpg	1	324 114 272 265
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img149.jpg	1	345 97 273 273
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img150.jpg	1	318 102 286 269
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img151.jpg	1	294 94 280 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img153.jpg	1	0 43 169 269
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img154.jpg	1	0 56 180 271
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img155.jpg	1	0 62 205 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img156.jpg	1	0 70 228 272
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img157.jpg	1	0 78 248 272
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img158.jpg	1	0 102 266 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img159.jpg	1	36 120 262 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img160.jpg	1	76 148 264 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img161.jpg	1	127 172 255 244
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img162.jpg	1	156 176 254 242
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img163.jpg	1	176 177 256 239
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img164.jpg	1	200 176 250 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img165.jpg	1	214 164 248 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img166.jpg	1	216 160 251 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img167.jpg	1	214 148 241 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img168.jpg	1	196 124 242 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img169.jpg	1	181 118 239 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img170.jpg	1	162 114 240 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img171.jpg	1	144 120 242 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img172.jpg	1	132 130 240 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img173.jpg	1	130 140 236 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img174.jpg	1	144 172 228 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img175.jpg	1	189 206 224 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img176.jpg	1	198 208 228 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img177.jpg	1	214 206 227 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img178.jpg	1	230 200 224 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img179.jpg	1	240 198 226 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img180.jpg	1	238 194 234 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img181.jpg	1	244 188 226 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img182.jpg	1	242 180 228 213
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img183.jpg	1	240 178 229 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img184.jpg	1	224 177 239 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img185.jpg	1	222 176 230 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img186.jpg	1	208 175 232 223
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img187.jpg	1	198 172 232 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img188.jpg	1	194 168 234 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img189.jpg	1	186 166 245 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img190.jpg	1	196 165 236 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img191.jpg	1	194 162 236 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img192.jpg	1	194 169 235 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img193.jpg	1	196 163 236 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img194.jpg	1	180 162 242 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img195.jpg	1	180 160 232 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img196.jpg	1	184 148 220 254
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img197.jpg	1	170 158 224 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img198.jpg	1	163 142 229 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img199.jpg	1	151 127 247 289
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img200.jpg	1	160 154 244 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img201.jpg	1	169 142 244 272
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img202.jpg	1	178 158 242 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img203.jpg	1	184 158 241 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img204.jpg	1	184 168 242 243
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img205.jpg	1	183 174 239 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img206.jpg	1	182 152 240 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img207.jpg	1	176 181 242 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img208.jpg	1	172 180 256 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img209.jpg	1	176 178 249 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img210.jpg	1	177 180 249 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img211.jpg	1	188 180 248 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img212.jpg	1	188 182 252 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img213.jpg	1	194 183 246 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img214.jpg	1	193 181 250 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img215.jpg	1	206 180 246 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img216.jpg	1	212 182 242 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img217.jpg	1	216 182 238 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img218.jpg	1	216 188 240 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img219.jpg	1	202 176 251 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img220.jpg	1	210 182 238 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img221.jpg	1	202 156 239 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img222.jpg	1	198 150 239 242
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img223.jpg	1	197 132 240 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img224.jpg	1	198 114 238 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img225.jpg	1	200 100 236 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img226.jpg	1	202 94 238 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img227.jpg	1	208 90 235 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img228.jpg	1	212 84 236 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img229.jpg	1	214 84 235 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img230.jpg	1	216 88 233 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img231.jpg	1	222 92 230 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img232.jpg	1	228 94 228 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img233.jpg	1	230 94 229 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img234.jpg	1	228 96 231 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img235.jpg	1	230 98 229 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img236.jpg	1	232 96 230 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img237.jpg	1	236 118 229 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img238.jpg	1	248 136 228 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img239.jpg	1	250 144 228 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img240.jpg	1	246 134 222 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img241.jpg	1	244 122 212 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img242.jpg	1	244 118 205 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img243.jpg	1	241 112 203 242
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img244.jpg	1	242 106 202 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img245.jpg	1	244 106 204 247
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img246.jpg	1	246 106 204 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img247.jpg	1	249 106 203 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img248.jpg	1	248 104 206 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img249.jpg	1	246 100 206 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img250.jpg	1	245 98 207 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img251.jpg	1	246 96 211 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img252.jpg	1	250 96 210 244
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img253.jpg	1	256 96 210 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img254.jpg	1	260 102 206 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img255.jpg	1	265 106 205 247
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img256.jpg	1	268 106 208 247
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img257.jpg	1	270 102 210 244
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img258.jpg	1	272 88 212 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img259.jpg	1	276 80 212 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img260.jpg	1	280 68 212 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img261.jpg	1	284 82 210 239
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img262.jpg	1	284 82 210 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img263.jpg	1	284 79 210 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img264.jpg	1	284 90 210 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img265.jpg	1	284 86 208 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img266.jpg	1	292 80 204 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img267.jpg	1	294 84 204 219
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img268.jpg	1	294 76 208 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img269.jpg	1	292 88 210 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img270.jpg	1	294 106 208 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img271.jpg	1	294 108 210 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img272.jpg	1	300 106 202 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img273.jpg	1	298 108 204 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img276.jpg	1	294 86 212 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img277.jpg	1	296 88 213 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img278.jpg	1	300 90 219 221
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img279.jpg	1	300 92 222 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img280.jpg	1	296 85 231 233
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img281.jpg	1	294 98 238 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img282.jpg	1	292 100 240 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img283.jpg	1	290 104 244 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img284.jpg	1	290 110 245 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img285.jpg	1	288 114 247 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img286.jpg	1	288 114 247 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img287.jpg	1	288 116 248 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img288.jpg	1	292 114 245 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img289.jpg	1	292 114 248 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img290.jpg	1	294 84 247 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img291.jpg	1	293 90 247 254
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img292.jpg	1	292 101 245 243
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img293.jpg	1	292 106 244 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img294.jpg	1	293 108 241 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img295.jpg	1	295 110 239 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img296.jpg	1	302 110 232 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img297.jpg	1	306 110 227 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img298.jpg	1	310 112 226 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img299.jpg	1	314 112 234 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img300.jpg	1	328 114 230 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img301.jpg	1	338 122 230 200
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img302.jpg	1	342 132 182 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img303.jpg	1	342 139 180 177
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img304.jpg	1	343 144 171 172
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img305.jpg	1	344 148 180 172
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img306.jpg	1	342 152 186 167
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img307.jpg	1	345 152 187 164
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img308.jpg	1	347 152 181 165
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img309.jpg	1	348 152 180 166
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img310.jpg	1	346 156 186 162
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img311.jpg	1	342 160 198 156
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img312.jpg	1	340 164 206 148
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img313.jpg	1	340 164 216 144
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img314.jpg	1	343 158 217 146
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img315.jpg	1	346 152 216 145
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img316.jpg	1	348 146 216 150
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img317.jpg	1	348 141 240 161
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img318.jpg	1	351 139 245 173
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img319.jpg	1	358 138 262 188
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img320.jpg	1	367 132 249 201
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img321.jpg	1	370 130 256 207
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img322.jpg	1	372 130 254 209
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img323.jpg	1	374 126 254 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img324.jpg	1	378 122 252 213
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img325.jpg	1	380 124 248 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img326.jpg	1	382 128 248 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img327.jpg	1	384 132 246 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img328.jpg	1	386 138 246 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img329.jpg	1	388 142 252 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img330.jpg	1	392 150 222 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img331.jpg	1	372 186 268 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img332.jpg	1	369 186 265 203
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img333.jpg	1	340 188 300 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img334.jpg	1	330 202 240 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img335.jpg	1	332 226 248 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img336.jpg	1	333 250 235 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img337.jpg	1	326 266 264 190
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img338.jpg	1	320 280 232 184
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img339.jpg	1	312 291 232 177
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img340.jpg	1	294 296 194 178
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img341.jpg	1	291 292 197 188
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img342.jpg	1	292 282 192 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img343.jpg	1	288 280 199 200
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img344.jpg	1	288 280 200 200
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img345.jpg	1	291 278 195 201
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img346.jpg	1	286 278 197 200
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img347.jpg	1	290 278 196 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img348.jpg	1	300 268 190 184
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img349.jpg	1	300 240 180 186
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img350.jpg	1	294 248 177 188
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img351.jpg	1	288 272 177 186
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img352.jpg	1	286 297 176 183
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img353.jpg	1	284 304 176 176
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img354.jpg	1	281 304 175 176
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img355.jpg	1	274 284 176 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img356.jpg	1	268 296 176 184
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img357.jpg	1	262 272 179 186
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img358.jpg	1	254 234 180 190
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img359.jpg	1	256 198 186 184
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img360.jpg	1	262 160 192 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img361.jpg	1	252 140 196 188
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img362.jpg	1	232 124 206 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img363.jpg	1	226 120 198 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img364.jpg	1	218 118 201 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img365.jpg	1	202 109 206 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img366.jpg	1	198 106 206 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img367.jpg	1	202 120 206 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img368.jpg	1	242 166 222 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img369.jpg	1	256 160 226 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img370.jpg	1	258 136 226 200
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img371.jpg	1	258 117 224 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img372.jpg	1	257 75 225 203
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img373.jpg	1	272 60 228 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img374.jpg	1	300 52 224 202
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img375.jpg	1	330 48 221 200
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img376.jpg	1	347 44 225 202
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img377.jpg	1	346 44 234 205
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img378.jpg	1	368 48 224 202
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img379.jpg	1	370 50 228 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img380.jpg	1	366 48 229 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img381.jpg	1	366 48 232 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img382.jpg	1	366 48 232 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img383.jpg	1	358 52 237 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img384.jpg	1	382 60 232 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img385.jpg	1	396 60 232 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img386.jpg	1	404 60 232 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img387.jpg	1	402 59 229 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img388.jpg	1	400 56 230 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img389.jpg	1	408 52 228 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img390.jpg	1	402 48 229 200
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img391.jpg	1	386 28 232 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img392.jpg	1	388 35 232 209
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img393.jpg	1	402 44 234 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img398.jpg	1	364 0 242 190
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img399.jpg	1	372 0 242 200
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img400.jpg	1	378 0 242 197
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img401.jpg	1	366 0 240 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img402.jpg	1	370 0 240 199
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img403.jpg	1	371 0 241 202
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img404.jpg	1	376 0 240 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img405.jpg	1	378 0 242 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img406.jpg	1	368 3 236 213
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img407.jpg	1	354 16 241 209
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img408.jpg	1	338 20 236 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img409.jpg	1	320 32 236 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img410.jpg	1	310 30 236 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img411.jpg	1	316 20 233 209
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img412.jpg	1	326 24 232 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img413.jpg	1	342 28 234 209
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img414.jpg	1	358 28 232 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img415.jpg	1	364 20 230 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img416.jpg	1	378 18 228 202
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img418.jpg	1	0 55 37 161
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img419.jpg	1	0 51 43 167
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img420.jpg	1	0 50 48 170
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img421.jpg	1	0 46 52 175
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img422.jpg	1	0 41 56 177
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img423.jpg	1	0 33 64 181
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img424.jpg	1	0 20 70 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img425.jpg	1	0 0 80 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img426.jpg	1	0 0 96 199
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img427.jpg	1	0 0 109 207
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img428.jpg	1	0 0 132 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img429.jpg	1	0 0 154 219
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img430.jpg	1	0 10 180 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img431.jpg	1	0 22 208 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img432.jpg	1	0 36 228 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img433.jpg	1	14 47 228 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img434.jpg	1	32 56 224 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img435.jpg	1	62 69 224 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img436.jpg	1	75 76 223 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img437.jpg	1	112 95 220 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img438.jpg	1	150 128 212 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img439.jpg	1	172 148 214 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img440.jpg	1	185 158 217 233
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img441.jpg	1	193 162 223 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img442.jpg	1	203 168 220 242
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img443.jpg	1	220 189 218 241
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img444.jpg	1	234 196 227 249
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img445.jpg	1	240 188 225 244
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img446.jpg	1	258 185 227 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img447.jpg	1	290 195 220 253
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img448.jpg	1	286 208 215 244
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img449.jpg	1	258 224 201 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img450.jpg	1	212 240 196 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img451.jpg	1	172 248 197 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img452.jpg	1	132 244 199 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img453.jpg	1	100 231 199 225
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img454.jpg	1	117 228 189 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img455.jpg	1	133 219 187 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img456.jpg	1	137 202 188 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img457.jpg	1	114 178 162 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img458.jpg	1	66 142 186 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img459.jpg	1	68 126 190 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img460.jpg	1	77 141 184 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img461.jpg	1	92 159 180 211
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img462.jpg	1	96 177 182 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img463.jpg	1	101 170 177 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img464.jpg	1	114 158 175 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img465.jpg	1	115 155 181 219
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img466.jpg	1	112 170 166 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img467.jpg	1	84 186 182 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img468.jpg	1	73 192 183 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img469.jpg	1	64 192 192 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img470.jpg	1	72 195 197 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img471.jpg	1	140 182 187 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img472.jpg	1	178 127 193 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img473.jpg	1	214 110 190 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img474.jpg	1	239 112 193 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img475.jpg	1	241 127 183 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img476.jpg	1	194 152 182 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img477.jpg	1	170 144 182 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img478.jpg	1	124 92 202 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img479.jpg	1	126 72 206 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img480.jpg	1	120 103 180 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img481.jpg	1	89 132 201 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img482.jpg	1	112 138 204 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img483.jpg	1	131 144 208 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img484.jpg	1	140 145 216 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img485.jpg	1	138 134 216 209
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img486.jpg	1	114 98 210 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img487.jpg	1	84 108 216 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img488.jpg	1	80 108 217 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img489.jpg	1	100 102 218 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img490.jpg	1	116 94 221 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img491.jpg	1	157 102 223 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img492.jpg	1	171 102 231 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img493.jpg	1	174 96 242 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img494.jpg	1	179 94 239 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img495.jpg	1	178 100 238 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img496.jpg	1	176 105 238 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img497.jpg	1	176 106 235 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img498.jpg	1	167 104 233 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img499.jpg	1	158 99 236 223
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img500.jpg	1	154 92 237 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img501.jpg	1	148 90 235 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img502.jpg	1	138 86 238 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img503.jpg	1	136 78 238 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img504.jpg	1	140 64 236 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img505.jpg	1	148 69 229 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img506.jpg	1	164 66 221 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img507.jpg	1	166 98 214 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img508.jpg	1	158 103 212 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img509.jpg	1	150 104 214 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img510.jpg	1	146 104 210 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img511.jpg	1	142 100 208 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img512.jpg	1	136 94 208 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img513.jpg	1	132 86 206 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img514.jpg	1	126 80 208 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img515.jpg	1	122 83 319 233
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img516.jpg	1	118 84 209 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img517.jpg	1	118 82 208 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img518.jpg	1	128 74 204 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img519.jpg	1	134 53 208 225
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img520.jpg	1	138 38 208 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img521.jpg	1	142 36 208 237
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img522.jpg	1	164 56 205 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img523.jpg	1	172 61 204 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img524.jpg	1	188 64 198 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img525.jpg	1	202 70 196 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img526.jpg	1	220 69 198 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img527.jpg	1	234 72 194 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img528.jpg	1	242 72 202 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img529.jpg	1	239 74 200 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img530.jpg	1	232 86 187 223
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img531.jpg	1	218 88 194 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img532.jpg	1	214 85 184 221
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img533.jpg	1	207 104 177 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img534.jpg	1	212 108 174 215
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img535.jpg	1	216 108 174 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img536.jpg	1	228 98 166 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img537.jpg	1	224 85 166 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img538.jpg	1	208 75 166 211
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img539.jpg	1	186 62 168 213
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img540.jpg	1	162 69 171 219
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img541.jpg	1	161 82 179 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img542.jpg	1	162 98 186 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img543.jpg	1	174 105 186 237
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img544.jpg	1	198 104 192 241
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img545.jpg	1	192 118 200 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img546.jpg	1	178 124 208 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img547.jpg	1	178 134 208 247
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img548.jpg	1	190 150 206 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img549.jpg	1	198 181 210 243
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img550.jpg	1	198 200 220 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img551.jpg	1	204 208 223 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img552.jpg	1	217 210 229 270
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img553.jpg	1	217 205 234 263
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img554.jpg	1	210 190 236 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img555.jpg	1	199 184 239 275
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img556.jpg	1	188 179 237 270
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img557.jpg	1	168 168 237 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img558.jpg	1	152 164 239 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img559.jpg	1	138 162 248 278
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img560.jpg	1	144 160 250 272
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img561.jpg	1	160 152 241 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img562.jpg	1	181 148 241 278
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img563.jpg	1	183 148 241 278
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img564.jpg	1	170 154 253 280
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img565.jpg	1	158 166 244 276
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img566.jpg	1	140 172 254 281
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img567.jpg	1	130 173 248 277
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img568.jpg	1	112 178 244 272
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img569.jpg	1	87 185 245 273
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img570.jpg	1	57 192 241 269
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img571.jpg	1	0 190 174 262
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img572.jpg	1	0 227 31 201
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img573.jpg	1	0 165 37 245
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img574.jpg	1	0 164 74 276
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img575.jpg	1	0 222 110 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img576.jpg	1	0 274 155 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img577.jpg	1	0 302 216 178
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img578.jpg	1	34 302 252 178
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img579.jpg	1	40 286 258 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img580.jpg	1	63 249 246 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img581.jpg	1	76 225 246 255
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img582.jpg	1	92 202 245 262
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img583.jpg	1	102 182 248 268
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img584.jpg	1	106 170 250 272
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img585.jpg	1	120 166 242 270
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img586.jpg	1	136 164 239 269
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img587.jpg	1	158 164 235 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img588.jpg	1	184 160 229 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img589.jpg	1	202 148 232 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img590.jpg	1	206 132 234 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img591.jpg	1	204 113 234 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img592.jpg	1	201 106 232 257
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img593.jpg	1	206 100 229 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img594.jpg	1	218 110 222 254
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img595.jpg	1	246 121 208 251
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img596.jpg	1	274 134 209 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img597.jpg	1	298 138 210 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img598.jpg	1	308 139 214 249
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img599.jpg	1	294 134 208 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img600.jpg	1	290 116 206 242
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img601.jpg	1	277 106 201 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img602.jpg	1	234 93 192 223
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img603.jpg	1	232 74 190 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img604.jpg	1	217 26 193 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img605.jpg	1	203 12 197 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img606.jpg	1	196 1 198 237
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img607.jpg	1	190 0 200 237
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img608.jpg	1	184 0 200 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img609.jpg	1	180 0 200 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img610.jpg	1	172 0 198 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img611.jpg	1	162 0 198 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img612.jpg	1	166 0 196 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img613.jpg	1	178 0 193 215
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img614.jpg	1	191 0 193 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img615.jpg	1	202 0 196 202
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img616.jpg	1	208 0 199 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img617.jpg	1	209 0 201 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img618.jpg	1	207 0 201 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img619.jpg	1	202 0 202 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img620.jpg	1	204 0 199 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img621.jpg	1	211 0 195 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img622.jpg	1	228 0 191 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img623.jpg	1	246 1 193 239
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img624.jpg	1	251 0 204 255
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img625.jpg	1	264 13 209 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img626.jpg	1	280 22 207 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img627.jpg	1	298 0 216 284
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img628.jpg	1	284 0 236 276
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img629.jpg	1	278 0 230 263
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img630.jpg	1	294 0 231 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img631.jpg	1	308 0 244 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img632.jpg	1	328 0 267 278
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img633.jpg	1	352 0 278 298
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img634.jpg	1	358 18 280 292
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img635.jpg	1	364 22 276 298
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img636.jpg	1	373 28 267 300
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img637.jpg	1	381 38 259 296
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img638.jpg	1	384 28 256 310
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img639.jpg	1	382 39 258 303
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img640.jpg	1	382 6 258 343
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img641.jpg	1	388 12 252 339
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img642.jpg	1	394 18 246 330
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img643.jpg	1	396 90 244 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img644.jpg	1	394 108 246 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img645.jpg	1	385 106 255 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img646.jpg	1	376 96 264 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img647.jpg	1	376 89 264 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img652.jpg	1	288 40 342 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img653.jpg	1	290 72 288 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img654.jpg	1	292 40 348 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img655.jpg	1	293 32 347 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img656.jpg	1	296 31 344 275
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img657.jpg	1	300 58 296 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img658.jpg	1	304 58 290 245
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img659.jpg	1	299 14 341 294
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img661.jpg	1	284 134 239 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img662.jpg	1	296 138 228 280
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img663.jpg	1	312 152 228 264
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img664.jpg	1	316 142 226 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img665.jpg	1	321 120 220 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img666.jpg	1	332 104 210 243
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img667.jpg	1	342 106 206 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img668.jpg	1	352 115 207 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img673.jpg	1	351 28 217 314
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img674.jpg	1	341 4 217 326
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img675.jpg	1	332 0 217 318
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img676.jpg	1	332 70 212 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img677.jpg	1	332 58 212 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img678.jpg	1	336 46 210 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img679.jpg	1	344 40 212 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img680.jpg	1	351 38 213 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img681.jpg	1	352 36 215 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img682.jpg	1	352 32 216 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img683.jpg	1	350 28 218 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img684.jpg	1	348 18 218 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img685.jpg	1	344 8 219 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img686.jpg	1	344 6 216 237
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img687.jpg	1	346 10 216 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img688.jpg	1	353 22 215 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img689.jpg	1	367 38 209 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img690.jpg	1	389 58 207 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img691.jpg	1	438 94 202 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img692.jpg	1	458 67 182 267
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img693.jpg	1	480 72 160 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img694.jpg	1	510 48 130 284
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img695.jpg	1	518 34 122 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img696.jpg	1	506 15 134 255
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img697.jpg	1	516 14 124 251
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img698.jpg	1	504 14 136 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img699.jpg	1	492 8 148 247
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img700.jpg	1	482 0 158 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img701.jpg	1	482 10 158 232
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img702.jpg	1	482 26 158 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img703.jpg	1	482 44 158 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img704.jpg	1	450 121 190 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img705.jpg	1	432 147 208 269
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img706.jpg	1	406 164 234 278
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img707.jpg	1	380 166 260 296
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img708.jpg	1	356 176 284 298
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img709.jpg	1	334 184 284 296
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img710.jpg	1	312 172 285 304
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img711.jpg	1	291 180 298 294
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img712.jpg	1	277 160 305 306
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img713.jpg	1	276 162 296 292
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img714.jpg	1	284 147 288 279
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img715.jpg	1	296 136 273 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img716.jpg	1	309 134 268 242
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img717.jpg	1	322 138 262 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img718.jpg	1	332 146 256 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img719.jpg	1	338 146 262 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img720.jpg	1	339 144 272 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img721.jpg	1	344 145 276 223
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img722.jpg	1	348 137 276 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img723.jpg	1	354 153 275 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img724.jpg	1	361 147 279 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img725.jpg	1	360 136 280 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img726.jpg	1	362 138 278 249
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img727.jpg	1	382 160 258 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img728.jpg	1	391 166 249 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img729.jpg	1	392 166 248 249
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img730.jpg	1	392 166 248 249
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img731.jpg	1	394 170 246 246
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img732.jpg	1	400 177 240 243
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img733.jpg	1	406 185 234 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img734.jpg	1	412 190 228 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img735.jpg	1	414 194 226 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img736.jpg	1	414 200 226 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img737.jpg	1	410 203 230 231
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img738.jpg	1	406 199 234 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img739.jpg	1	396 192 244 248
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img740.jpg	1	382 191 258 255
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img741.jpg	1	371 193 269 261
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img742.jpg	1	357 194 283 261
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img743.jpg	1	346 188 291 262
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img744.jpg	1	339 176 287 274
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img745.jpg	1	333 182 295 268
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img746.jpg	1	328 192 288 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img747.jpg	1	329 198 299 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img748.jpg	1	334 196 280 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img749.jpg	1	338 202 301 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img750.jpg	1	344 206 296 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img751.jpg	1	348 204 280 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img752.jpg	1	352 206 288 255
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img753.jpg	1	350 185 290 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img754.jpg	1	350 178 290 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img755.jpg	1	356 170 284 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img756.jpg	1	360 170 280 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img757.jpg	1	360 171 280 277
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img758.jpg	1	360 169 280 287
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img759.jpg	1	362 162 278 294
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img760.jpg	1	366 154 274 300
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img761.jpg	1	372 148 268 306
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img762.jpg	1	386 147 254 325
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img763.jpg	1	382 142 258 338
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img764.jpg	1	368 161 264 319
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img765.jpg	1	357 176 279 304
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img766.jpg	1	358 189 262 291
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img767.jpg	1	358 192 261 288
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img768.jpg	1	360 204 255 276
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img769.jpg	1	394 209 214 271
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img771.jpg	1	415 310 199 170
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img772.jpg	1	418 294 197 186
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img773.jpg	1	410 264 198 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img774.jpg	1	402 234 197 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img775.jpg	1	392 212 198 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img776.jpg	1	382 202 192 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img777.jpg	1	365 184 189 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img778.jpg	1	353 166 189 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img779.jpg	1	348 156 189 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img780.jpg	1	344 160 187 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img781.jpg	1	341 166 183 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img782.jpg	1	338 166 184 221
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img783.jpg	1	341 162 183 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img784.jpg	1	342 154 186 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img785.jpg	1	342 152 186 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img786.jpg	1	343 154 185 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img787.jpg	1	344 150 186 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img788.jpg	1	332 143 186 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img789.jpg	1	318 138 186 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img790.jpg	1	310 132 188 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img791.jpg	1	322 128 188 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img792.jpg	1	330 122 187 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img793.jpg	1	326 122 184 227
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img794.jpg	1	314 118 184 224
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img795.jpg	1	314 114 181 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img796.jpg	2	334 104 179 223	542 0 98 100
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img797.jpg	2	344 106 182 224	531 0 109 150
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img798.jpg	2	346 102 188 226	566 0 74 181
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img799.jpg	2	335 104 191 227	573 2 67 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img800.jpg	2	312 113 182 227	566 32 74 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img801.jpg	2	284 124 181 228	542 39 98 201
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img802.jpg	2	262 134 176 230	526 39 114 215
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img803.jpg	2	232 140 176 232	478 48 162 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img804.jpg	2	202 139 176 235	436 56 204 211
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img805.jpg	2	170 137 176 239	424 44 216 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img806.jpg	2	134 140 182 242	388 54 252 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img807.jpg	2	100 144 194 245	378 60 262 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img808.jpg	2	82 146 208 248	362 62 278 217
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img809.jpg	2	85 150 212 248	372 62 268 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img810.jpg	2	82 156 210 248	378 68 262 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img811.jpg	2	100 161 203 243	386 74 254 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img812.jpg	2	124 162 200 238	411 94 229 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img813.jpg	2	124 158 204 240	411 104 229 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img814.jpg	2	118 162 197 235	412 114 228 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img815.jpg	2	102 168 202 234	394 122 246 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img816.jpg	2	92 172 198 230	392 129 248 199
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img817.jpg	2	76 172 202 225	369 130 269 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img818.jpg	2	68 167 198 221	358 126 268 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img819.jpg	2	52 160 202 220	348 118 250 195
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img820.jpg	2	24 166 210 214	322 118 248 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img821.jpg	2	16 175 210 213	320 126 247 193
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img822.jpg	2	8 182 209 214	307 132 241 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img823.jpg	2	0 189 209 213	291 138 245 190
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img824.jpg	2	0 192 209 214	294 140 236 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img825.jpg	2	0 196 210 214	292 145 264 191
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img826.jpg	2	0 196 210 214	280 146 260 190
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img827.jpg	2	10 200 212 212	296 148 268 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img828.jpg	2	22 192 210 210	313 142 221 185
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img829.jpg	2	40 185 202 210	327 136 217 183
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img830.jpg	2	46 184 202 210	329 136 227 184
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img831.jpg	2	56 188 200 210	358 142 208 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img832.jpg	2	60 188 199 208	341 142 211 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img833.jpg	2	67 186 196 209	352 140 207 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img834.jpg	2	75 186 195 210	351 141 217 183
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img835.jpg	2	82 186 194 210	343 141 233 183
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img836.jpg	2	86 184 194 208	366 140 216 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img837.jpg	2	96 180 188 207	374 135 210 183
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img838.jpg	2	111 178 183 208	386 136 212 180
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img839.jpg	2	128 176 182 208	404 136 214 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img840.jpg	2	136 178 182 210	428 140 196 181
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img841.jpg	2	150 175 182 209	440 142 184 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img842.jpg	2	148 170 184 210	446 130 172 184
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img843.jpg	2	146 164 186 210	412 112 208 190
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img844.jpg	2	146 158 186 212	418 110 204 190
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img845.jpg	2	146 154 186 215	410 82 212 212
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img846.jpg	2	140 152 185 216	382 1 169 207
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img857.jpg	2	0 116 166 242	350 66 162 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img858.jpg	2	0 104 206 234	382 60 171 219
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img859.jpg	2	20 56 232 242	434 20 185 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img860.jpg	2	57 22 227 244	464 0 176 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img861.jpg	2	60 16 228 243	468 0 172 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img862.jpg	2	64 16 222 240	466 0 174 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img863.jpg	2	64 22 222 239	464 0 176 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img864.jpg	2	66 32 222 234	464 0 176 214
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img865.jpg	2	69 44 217 232	462 0 178 222
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img866.jpg	2	111 106 203 222	484 54 156 220
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img867.jpg	2	120 111 200 222	490 60 150 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img868.jpg	2	134 117 196 222	500 66 140 216
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img869.jpg	2	150 126 193 222	512 78 128 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img870.jpg	2	162 144 187 223	518 96 122 205
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img871.jpg	2	166 161 186 217	518 112 122 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img872.jpg	2	160 175 186 215	510 126 130 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img873.jpg	2	134 188 192 214	489 140 151 201
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img874.jpg	2	106 198 190 211	456 150 162 198
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img875.jpg	2	78 205 194 212	430 156 158 197
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img876.jpg	2	60 214 191 210	406 162 156 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img877.jpg	2	24 215 196 205	368 162 152 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img878.jpg	2	8 210 206 200	360 158 151 188
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img879.jpg	2	24 208 188 198	358 158 148 184
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img880.jpg	2	0 208 212 196	352 158 146 182
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img881.jpg	2	8 208 190 194	342 158 143 180
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img882.jpg	2	44 186 174 185	355 138 139 174
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img883.jpg	2	38 184 190 184	362 138 138 172
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img884.jpg	2	70 180 170 184	378 137 140 173
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img885.jpg	2	72 174 169 184	380 132 143 171
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img886.jpg	2	69 168 171 184	380 124 144 177
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img887.jpg	2	72 164 170 184	383 122 143 175
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img888.jpg	2	72 158 170 186	384 115 144 177
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img889.jpg	2	64 158 172 186	377 114 145 178
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img890.jpg	2	60 158 173 187	374 114 144 178
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img891.jpg	2	62 160 174 186	378 115 143 179
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img892.jpg	2	30 157 219 189	412 50 140 238
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img893.jpg	2	72 156 174 190	412 76 152 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img894.jpg	2	64 154 176 190	404 78 162 219
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img895.jpg	2	60 154 175 190	397 82 170 218
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img896.jpg	2	56 156 178 192	394 78 175 226
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img897.jpg	2	56 164 176 192	394 126 174 186
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img898.jpg	2	56 170 178 192	396 130 176 187
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img899.jpg	2	22 172 216 190	396 132 178 186
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img900.jpg	2	52 170 178 192	392 138 178 176
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img901.jpg	2	46 164 180 191	388 138 175 168
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img902.jpg	2	32 149 182 193	378 108 179 186
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img903.jpg	2	54 138 180 194	400 96 182 191
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img904.jpg	2	19 130 229 196	410 90 186 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img905.jpg	2	62 120 185 204	410 88 185 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img906.jpg	2	52 136 202 204	409 88 185 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img907.jpg	2	52 135 206 209	412 92 185 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img908.jpg	2	54 135 214 213	412 92 186 191
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img909.jpg	2	47 126 226 222	410 88 185 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img910.jpg	2	29 131 243 219	405 88 185 193
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img911.jpg	2	22 130 250 218	401 88 185 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img912.jpg	2	19 124 255 222	398 88 186 193
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img913.jpg	2	54 122 216 223	396 86 187 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img914.jpg	2	32 120 242 224	400 86 186 194
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img915.jpg	2	50 120 226 226	402 86 190 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img916.jpg	2	48 120 224 228	400 86 190 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img917.jpg	2	36 114 222 228	392 82 186 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img918.jpg	2	0 102 233 232	374 67 185 196
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img919.jpg	2	0 98 212 240	354 58 186 206
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img920.jpg	2	0 104 198 244	338 66 192 207
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img921.jpg	2	0 108 192 252	332 72 195 209
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img922.jpg	2	0 113 178 249	326 76 190 208
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img923.jpg	2	305 82 191 206	0 117 156 253
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img924.jpg	2	294 80 190 210	0 119 150 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img925.jpg	2	305 82 197 208	0 126 152 260
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img926.jpg	2	300 60 204 226	0 108 142 278
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img927.jpg	2	250 30 216 246	0 142 50 192
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img928.jpg	1	208 11 250 275
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img929.jpg	1	210 4 262 289
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img930.jpg	1	222 39 256 277
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img931.jpg	1	212 62 256 282
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img932.jpg	1	219 84 247 265
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img933.jpg	1	226 104 242 268
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img934.jpg	2	257 124 237 264	0 262 54 184
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img935.jpg	2	274 146 242 259	0 236 70 235
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img936.jpg	2	278 164 246 265	0 252 82 228
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img937.jpg	2	280 163 245 263	0 250 83 230
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img938.jpg	2	280 162 244 266	0 246 82 234
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img939.jpg	2	278 168 242 262	0 251 82 229
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img940.jpg	2	246 132 238 260	0 234 46 210
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img941.jpg	2	241 132 241 255	0 234 42 204
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img942.jpg	2	240 124 238 256	0 239 38 189
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img943.jpg	1	230 111 240 253
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img944.jpg	1	226 102 236 252
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img945.jpg	1	216 92 240 255
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img946.jpg	1	208 87 242 257
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img947.jpg	1	204 84 243 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img948.jpg	1	204 80 244 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img949.jpg	1	204 76 243 257
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img950.jpg	1	204 74 242 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img951.jpg	1	206 74 242 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img952.jpg	1	208 78 240 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img953.jpg	1	224 96 232 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img954.jpg	2	248 110 232 254	0 214 46 201
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img955.jpg	2	264 120 238 256	0 202 66 236
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img956.jpg	2	278 137 238 253	0 216 80 240
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img957.jpg	2	326 164 242 260	0 224 130 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img958.jpg	2	360 160 254 262	0 219 170 261
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img959.jpg	2	380 158 257 260	0 214 194 266
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img960.jpg	2	386 150 254 256	0 207 202 273
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img961.jpg	2	385 142 255 252	0 200 198 280
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img962.jpg	2	376 132 251 244	0 185 184 291
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img963.jpg	2	366 112 256 250	0 164 174 290
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img964.jpg	2	388 110 250 252	0 150 187 304
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img965.jpg	2	0 172 236 308	432 146 208 245
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img966.jpg	2	0 206 250 274	439 178 201 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img967.jpg	2	418 185 222 258	0 222 212 258
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img968.jpg	2	368 191 241 257	0 230 158 250
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img969.jpg	2	336 188 242 244	0 224 148 256
+C:/Users/arinz/Desktop/2016-2017/Spring/OpenCV Fun/Classifiers/Blocks/img2/img970.jpg	2	339 178 247 251	0 211 153 269

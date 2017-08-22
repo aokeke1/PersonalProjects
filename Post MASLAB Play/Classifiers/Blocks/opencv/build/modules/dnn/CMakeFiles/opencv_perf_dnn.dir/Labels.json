@@ -1,0 +1,31 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/modules/dnn/perf/perf_convolution.cpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/modules/dnn/perf/perf_halide_net.cpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/modules/dnn/perf/perf_main.cpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/modules/dnn/perf/perf_precomp.hpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "Main", "opencv_dnn", "PerfTest" ],
+		"name" : "opencv_perf_dnn"
+	}
+}
