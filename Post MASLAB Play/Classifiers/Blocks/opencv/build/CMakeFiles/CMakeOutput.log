@@ -1,0 +1,910 @@
+The system is: Windows - 10.0.15063 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/3.9.0/CompilerIdCXX/a.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/3.9.0/CompilerIdC/a.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_31040/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_31040.dir\build.make CMakeFiles/cmTC_31040.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31040.dir/testCXXCompiler.cxx.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe     -o CMakeFiles\cmTC_31040.dir\testCXXCompiler.cxx.obj -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_31040.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_31040.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_31040.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_31040.dir/objects.a @CMakeFiles\cmTC_31040.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_31040.dir/objects.a -Wl,--no-whole-archive  -o cmTC_31040.exe -Wl,--out-implib,libcmTC_31040.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_31040.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_ec0ab/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_ec0ab.dir\build.make CMakeFiles/cmTC_ec0ab.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ec0ab.dir/CMakeCXXCompilerABI.cpp.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe     -o CMakeFiles\cmTC_ec0ab.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_ec0ab.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_ec0ab.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_ec0ab.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_ec0ab.dir/objects.a @CMakeFiles\cmTC_ec0ab.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_ec0ab.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ec0ab.exe -Wl,--out-implib,libcmTC_ec0ab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Reading specs from C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/specs
+COLLECT_GCC=C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\..\share\mingwpy\bin\g++.exe
+COLLECT_LTO_WRAPPER=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-4.9.2/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64 --with-gxx-include-dir=/mingw64/x86_64-w64-mingw32/include/c++ --enable-static --disable-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=x86-64 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-mpc=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-isl=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-cloog=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='x86_64-win32-seh-rev201506, mingwpy build' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/include -I/tmp/x86_64/prerequisites/x86_64-zlib-static/include -I/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/include -I/tmp/x86_64/prerequisites/x86_64-zlib-static/include -I/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/lib -L/tmp/x86_64/prerequisites/x86_64-zlib-static/lib -L/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/lib '
+Thread model: win32
+gcc version 4.9.2 (x86_64-win32-seh-rev201506, mingwpy build) 
+COMPILER_PATH=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ec0ab.exe' '-mtune=generic' '-march=x86-64'
+ C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe -plugin C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\arinz\AppData\Local\Temp\ccpr2daT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcr90 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcr90 --sysroot=D:/msys64/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64 -m i386pep -Bdynamic -o cmTC_ec0ab.exe C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2 -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../.. -Lmingwpy/opt/lib --whole-archive CMakeFiles\cmTC_ec0ab.dir/objects.a --no-whole-archive --out-implib libcmTC_ec0ab.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr90 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr90 C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/msvcr90.exe.res C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_ec0ab/fast"]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_ec0ab.dir\build.make CMakeFiles/cmTC_ec0ab.dir/build]
+  ignore line: [mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_ec0ab.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe     -o CMakeFiles\cmTC_ec0ab.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_ec0ab.exe]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_ec0ab.dir\link.txt --verbose=1]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_ec0ab.dir/objects.a]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_ec0ab.dir/objects.a @CMakeFiles\cmTC_ec0ab.dir\objects1.rsp]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_ec0ab.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ec0ab.exe -Wl,--out-implib,libcmTC_ec0ab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Reading specs from C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/specs]
+  ignore line: [COLLECT_GCC=C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\..\share\mingwpy\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64 --with-gxx-include-dir=/mingw64/x86_64-w64-mingw32/include/c++ --enable-static --disable-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=x86-64 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-mpc=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-isl=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-cloog=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='x86_64-win32-seh-rev201506, mingwpy build' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/include -I/tmp/x86_64/prerequisites/x86_64-zlib-static/include -I/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/include -I/tmp/x86_64/prerequisites/x86_64-zlib-static/include -I/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/lib -L/tmp/x86_64/prerequisites/x86_64-zlib-static/lib -L/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/lib ']
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.9.2 (x86_64-win32-seh-rev201506, mingwpy build) ]
+  ignore line: [COMPILER_PATH=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ec0ab.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe -plugin C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\arinz\AppData\Local\Temp\ccpr2daT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcr90 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcr90 --sysroot=D:/msys64/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64 -m i386pep -Bdynamic -o cmTC_ec0ab.exe C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2 -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../.. -Lmingwpy/opt/lib --whole-archive CMakeFiles\cmTC_ec0ab.dir/objects.a --no-whole-archive --out-implib libcmTC_ec0ab.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr90 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr90 C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/msvcr90.exe.res C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\arinz\AppData\Local\Temp\ccpr2daT.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcr90] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-liconv] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcr90] ==> ignore
+    arg [--sysroot=D:/msys64/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64] ==> ignore
+    arg [-m] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_ec0ab.exe] ==> ignore
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..]
+    arg [-Lmingwpy/opt/lib] ==> ignore
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_ec0ab.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_ec0ab.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcr90] ==> lib [msvcr90]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-liconv] ==> lib [iconv]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcr90] ==> lib [msvcr90]
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/msvcr90.exe.res] ==> ignore
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o] ==> ignore
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib/gcc/x86_64-w64-mingw32/4.9.2]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib/gcc]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/x86_64-w64-mingw32/lib]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/x86_64-w64-mingw32/lib]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib]
+  implicit libs: [stdc++;mingw32;gcc;moldname;mingwex;msvcr90;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex;msvcr90]
+  implicit dirs: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib/gcc/x86_64-w64-mingw32/4.9.2;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib/gcc;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/x86_64-w64-mingw32/lib;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_57f09/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_57f09.dir\build.make CMakeFiles/cmTC_57f09.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_57f09.dir/feature_tests.cxx.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe    -std=c++14 -o CMakeFiles\cmTC_57f09.dir\feature_tests.cxx.obj -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_57f09.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_57f09.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_57f09.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_57f09.dir/objects.a @CMakeFiles\cmTC_57f09.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_57f09.dir/objects.a -Wl,--no-whole-archive  -o cmTC_57f09.exe -Wl,--out-implib,libcmTC_57f09.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_57f09.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_1ddfe/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_1ddfe.dir\build.make CMakeFiles/cmTC_1ddfe.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1ddfe.dir/feature_tests.cxx.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe    -std=c++11 -o CMakeFiles\cmTC_1ddfe.dir\feature_tests.cxx.obj -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_1ddfe.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_1ddfe.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_1ddfe.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_1ddfe.dir/objects.a @CMakeFiles\cmTC_1ddfe.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_1ddfe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1ddfe.exe -Wl,--out-implib,libcmTC_1ddfe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1ddfe.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_c9f6e/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_c9f6e.dir\build.make CMakeFiles/cmTC_c9f6e.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c9f6e.dir/feature_tests.cxx.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe    -std=c++98 -o CMakeFiles\cmTC_c9f6e.dir\feature_tests.cxx.obj -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_c9f6e.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_c9f6e.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_c9f6e.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_c9f6e.dir/objects.a @CMakeFiles\cmTC_c9f6e.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_c9f6e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c9f6e.exe -Wl,--out-implib,libcmTC_c9f6e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c9f6e.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_789f1/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_789f1.dir\build.make CMakeFiles/cmTC_789f1.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_789f1.dir/testCCompiler.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -o CMakeFiles\cmTC_789f1.dir\testCCompiler.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_789f1.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_789f1.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_789f1.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_789f1.dir/objects.a @CMakeFiles\cmTC_789f1.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_789f1.dir/objects.a -Wl,--no-whole-archive  -o cmTC_789f1.exe -Wl,--out-implib,libcmTC_789f1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_789f1.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_164ac/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_164ac.dir\build.make CMakeFiles/cmTC_164ac.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_164ac.dir/CMakeCCompilerABI.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -o CMakeFiles\cmTC_164ac.dir\CMakeCCompilerABI.c.obj   -c C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\share\cmake-3.9\Modules\CMakeCCompilerABI.c
+Linking C executable cmTC_164ac.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_164ac.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_164ac.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_164ac.dir/objects.a @CMakeFiles\cmTC_164ac.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_164ac.dir/objects.a -Wl,--no-whole-archive  -o cmTC_164ac.exe -Wl,--out-implib,libcmTC_164ac.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Reading specs from C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/specs
+COLLECT_GCC=C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\..\share\mingwpy\bin\gcc.exe
+COLLECT_LTO_WRAPPER=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-4.9.2/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64 --with-gxx-include-dir=/mingw64/x86_64-w64-mingw32/include/c++ --enable-static --disable-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=x86-64 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-mpc=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-isl=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-cloog=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='x86_64-win32-seh-rev201506, mingwpy build' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/include -I/tmp/x86_64/prerequisites/x86_64-zlib-static/include -I/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/include -I/tmp/x86_64/prerequisites/x86_64-zlib-static/include -I/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/lib -L/tmp/x86_64/prerequisites/x86_64-zlib-static/lib -L/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/lib '
+Thread model: win32
+gcc version 4.9.2 (x86_64-win32-seh-rev201506, mingwpy build) 
+COMPILER_PATH=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_164ac.exe' '-mtune=generic' '-march=x86-64'
+ C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe -plugin C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\arinz\AppData\Local\Temp\cch22dGt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcr90 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcr90 --sysroot=D:/msys64/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64 -m i386pep -Bdynamic -o cmTC_164ac.exe C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2 -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../.. -Lmingwpy/opt/lib --whole-archive CMakeFiles\cmTC_164ac.dir/objects.a --no-whole-archive --out-implib libcmTC_164ac.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr90 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr90 C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/msvcr90.exe.res C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_164ac/fast"]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_164ac.dir\build.make CMakeFiles/cmTC_164ac.dir/build]
+  ignore line: [mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_164ac.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -o CMakeFiles\cmTC_164ac.dir\CMakeCCompilerABI.c.obj   -c C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\share\cmake-3.9\Modules\CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_164ac.exe]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_164ac.dir\link.txt --verbose=1]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_164ac.dir/objects.a]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_164ac.dir/objects.a @CMakeFiles\cmTC_164ac.dir\objects1.rsp]
+  ignore line: [C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_164ac.dir/objects.a -Wl,--no-whole-archive  -o cmTC_164ac.exe -Wl,--out-implib,libcmTC_164ac.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Reading specs from C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/specs]
+  ignore line: [COLLECT_GCC=C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\..\share\mingwpy\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64 --with-gxx-include-dir=/mingw64/x86_64-w64-mingw32/include/c++ --enable-static --disable-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=x86-64 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-mpc=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-isl=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --with-cloog=/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='x86_64-win32-seh-rev201506, mingwpy build' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/include -I/tmp/x86_64/prerequisites/x86_64-zlib-static/include -I/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/include -I/tmp/x86_64/prerequisites/x86_64-zlib-static/include -I/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64/opt/lib -L/tmp/x86_64/prerequisites/x86_64-zlib-static/lib -L/tmp/x86_64/prerequisites/x86_64-w64-mingw32-static/lib ']
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.9.2 (x86_64-win32-seh-rev201506, mingwpy build) ]
+  ignore line: [COMPILER_PATH=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_164ac.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe -plugin C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\arinz\AppData\Local\Temp\cch22dGt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcr90 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcr90 --sysroot=D:/msys64/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64 -m i386pep -Bdynamic -o cmTC_164ac.exe C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2 -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib -LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../.. -Lmingwpy/opt/lib --whole-archive CMakeFiles\cmTC_164ac.dir/objects.a --no-whole-archive --out-implib libcmTC_164ac.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr90 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr90 C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/msvcr90.exe.res C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\arinz\AppData\Local\Temp\cch22dGt.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcr90] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-liconv] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcr90] ==> ignore
+    arg [--sysroot=D:/msys64/tmp/x86_64/x86_64-492-win32-seh-rt_v4-rev201506-s/mingw64] ==> ignore
+    arg [-m] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_164ac.exe] ==> ignore
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib]
+    arg [-LC:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..] ==> dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..]
+    arg [-Lmingwpy/opt/lib] ==> ignore
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_164ac.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_164ac.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcr90] ==> lib [msvcr90]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-liconv] ==> lib [iconv]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcr90] ==> lib [msvcr90]
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/msvcr90.exe.res] ==> ignore
+    arg [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o] ==> ignore
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib/gcc/x86_64-w64-mingw32/4.9.2]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib/gcc]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/x86_64-w64-mingw32/lib]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/x86_64-w64-mingw32/lib]
+  collapse library dir [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..] ==> [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib]
+  implicit libs: [mingw32;gcc;moldname;mingwex;msvcr90;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex;msvcr90]
+  implicit dirs: [C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib/gcc/x86_64-w64-mingw32/4.9.2;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib/gcc;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/x86_64-w64-mingw32/lib;C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_403ca/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_403ca.dir\build.make CMakeFiles/cmTC_403ca.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_403ca.dir/feature_tests.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -std=c11 -o CMakeFiles\cmTC_403ca.dir\feature_tests.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_403ca.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_403ca.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_403ca.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_403ca.dir/objects.a @CMakeFiles\cmTC_403ca.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_403ca.dir/objects.a -Wl,--no-whole-archive  -o cmTC_403ca.exe -Wl,--out-implib,libcmTC_403ca.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_403ca.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_f314d/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_f314d.dir\build.make CMakeFiles/cmTC_f314d.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f314d.dir/feature_tests.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -std=c99 -o CMakeFiles\cmTC_f314d.dir\feature_tests.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_f314d.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_f314d.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_f314d.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_f314d.dir/objects.a @CMakeFiles\cmTC_f314d.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_f314d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f314d.exe -Wl,--out-implib,libcmTC_f314d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f314d.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_639c1/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_639c1.dir\build.make CMakeFiles/cmTC_639c1.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_639c1.dir/feature_tests.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -std=c90 -o CMakeFiles\cmTC_639c1.dir\feature_tests.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_639c1.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_639c1.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_639c1.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_639c1.dir/objects.a @CMakeFiles\cmTC_639c1.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_639c1.dir/objects.a -Wl,--no-whole-archive  -o cmTC_639c1.exe -Wl,--out-implib,libcmTC_639c1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_639c1.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_a354b/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_a354b.dir\build.make CMakeFiles/cmTC_a354b.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a354b.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_a354b.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_a354b.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_a354b.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_a354b.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_a354b.dir/objects.a @CMakeFiles\cmTC_a354b.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_a354b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a354b.exe -Wl,--out-implib,libcmTC_a354b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a354b.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_bac87/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_bac87.dir\build.make CMakeFiles/cmTC_bac87.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bac87.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_bac87.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_bac87.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_bac87.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_bac87.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_bac87.dir/objects.a @CMakeFiles\cmTC_bac87.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_bac87.dir/objects.a -Wl,--no-whole-archive  -o cmTC_bac87.exe -Wl,--out-implib,libcmTC_bac87.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bac87.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_fbf31/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_fbf31.dir\build.make CMakeFiles/cmTC_fbf31.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fbf31.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_fbf31.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_fbf31.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_fbf31.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_fbf31.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_fbf31.dir/objects.a @CMakeFiles\cmTC_fbf31.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_fbf31.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fbf31.exe -Wl,--out-implib,libcmTC_fbf31.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fbf31.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_cb123/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_cb123.dir\build.make CMakeFiles/cmTC_cb123.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb123.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_cb123.dir\CMAKE_SIZEOF_UNSIGNED_SHORT.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_cb123.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_cb123.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_cb123.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_cb123.dir/objects.a @CMakeFiles\cmTC_cb123.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_cb123.dir/objects.a -Wl,--no-whole-archive  -o cmTC_cb123.exe -Wl,--out-implib,libcmTC_cb123.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_cb123.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_0b6ac/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_0b6ac.dir\build.make CMakeFiles/cmTC_0b6ac.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b6ac.dir/TestEndianess.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_0b6ac.dir\TestEndianess.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\TestEndianess.c
+Linking C executable cmTC_0b6ac.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_0b6ac.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_0b6ac.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_0b6ac.dir/objects.a @CMakeFiles\cmTC_0b6ac.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_0b6ac.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0b6ac.exe -Wl,--out-implib,libcmTC_0b6ac.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0b6ac.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_f72da/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_f72da.dir\build.make CMakeFiles/cmTC_f72da.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f72da.dir/CheckFunctionExists.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG   -o CMakeFiles\cmTC_f72da.dir\CheckFunctionExists.c.obj   -c C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\share\cmake-3.9\Modules\CheckFunctionExists.c
+Linking C executable cmTC_f72da.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_f72da.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_f72da.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_f72da.dir/objects.a @CMakeFiles\cmTC_f72da.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_f72da.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f72da.exe -Wl,--out-implib,libcmTC_f72da.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f72da.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_b1f89/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_b1f89.dir\build.make CMakeFiles/cmTC_b1f89.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1f89.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_b1f89.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_b1f89.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_b1f89.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_b1f89.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_b1f89.dir/objects.a @CMakeFiles\cmTC_b1f89.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_b1f89.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b1f89.exe -Wl,--out-implib,libcmTC_b1f89.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b1f89.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of off64_t passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_26422/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_26422.dir\build.make CMakeFiles/cmTC_26422.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26422.dir/OFF64_T.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_26422.dir\OFF64_T.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c
+Linking C executable cmTC_26422.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_26422.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_26422.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_26422.dir/objects.a @CMakeFiles\cmTC_26422.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_26422.dir/objects.a -Wl,--no-whole-archive  -o cmTC_26422.exe -Wl,--out-implib,libcmTC_26422.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_26422.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_48ea4/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_48ea4.dir\build.make CMakeFiles/cmTC_48ea4.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48ea4.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_48ea4.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_48ea4.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_48ea4.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_48ea4.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_48ea4.dir/objects.a @CMakeFiles\cmTC_48ea4.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_48ea4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_48ea4.exe -Wl,--out-implib,libcmTC_48ea4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_48ea4.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_e9ef8/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_e9ef8.dir\build.make CMakeFiles/cmTC_e9ef8.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9ef8.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_e9ef8.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_e9ef8.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_e9ef8.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_e9ef8.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_e9ef8.dir/objects.a @CMakeFiles\cmTC_e9ef8.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_e9ef8.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e9ef8.exe -Wl,--out-implib,libcmTC_e9ef8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e9ef8.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file io.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_7c6ec/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_7c6ec.dir\build.make CMakeFiles/cmTC_7c6ec.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c6ec.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_7c6ec.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_7c6ec.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7c6ec.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7c6ec.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_7c6ec.dir/objects.a @CMakeFiles\cmTC_7c6ec.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_7c6ec.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7c6ec.exe -Wl,--out-implib,libcmTC_7c6ec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7c6ec.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_693a7/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_693a7.dir\build.make CMakeFiles/cmTC_693a7.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_693a7.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_693a7.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_693a7.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_693a7.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_693a7.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_693a7.dir/objects.a @CMakeFiles\cmTC_693a7.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_693a7.dir/objects.a -Wl,--no-whole-archive  -o cmTC_693a7.exe -Wl,--out-implib,libcmTC_693a7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_693a7.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_2aa10/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_2aa10.dir\build.make CMakeFiles/cmTC_2aa10.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2aa10.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_2aa10.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_2aa10.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_2aa10.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_2aa10.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_2aa10.dir/objects.a @CMakeFiles\cmTC_2aa10.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_2aa10.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2aa10.exe -Wl,--out-implib,libcmTC_2aa10.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2aa10.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_66e73/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_66e73.dir\build.make CMakeFiles/cmTC_66e73.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66e73.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_66e73.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_66e73.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_66e73.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_66e73.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_66e73.dir/objects.a @CMakeFiles\cmTC_66e73.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_66e73.dir/objects.a -Wl,--no-whole-archive  -o cmTC_66e73.exe -Wl,--out-implib,libcmTC_66e73.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_66e73.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file DShow.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_3c271/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_3c271.dir\build.make CMakeFiles/cmTC_3c271.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c271.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_3c271.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_3c271.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_3c271.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_3c271.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_3c271.dir/objects.a @CMakeFiles\cmTC_3c271.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_3c271.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3c271.exe -Wl,--out-implib,libcmTC_3c271.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3c271.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_94ae1/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_94ae1.dir\build.make CMakeFiles/cmTC_94ae1.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94ae1.dir/CheckIncludeFile.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_94ae1.dir\CheckIncludeFile.c.obj   -c C:\Users\arinz\Desktop\2016-2017\Projects\Github\PersonalProjects\Post_MASLAB_Play\Classifiers\Blocks\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_94ae1.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_94ae1.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_94ae1.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_94ae1.dir/objects.a @CMakeFiles\cmTC_94ae1.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_94ae1.dir/objects.a -Wl,--no-whole-archive  -o cmTC_94ae1.exe -Wl,--out-implib,libcmTC_94ae1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_94ae1.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/Scripts/mingw32-make.exe" "cmTC_6773b/fast"
+C:/Users/arinz/Desktop/WinPython-64bit-2.7.10.3/python-2.7.10.amd64/share/mingwpy/bin/mingw32-make -f CMakeFiles\cmTC_6773b.dir\build.make CMakeFiles/cmTC_6773b.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6773b.dir/CheckFunctionExists.c.obj
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=pthread_create -O3 -DNDEBUG   -o CMakeFiles\cmTC_6773b.dir\CheckFunctionExists.c.obj   -c C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\share\cmake-3.9\Modules\CheckFunctionExists.c
+Linking C executable cmTC_6773b.exe
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_6773b.dir\link.txt --verbose=1
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E remove -f CMakeFiles\cmTC_6773b.dir/objects.a
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\ar.exe cr CMakeFiles\cmTC_6773b.dir/objects.a @CMakeFiles\cmTC_6773b.dir\objects1.rsp
+C:\Users\arinz\Desktop\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\gcc.exe    -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -fomit-frame-pointer -ffunction-sections  -msse -msse2 -msse3 -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=pthread_create -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles\cmTC_6773b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6773b.exe -Wl,--out-implib,libcmTC_6773b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6773b.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/arinz/Desktop/2016-2017/Projects/Github/PersonalProjects/Post_MASLAB_Play/Classifiers/Blocks/opencv/build/CMakeFiles/CMakeTmp'
+
+
