@@ -22,7 +22,7 @@ rb = 1.7
 gr = 1.1
 gb = 1.1
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 
 
@@ -70,7 +70,7 @@ while True:
             frame2 = copy.copy(frame)
             gray = cv2.cvtColor(frame2, cv2.COLOR_BGR2GRAY)
             faces = face_cascade.detectMultiScale(gray, 1.3, 5)
-            eyes = eye_cascade.detectMultiScale(gray)
+            eyes = eye_cascade.detectMultiScale(gray, 1.3, 5)
             for (ex,ey,ew,eh) in eyes:
                 cv2.rectangle(frame2,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
                 cv2.putText(frame2,'eye',(ex+ew/4,ey+eh/2), font, 0.5, (11,255,255), 2, cv2.LINE_AA)
