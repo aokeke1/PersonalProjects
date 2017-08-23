@@ -1,0 +1,4 @@
+pip install qrcode
+pip install PIL
+pip install zbar (from whl)
+pip install Image (?)

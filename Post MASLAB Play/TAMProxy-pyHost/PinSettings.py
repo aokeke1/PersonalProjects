@@ -40,3 +40,6 @@ gr = 1.1
 gb = 1.1
 obj_cascade = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
 
+desiredCodeArea = 2
+desiredData = "shoes"
+
