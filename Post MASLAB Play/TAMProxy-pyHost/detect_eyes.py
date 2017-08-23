@@ -52,6 +52,12 @@ def filter_contours(frame,height,width,ratio = 0.01):
     
 face_cascade = cv2.CascadeClassifier('data/haarcascades/haarcascade_profileface.xml')
 eye_cascade = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
+
+#eye_cascade = cv2.CascadeClassifier('data/haarcascades/cascade_whiteout2.xml')
+#eye_cascade = cv2.CascadeClassifier('data/haarcascades/cascade_maslabblock4.xml')
+#eye_cascade = cv2.CascadeClassifier('data/haarcascades/haarcascade_smile.xml')
+font = cv2.FONT_HERSHEY_SIMPLEX
+
 while True:
     
     try:
@@ -67,13 +73,14 @@ while True:
             eyes = eye_cascade.detectMultiScale(gray)
             for (ex,ey,ew,eh) in eyes:
                 cv2.rectangle(frame2,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
-            for (x,y,w,h) in faces:
-                frame2 = cv2.rectangle(frame2,(x,y),(x+w,y+h),(255,0,0),2)
-                roi_gray = gray[y:y+h, x:x+w]
-                roi_color = frame2[y:y+h, x:x+w]
-                eyes = eye_cascade.detectMultiScale(roi_gray)
-                for (ex,ey,ew,eh) in eyes:
-                    cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
+                cv2.putText(frame2,'eye',(ex+ew/4,ey+eh/2), font, 0.5, (11,255,255), 2, cv2.LINE_AA)
+#            for (x,y,w,h) in faces:
+#                frame2 = cv2.rectangle(frame2,(x,y),(x+w,y+h),(255,0,0),2)
+#                roi_gray = gray[y:y+h, x:x+w]
+#                roi_color = frame2[y:y+h, x:x+w]
+#                eyes = eye_cascade.detectMultiScale(roi_gray)
+#                for (ex,ey,ew,eh) in eyes:
+#                    cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
 
 #            b,g,r = cv2.split(frame2) 
 #            frame2[((r>(rg*g)) & (r>(rb*b)))] = [0,0,255]
