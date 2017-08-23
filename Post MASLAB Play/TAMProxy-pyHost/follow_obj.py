@@ -86,7 +86,7 @@ class Drive(Sketch):
 
     def loop(self):
         #drive for two seconds
-        if self.full_timer.millis()/1000<30:
+        if self.full_timer.millis()/1000<100:
             if (self.timer.millis() > 10):
                 self.dt = self.timer.millis()
                 self.timer.reset()
@@ -121,7 +121,7 @@ class Drive(Sketch):
             self.frame2 = copy.copy(self.frame)
 
             gray = cv2.cvtColor(self.frame2, cv2.COLOR_BGR2GRAY)
-            objs = self.obj_cascade.detectMultiScale(gray)
+            objs = self.obj_cascade.detectMultiScale(gray, 1.3, 5)
             for (ex,ey,ew,eh) in objs:
                 cv2.rectangle(self.frame2,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
 
@@ -134,9 +134,10 @@ class Drive(Sketch):
                 self.integral = 0.0
                 self.derivative = 0.0
             else:
-                print ("obj seen")
+#                print ("obj seen")
+#                print (self.sorted_objs,self.sorted_objs[0],type(self.sorted_objs),type(self.sorted_objs[0]))
                 (ex,ey,ew,eh) = self.sorted_objs[0]
-                cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(255,255,0),2)
+                cv2.rectangle(self.frame2,(ex,ey),(ex+ew,ey+eh),(255,255,0),2)
                 
                 cx = int(ex + ew/2.0)
                 cy = int(ey + eh/2.0)
@@ -173,9 +174,17 @@ class Drive(Sketch):
         return sortedCnts
     def sort_objs(self,objs):
         areas = []
+        indeces = []
+        i=0
         for (ex,ey,ew,eh) in objs:
             areas.append(ew*eh)
-        return [x for _,x in sorted(zip(area,objs))]
+            indeces.append(i)
+            i+=1
+        sortedIndeces = [x for _,x in sorted(zip(areas,indeces))]
+        sortedObjs = []
+        for i in sortedIndeces:
+            sortedObjs.append(objs[i])
+        return sortedObjs
     def displayCamera(self):
         if self.ret:
 #            cv2.imshow("Original", self.frame)
