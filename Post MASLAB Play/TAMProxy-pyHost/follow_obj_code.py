@@ -41,7 +41,8 @@ class Drive(Sketch):
         #Encoders
         self.encoders = (Encoder(self.tamp, *PS.left_encoder_pins, continuous=True),Encoder(self.tamp, *PS.right_encoder_pins, continuous=True)) #(L,R)
         self.prev_encoder = (0,0) #(L,R)
-        self.pos = (0,0,0) #(x,y,angle [deg])        
+        self.pos = (0,0,0) #(x,y,angle [deg])
+        self.last_pos = (0,0,0)
         
         #Timers
         self.timer = Timer()
@@ -95,6 +96,7 @@ class Drive(Sketch):
         self.resetImageTime = PS.resetImageTime
         self.contours = []
         self.targetObj = None
+        self.targetObjGhost = None
         self.resetImageTimer.set(100000)
 
     def loop(self):
@@ -136,11 +138,12 @@ class Drive(Sketch):
             if len(self.symbols)>0 or (self.resetImageTimer.millis()<=self.resetImageTime and (self.targetObj is not None)):
 #                print ("obj seen")
                 fromTimer = False
+                self.contours = []
                 if len(self.symbols)>0:
                     #prepare contours
                     self.targetLocked = False
                     self.targetObj = None
-                    self.contours = []
+                    self.targetObjGhost = None
                     for s in self.symbols:
                         if s.data==self.desiredData:
                             self.targetObj = np.array(s.location)
@@ -148,13 +151,13 @@ class Drive(Sketch):
                     self.contours = self.sort_contours(self.contours)
                     if self.targetObj is None:
                         self.targetObj = self.contours[0]
+                    self.targetObjGhost = self.targetObj.copy()
                     self.resetImageTimer.reset()
                 else:
                     fromTimer = True
                     
                 #if there is a target or timer hasn't reset image
-                cv2.drawContours(self.frame, self.contours, 0, (255,255,0), 3)
-                cv2.drawContours(self.frame, [self.targetObj], 0, (255,0,0), 3)
+                
                 try:                    
                     w,x1,y1,z = self.targetObj
                     a,b = w
@@ -182,6 +185,32 @@ class Drive(Sketch):
                     if not fromTimer:
                         offsetX = (30.0/self.webcamWidth)*(self.CAMERA_CENTER[0]-cx)
                         self.desired_theta = self.pos[2] + offsetX
+                    else:
+                        #move the ghost image how much it is expected to move
+                        try:                    
+                            w,x1,y1,z = self.targetObjGhost
+                            a,b = w
+                            c,d = x1
+                            e,f = y1
+                            g,h = z
+                            
+                            deltaX = -(self.last_diff*self.webcamWidth/30.0)+self.CAMERA_CENTER[0]
+                            a += deltaX
+                            c += deltaX
+                            e += deltaX
+                            g += deltaX
+                            
+                            #guess
+                            deltaDist = np.sign(self.bias)*np.sqrt((self.pos[0]-self.last_pos[0])**2+(self.pos[1]-self.last_pos[1])**2)
+                            deltaY = np.sqrt(deltaDist)
+                            b += deltaY
+                            d += deltaY
+                            f -= deltaY
+                            h -= deltaY
+                            
+                            self.targetObjGhost = np.array(((a,b),(c,d),(e,f),(g,h)))
+                        except:
+                            pass
                     
                     trackConst = 30
                     area = (float(cv2.contourArea(self.targetObj))*100.0/(self.frame.shape[0]*self.frame.shape[1]))
@@ -192,9 +221,13 @@ class Drive(Sketch):
                     trackConst2 = 10 #guess
                     if fromTimer:
                         self.bias *= trackConst2/self.resetImageTimer.millis()
+                cv2.drawContours(self.frame, self.contours, 0, (255,255,0), 3)
+                cv2.drawContours(self.frame, [self.targetObjGhost], 0, (255,0,255), 3)
+                cv2.drawContours(self.frame, [self.targetObj], 0, (255,0,0), 3)
             else:
                 self.targetLocked = False
                 self.targetObj = None
+                self.targetObjGhost = None
                 self.bias=0
                 self.desired_theta = self.pos[2]
                 self.last_diff = 0
@@ -298,6 +331,7 @@ class Drive(Sketch):
 
         dTheta = wd
 #        print (dx,dy,dTheta,math.degrees(dTheta),leftEnc,rightEnc,self.prev_encoder[0],self.prev_encoder[1])
+        self.last_pos = self.pos
         self.pos = (x+dx,y+dy,theta+math.degrees(dTheta))
         
         self.prev_encoder = (leftEnc,rightEnc)
