@@ -135,6 +135,7 @@ class Drive(Sketch):
 
             if len(self.symbols)>0 or (self.resetImageTimer.millis()<=self.resetImageTime and (self.targetObj is not None)):
 #                print ("obj seen")
+                fromTimer = False
                 if len(self.symbols)>0:
                     #prepare contours
                     self.targetLocked = False
@@ -148,6 +149,8 @@ class Drive(Sketch):
                     if self.targetObj is None:
                         self.targetObj = self.contours[0]
                     self.resetImageTimer.reset()
+                else:
+                    fromTimer = True
                     
                 #if there is a target or timer hasn't reset image
                 cv2.drawContours(self.frame, self.contours, 0, (255,255,0), 3)
@@ -175,19 +178,20 @@ class Drive(Sketch):
                     cy=0
                 if cx!=0 and cy!=0:
                     self.targetLocked = True
-                    offsetX = (30.0/self.webcamWidth)*(self.CAMERA_CENTER[0]-cx)
-                    self.desired_theta = self.pos[2] + offsetX
+                    #only update angle if it saw the image. Don't use memory of image to keep updating desired angle
+                    if not fromTimer:
+                        offsetX = (30.0/self.webcamWidth)*(self.CAMERA_CENTER[0]-cx)
+                        self.desired_theta = self.pos[2] + offsetX
+                    
                     trackConst = 30
-#                    offsetY = self.CAMERA_CENTER[1]-cy
                     area = (float(cv2.contourArea(self.targetObj))*100.0/(self.frame.shape[0]*self.frame.shape[1]))
                     areaOffset = (self.desiredCodeArea-area)
-                    
-                    
-#                    print ("desired area fraction",self.desiredCodeArea)
-#                    print ("actual area fraction",area)
-#                    print ("bias induced",(areaOffset)*trackConst)
-                    
                     self.bias = (areaOffset)*trackConst
+                    
+                    #decay the speed over time when it loses the image. Assuming that you are moving in the right direction
+                    trackConst2 = 10 #guess
+                    if fromTimer:
+                        self.bias *= trackConst2/self.resetImageTimer.millis()
             else:
                 self.targetLocked = False
                 self.targetObj = None
