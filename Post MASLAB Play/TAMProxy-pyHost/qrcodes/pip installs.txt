@@ -1,5 +1,5 @@
 pip install qrcode
-pip install PIL (or pillow or upgrade pillow)
+pip install --upgrade pillow
 pip install zbar (from whl)
-pip install Image (?)
+pip install Image
 pip install qrtools

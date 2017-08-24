@@ -90,10 +90,16 @@ class Drive(Sketch):
         self.desiredCodeArea = PS.desiredCodeArea
         self.desiredData = PS.desiredData  
         self.symbols = []
+        self.font = cv2.FONT_HERSHEY_SIMPLEX
+        self.resetImageTimer = Timer()
+        self.resetImageTime = PS.resetImageTime
+        self.contours = []
+        self.targetObj = None
+        self.resetImageTimer.set(100000)
 
     def loop(self):
         #drive for two seconds
-        if self.full_timer.millis()/1000<30:
+        if self.full_timer.millis()/1000<300:
             if (self.timer.millis() > 10):
                 self.dt = self.timer.millis()
                 self.timer.reset()
@@ -126,24 +132,40 @@ class Drive(Sketch):
     def trackObjs(self):
         if self.ret:
             self.symbols = self.detect_qr(self.frame)
-            
-            if len(self.symbols)>0:
-                print ("obj seen")
-                
-                #prepare contours
-                contours = []
-                self.targetObj = None
-                for s in self.symbols:
-                    if s.data==self.desiredData:
-                        self.targetObj = np.array(s.location)
-                    contours.append(np.array(s.location))
-                contours = self.sort_contours(contours)
-                if self.targetObj is None:
-                    self.targetObj = contours[0]
+
+            if len(self.symbols)>0 or (self.resetImageTimer.millis()<=self.resetImageTime and (self.targetObj is not None)):
+#                print ("obj seen")
+                if len(self.symbols)>0:
+                    #prepare contours
+                    self.targetLocked = False
+                    self.targetObj = None
+                    self.contours = []
+                    for s in self.symbols:
+                        if s.data==self.desiredData:
+                            self.targetObj = np.array(s.location)
+                        self.contours.append(np.array(s.location))
+                    self.contours = self.sort_contours(self.contours)
+                    if self.targetObj is None:
+                        self.targetObj = self.contours[0]
+                    self.resetImageTimer.reset()
                     
-                cv2.drawContours(self.frame, contours, 0, (255,255,0), 3)
-                cv2.drawContours(self.frame, [self.targetObj], 0, (255,0,255), 3)
-                M = cv2.moments(targetObj)
+                #if there is a target or timer hasn't reset image
+                cv2.drawContours(self.frame, self.contours, 0, (255,255,0), 3)
+                cv2.drawContours(self.frame, [self.targetObj], 0, (255,0,0), 3)
+                try:                    
+                    w,x1,y1,z = self.targetObj
+                    a,b = w
+                    c,d = x1
+                    e,f = y1
+                    g,h = z
+
+                    cx = int(float(a+c+e+g)/4)
+                    cy = int(float(b+d+f+h)/4)
+                    cv2.putText(self.frame,s.data,(cx,cy), self.font, 0.5, (11,255,255), 2, cv2.LINE_AA)
+                except:
+                    pass
+
+                M = cv2.moments(self.targetObj)
                 try:
                     cx = int(M['m10']/M['m00'])
                     cy = int(M['m01']/M['m00'])
@@ -155,54 +177,25 @@ class Drive(Sketch):
                     self.targetLocked = True
                     offsetX = (30.0/self.webcamWidth)*(self.CAMERA_CENTER[0]-cx)
                     self.desired_theta = self.pos[2] + offsetX
-                    trackConst = 5
+                    trackConst = 30
 #                    offsetY = self.CAMERA_CENTER[1]-cy
-                    area = (float(cv2.contourArea(cnt))*100.0/(self.frame.shape[0]*self.frame.shape[1]))
+                    area = (float(cv2.contourArea(self.targetObj))*100.0/(self.frame.shape[0]*self.frame.shape[1]))
                     areaOffset = (self.desiredCodeArea-area)
+                    
+                    
+#                    print ("desired area fraction",self.desiredCodeArea)
+#                    print ("actual area fraction",area)
+#                    print ("bias induced",(areaOffset)*trackConst)
+                    
                     self.bias = (areaOffset)*trackConst
-                
-                
-                self.targetLocked = True
-                offsetX = (30.0/self.webcamWidth)*(self.CAMERA_CENTER[0]-cx)
-                self.desired_theta = self.pos[2] + offsetX
-                trackConst = 0.5
-                offsetY = self.CAMERA_CENTER[1]-cy
-                self.bias = offsetY*trackConst
             else:
                 self.targetLocked = False
-                self.bias = 0
+                self.targetObj = None
+                self.bias=0
                 self.desired_theta = self.pos[2]
-                self.last_diff = 0.0
-                self.integral = 0.0
-                self.derivative = 0.0
-            
-            self.frame2 = copy.copy(self.frame)
-
-            for (ex,ey,ew,eh) in objs:
-                cv2.rectangle(self.frame2,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
-
-            self.sorted_objs = self.sort_objs(objs)
-            self.targetLocked = False
-            if len(self.sorted_objs)==0:
-                self.bias = 0
-                self.desired_theta = self.pos[2]
-                self.last_diff = 0.0
-                self.integral = 0.0
-                self.derivative = 0.0
-            else:
-                print ("obj seen")
-                (ex,ey,ew,eh) = self.sorted_objs[0]
-                cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(255,255,0),2)
-                
-                cx = int(ex + ew/2.0)
-                cy = int(ey + eh/2.0)
-                
-                self.targetLocked = True
-                offsetX = (30.0/self.webcamWidth)*(self.CAMERA_CENTER[0]-cx)
-                self.desired_theta = self.pos[2] + offsetX
-                trackConst = 0.5
-                offsetY = self.CAMERA_CENTER[1]-cy
-                self.bias = offsetY*trackConst
+                self.last_diff = 0
+                self.integral = 0
+                self.derivative = 0
             
         
     def filter_contours(self,frame,height,width,ratio = 0.01):
@@ -268,8 +261,8 @@ class Drive(Sketch):
 
     def displayCamera(self):
         if self.ret:
-#            cv2.imshow("Original", self.frame)
-            cv2.imshow("Filtered", self.frame2)
+            cv2.imshow("Original", self.frame)
+#            cv2.imshow("Filtered", self.frame2)
             cv2.waitKey(1)
 #            if cv2.waitKey(1) & 0xFF == ord('q'):
 #                break
@@ -442,12 +435,12 @@ class Drive(Sketch):
 if __name__ == "__main__":
     sketch = Drive()
     sketch.run()
-    try:
-        pause = raw_input("Press enter to close the window.")
-    except:
-        sketch.win.close()
-        sketch.cap.release()
-        cv2.destroyAllWindows()
+#    try:
+#        pause = raw_input("Press enter to close the window.")
+#    except:
+#        sketch.win.close()
+#        sketch.cap.release()
+#        cv2.destroyAllWindows()
     sketch.win.close()
     sketch.cap.release()
     cv2.destroyAllWindows()

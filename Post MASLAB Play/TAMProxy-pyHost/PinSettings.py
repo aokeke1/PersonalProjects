@@ -31,7 +31,7 @@ webcamWidth = 480
 webcamHeight = 640
 CAMERA_CENTER = (webcamWidth/2,webcamHeight/2)
 
-maxDriveSpeed = 100
+maxDriveSpeed = 60
 
 #Image Processing
 rg = 1.7
@@ -40,6 +40,6 @@ gr = 1.1
 gb = 1.1
 obj_cascade = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
 
-desiredCodeArea = 2
+desiredCodeArea = 5
 desiredData = "shoes"
-
+resetImageTime = 50 #milliseconds
