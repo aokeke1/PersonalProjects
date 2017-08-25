@@ -41,8 +41,8 @@ class Drive(Sketch):
         #Encoders
         self.encoders = (Encoder(self.tamp, *PS.left_encoder_pins, continuous=True),Encoder(self.tamp, *PS.right_encoder_pins, continuous=True)) #(L,R)
         self.prev_encoder = (0,0) #(L,R)
-        self.pos = (0,0,0) #(x,y,angle [deg])
-        self.last_pos = (0,0,0)
+        self.pos = (50,50,0) #(x,y,angle [deg])
+        self.last_pos = (50,50,0)
         
         #Timers
         self.timer = Timer()
@@ -182,8 +182,9 @@ class Drive(Sketch):
                 if cx!=0 and cy!=0:
                     self.targetLocked = True
                     #only update angle if it saw the image. Don't use memory of image to keep updating desired angle
+                    const = 2
                     if not fromTimer:
-                        offsetX = (30.0/self.webcamWidth)*(self.CAMERA_CENTER[0]-cx)
+                        offsetX = (30.0/self.webcamWidth)*(self.CAMERA_CENTER[0]-cx)/const
                         self.desired_theta = self.pos[2] + offsetX
                     else:
                         #move the ghost image how much it is expected to move
@@ -194,19 +195,23 @@ class Drive(Sketch):
                             e,f = y1
                             g,h = z
                             
-                            deltaX = -(self.last_diff*self.webcamWidth/30.0)+self.CAMERA_CENTER[0]
-                            a += deltaX
-                            c += deltaX
-                            e += deltaX
-                            g += deltaX
+#                            deltaX = -(self.last_diff*self.webcamWidth/30.0)+self.CAMERA_CENTER[0]
+                            oldTheta = self.desired_theta-self.last_diff
+                            dTheta = self.pos[2] - oldTheta
+                            
+                            deltaX = const*dTheta*self.webcamWidth/30.0
+                            a += int(deltaX)
+                            c += int(deltaX)
+                            e += int(deltaX)
+                            g += int(deltaX)
                             
                             #guess
                             deltaDist = np.sign(self.bias)*np.sqrt((self.pos[0]-self.last_pos[0])**2+(self.pos[1]-self.last_pos[1])**2)
                             deltaY = np.sqrt(deltaDist)
-                            b += deltaY
-                            d += deltaY
-                            f -= deltaY
-                            h -= deltaY
+                            b += int(deltaY)
+                            d += int(deltaY)
+                            f -= int(deltaY)
+                            h -= int(deltaY)
                             
                             self.targetObjGhost = np.array(((a,b),(c,d),(e,f),(g,h)))
                         except:
@@ -220,10 +225,17 @@ class Drive(Sketch):
                     #decay the speed over time when it loses the image. Assuming that you are moving in the right direction
                     trackConst2 = 10 #guess
                     if fromTimer:
+                        print ("ghost")
                         self.bias *= trackConst2/self.resetImageTimer.millis()
+#                try:
+#                print ("self.targObjGhost:",self.targetObjGhost)
+#                print ("self.targObj:",self.targetObj)
                 cv2.drawContours(self.frame, self.contours, 0, (255,255,0), 3)
                 cv2.drawContours(self.frame, [self.targetObjGhost], 0, (255,0,255), 3)
                 cv2.drawContours(self.frame, [self.targetObj], 0, (255,0,0), 3)
+#                except:
+#                    print ("can't draw contour")
+#                    raise KeyboardInterrupt
             else:
                 self.targetLocked = False
                 self.targetObj = None
