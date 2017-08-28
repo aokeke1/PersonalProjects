@@ -4158,3 +4158,12 @@ Moves: 20
      A   B   C   D   E   F   G   H  
 24580>perft
 Nodes:       8902,  Time:    0 cs
+ Sharper v0.17 by Albert Bertilsson
+16>hashsize
+4047>perft
+Nodes: 3195901860,  Time: 3887 cs
+61903>
+Error (unknown command): 
+63009>
+Error (unknown command): 
+65904>perft
