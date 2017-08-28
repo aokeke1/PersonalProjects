@@ -1,0 +1,75 @@
+myBoard = Board()
+>>> print myBoard
+  A  B  C  D  E  F  G  H 
+8 BR BN BB BK BQ BB BN BR
+7 BP BP BP BP BP BP BP BP
+6 xx xx xx xx xx xx xx xx
+5 xx xx xx xx xx xx xx xx
+4 xx xx xx xx xx xx xx xx
+3 xx xx xx xx xx xx xx xx
+2 WP WP WP WP WP WP WP WP
+1 WR WN WB WK WQ WB WN WR
+
+>>> myBoard.whiteMove("E2","E4")
+>>> myBoard.whiteMove("D2","D4")
+>>> myBoard.blackMove("D7","D5")
+>>> myBoard.blackMove("E7","E5")
+>>> myBoard.blackMove("E8","D7")
+>>> myBoard.blackMove("D5","E4")
+>>> myBoard.blackMove("D7","D4")
+>>> myBoard.blackMove("D4","D2")
+>>> for piece in myBoard.checkRemainingWhitePieces():
+	print piece
+	piece.updateValidMoves()
+	print piece.getValidMoves()
+	print "break"
+
+>>> myBoard.whiteMove("C1","D2")
+>>> myBoard.whiteMove("F2","F4")
+>>> myBoard.whiteMove("F4","F5")
+>>> myBoard.whiteMove("F5","F6")
+>>> myBoard.whiteMove("F6","G7")
+>>> myBoard.whiteMove("G7","F8")
+>>> myBoard.whiteMove("D2","C1")
+>>> myBoard.whiteMove("E1","D2")
+
+
+
+
+>>> 
+>>> myBoard = Board()
+>>> myBoard.whiteMove("E2","E4")
+>>> myBoard.whiteMove("D2","D4")
+>>> myBoard.blackMove("D7","D5")
+>>> myBoard.blackMove("E7","E5")
+>>> myBoard.blackMove("E8","D7")
+>>> myBoard.blackMove("D5","E4")
+>>> myBoard.blackMove("D7","D4")
+>>> myBoard.blackMove("D4","D2")
+>>> myBoard.whiteMove("C1","D2")
+>>> myBoard.whiteMove("F2","F4")
+>>> myBoard.whiteMove("F4","F5")
+>>> myBoard.whiteMove("F5","F6")
+>>> myBoard.whiteMove("F6","G7")
+>>> myBoard.whiteMove("G7","F8")
+Choose which piece you want:
+1.Knight 
+2.Bishop 
+3.Rook 
+4.Queen 
+Your choice:4
+>>> myBoard.whiteMove("D2","C1")
+>>> myBoard.whiteMove("E1","D2")
+Black wins!
+Game Over!
+>>> print myBoard
+  A  B  C  D  E  F  G  H 
+8 BR BN BB BK xx WQ BN BR
+7 BP BP BP xx xx BP xx BP
+6 xx xx xx xx xx xx xx xx
+5 xx xx xx xx BP xx xx xx
+4 xx xx xx xx BP xx xx xx
+3 xx xx xx xx xx xx xx xx
+2 WP WP WP WQ xx xx WP WP
+1 WR WN WB WK xx WB WN WR
+>>> 

@@ -1,0 +1,25 @@
+[Event "Computer chess game"]
+[Site "DESKTOP-BJTTROD"]
+[Date "2017.01.08"]
+[Round "?"]
+[White "arinz"]
+[Black "arinz"]
+[Result "1-0"]
+[BlackElo "2400"]
+[ECO "C40"]
+[Opening "Open Game"]
+[Time "19:49:24"]
+[Variation "Damiano Defence"]
+[WhiteElo "2400"]
+[Termination "normal"]
+[PlyCount "61"]
+[WhiteType "human"]
+[BlackType "human"]
+
+1. e4 e5 2. Nf3 f6 3. d4 Bd6 4. g3 b5 5. Bxb5 Bb4+ 6. c3 Bd6 7. Nbd2 a6 8.
+dxe5 fxe5 9. Bd3 Nf6 10. Nc4 Bc5 11. O-O Nc6 12. Ncxe5 d6 13. Nxc6 Qd7 14.
+b4 Qxc6 15. bxc5 dxc5 16. e5 Nd5 17. Be4 O-O 18. Bxd5+ Qxd5 19. Qxd5+ Rf7
+20. Qxa8 Rf8 21. Qd5+ Kh8 22. Ba3 Bg4 23. Bxc5 Bxf3 24. Bxf8 Bxd5 25. Rad1
+Bf7 26. Rd8 h5 27. Re1 Kh7 28. e6 Bxe6 29. Rxe6 g6 30. Re7+ Kg8 31. Bh6#
+1-0
+

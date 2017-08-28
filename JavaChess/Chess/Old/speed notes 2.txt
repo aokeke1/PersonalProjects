@@ -1,0 +1,236 @@
+         10123545275 function calls (9508084531 primitive calls) in 16546.580 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000 16546.580 16546.580 <string>:1(<module>)
+       75    0.000    0.000    0.020    0.000 ChessAI.py:4(threeMoveRep)
+        1    0.001    0.001 16546.580 16546.580 ChessAI.py:54(startGameAI)
+  7226063   12.073    0.000   19.956    0.000 ChessBoard.py:13(setRowPos)
+    74089    0.205    0.000    0.395    0.000 ChessBoard.py:190(__eq__)
+713488041  378.455    0.000  378.455    0.000 ChessBoard.py:21(getRowPos)
+  1340813    2.361    0.000 1500.354    0.001 ChessBoard.py:212(updateWhitePieces)
+  2201194    3.851    0.000 2586.761    0.001 ChessBoard.py:218(updateBlackPieces)
+    34608    0.658    0.000 4608.655    0.133 ChessBoard.py:224(whiteMove)
+      608    0.004    0.000    0.007    0.000 ChessBoard.py:25(__str__)
+  2201194   29.965    0.000 2682.628    0.001 ChessBoard.py:316(whiteMove2)
+    34575    0.684    0.000 6853.149    0.198 ChessBoard.py:381(blackMove)
+        8    0.000    0.000    0.000    0.000 ChessBoard.py:40(__init__)
+  7226063   12.241    0.000   21.704    0.000 ChessBoard.py:45(setColPos)
+  1340813   18.694    0.000 1561.278    0.001 ChessBoard.py:470(blackMove2)
+   209628    0.950    0.000 3285.403    0.016 ChessBoard.py:535(checkWhitePossibleMoves)
+   166265    0.768    0.000 1579.382    0.009 ChessBoard.py:552(checkBlackPossibleMoves)
+  3616096    1.259    0.000    1.259    0.000 ChessBoard.py:569(getAllRemainingPieces)
+713488041 1510.729    0.000 2319.578    0.000 ChessBoard.py:575(getPieceAt)
+  5978284    1.243    0.000    1.243    0.000 ChessBoard.py:589(checkRemainingWhitePieces)
+  5083521    1.061    0.000    1.061    0.000 ChessBoard.py:595(checkRemainingBlackPieces)
+    34575    0.717    0.000 6696.356    0.194 ChessBoard.py:623(whiteHasMoves)
+    34608    0.709    0.000 4433.149    0.128 ChessBoard.py:638(blackHasMoves)
+       37    0.000    0.000    0.058    0.002 ChessBoard.py:652(whiteInCheck)
+       59    0.000    0.000    0.053    0.001 ChessBoard.py:654(blackInCheck)
+       11    0.000    0.000    0.000    0.000 ChessBoard.py:656(endGame)
+    67222    0.021    0.000    0.021    0.000 ChessBoard.py:660(isEndGame)
+    24527    0.088    0.000    1.631    0.000 ChessBoard.py:662(removePieceAt)
+       76    0.002    0.000    0.009    0.000 ChessBoard.py:670(__str__)
+     1087    0.002    0.000    0.002    0.000 ChessBoard.py:683(coordToSquare)
+     2564    0.003    0.000    0.004    0.000 ChessBoard.py:691(squareToCoord)
+        1    0.000    0.000    0.001    0.001 ChessBoard.py:72(__init__)
+        8    0.000    0.000    0.000    0.000 ChessBoard.py:8(__init__)
+  7348124    1.646    0.000    1.646    0.000 Pieces.py:100(getMoveStatus)
+  3542007  105.814    0.000 16045.521    0.005 Pieces.py:102(willBeCheck)
+ 65656145  560.039    0.000 2256.788    0.000 Pieces.py:1041(updateValidMoves2)
+ 10492929    4.923    0.000    4.923    0.000 Pieces.py:114(__str__)
+ 33611151    4.113    0.000    4.113    0.000 Pieces.py:118(getName)
+834928546  901.784    0.000  901.784    0.000 Pieces.py:1193(coordToSquare)
+   303285    0.171    0.000    0.171    0.000 Pieces.py:120(getSymbol)
+106420530  136.316    0.000  157.962    0.000 Pieces.py:1201(squareToCoord)
+    97625    2.253    0.000 1461.547    0.015 Pieces.py:122(updateValidMoves)
+  3640369   55.547    0.000 4074.261    0.001 Pieces.py:175(inCheck)
+  7037262  128.056    0.000 3442.040    0.000 Pieces.py:187(updateValidMoves2)
+  1656038    0.368    0.000    0.368    0.000 Pieces.py:20(getPosition)
+  3950083    9.833    0.000    9.833    0.000 Pieces.py:22(setPosition)
+  7131780   20.695    0.000  181.824    0.000 Pieces.py:232(canQueenSideCastle)
+  7131780   65.251    0.000 1667.168    0.000 Pieces.py:268(canKingSideCastle)
+ 49163574    5.960    0.000    5.960    0.000 Pieces.py:302(getName)
+   992736    0.562    0.000    0.562    0.000 Pieces.py:304(getSymbol)
+    96605    3.453    0.000 4192.553    0.043 Pieces.py:306(updateValidMoves)
+282291468   45.453    0.000   45.453    0.000 Pieces.py:36(getColor)
+       32    0.000    0.000    0.000    0.000 Pieces.py:4(__init__)
+656504451  378.689    0.000  457.255    0.000 Pieces.py:40(__eq__)
+  9182643  207.304    0.000  757.874    0.000 Pieces.py:435(updateValidMoves2)
+ 35789904   15.349    0.000   38.613    0.000 Pieces.py:47(__ne__)
+102740002   15.849    0.000   15.849    0.000 Pieces.py:51(getValidMoves)
+  3611190    2.144    0.000    2.144    0.000 Pieces.py:53(isValidMove)
+ 60232907    7.382    0.000    7.382    0.000 Pieces.py:560(getName)
+   541580    0.316    0.000    0.316    0.000 Pieces.py:562(getSymbol)
+   140589    2.366    0.000 2481.221    0.018 Pieces.py:564(updateValidMoves)
+    26564    0.286    0.000    0.363    0.000 Pieces.py:59(getThreats)
+ 12888687  148.921    0.000  502.494    0.000 Pieces.py:633(updateValidMoves2)
+ 67930472    7.929    0.000    7.929    0.000 Pieces.py:699(getName)
+   433815    0.269    0.000    0.269    0.000 Pieces.py:701(getSymbol)
+   107947    2.153    0.000 1978.773    0.018 Pieces.py:703(updateValidMoves)
+ 10528734  152.986    0.000 2286.609    0.000 Pieces.py:739(updateValidMoves2)
+ 49714331    6.189    0.000    6.189    0.000 Pieces.py:771(getName)
+   397443    0.234    0.000    0.234    0.000 Pieces.py:773(getSymbol)
+   146976    2.212    0.000 1586.490    0.011 Pieces.py:775(updateValidMoves)
+    21462    0.128    0.000    0.185    0.000 Pieces.py:79(getThreatenedPieces)
+ 14503306  146.265    0.000  455.943    0.000 Pieces.py:844(updateValidMoves2)
+391036935   42.702    0.000   42.702    0.000 Pieces.py:909(getName)
+   945561    0.524    0.000
+    0.524    0.000 Pieces.py:911(getSymbol)
+   218805    0.053    0.000    0.053    0.000 Pieces.py:913(getLastPosition)
+   684293    8.570    0.000 4285.104    0.006 Pieces.py:915(updateValidMoves)
+     2037    1.945    0.001 15812.215    7.763 Strategy.py:1663(scoreChessBoard9)
+       38    0.042    0.001 10175.712  267.782 Strategy.py:1756(strategy13)
+       37    0.029    0.001 6364.831  172.022 Strategy.py:1959(strategy14)
+     2037    0.032    0.000    0.410    0.000 Strategy.py:27(oneMoveRep)
+     2112    1.576    0.001 11586.496    5.486 Strategy.py:36(checkForMate)
+      656    0.004    0.000    0.291    0.000 __init__.py:280(dumps)
+       12    0.000    0.000    0.000    0.000 __init__.py:462(loads)
+        3    0.000    0.000    0.000    0.000 _strptime.py:27(_getlang)
+        3    0.000    0.000    0.000    0.000 _strptime.py:295(_strptime)
+        3    0.000    0.000    0.000    0.000 adapter.py:368(adapt)
+      161    0.002    0.000    0.002    0.000 attrsettr.py:35(__getattr__)
+251259427/59400867 4002.550    0.000 10981.824    0.000 copy.py:145(deepcopy)
+908155263   87.480    0.000   87.480    0.000 copy.py:198(_deepcopy_atomic)
+284522577/73943739  876.062    0.000 10629.120    0.000 copy.py:226(_deepcopy_list)
+390987597 1186.814    0.000 2462.297    0.000 copy.py:234(_deepcopy_tuple)
+156043068/3635718  660.595    0.000 7828.376    0.002 copy.py:253(_deepcopy_dict)
+1895751573  977.701    0.000 1275.697    0.000 copy.py:267(_keep_alive)
+61807206/3635718  159.342    0.000 7864.710    0.002 copy.py:283(_deepcopy_inst)
+ 94235862  357.484    0.000 4206.995    0.000 copy.py:306(_reconstruct)
+ 94235862   35.112    0.000   53.532    0.000 copy_reg.py:92(__newobj__)
+        6    0.000    0.000    0.000    0.000 copy_reg.py:95(_slotnames)
+        3    0.000    0.000    0.000    0.000 cp1252.py:11(encode)
+        3    0.000    0.000    0.000    0.000 cp1252.py:14(decode)
+       12    0.000    0.000    0.000    0.000 decoder.py:363(decode)
+       12    0.000    0.000    0.000    0.000 decoder.py:376(raw_decode)
+      656    0.002    0.000    0.002    0.000 encoder.py:121(__init__)
+      656    0.002    0.000    0.286    0.000 encoder.py:254(encode)
+      656    0.131    0.000    0.283    0.000 encoder.py:283(iterencode)
+     4589    0.008    0.000    0.150    0.000 encoder.py:42(encode_basestring)
+     1110    0.001    0.000    0.001    0.000 encoder.py:52(replace)
+        3    0.000    0.000    0.000    0.000 error.py:26(__init__)
+      167    0.000    0.000    0.001    0.000 hmac.py:100(_current)
+      167    0.000    0.000    0.001    0.000 hmac.py:119(hexdigest)
+      167    0.000    0.000    0.000    0.000 hmac.py:30(__init__)
+      668    0.000    0.000    0.002    0.000 hmac.py:83(update)
+      167    0.001    0.000    0.002    0.000 hmac.py:88(copy)
+     1635    0.001    0.000    0.003    0.000 iostream.py:102(_check_mp_mode)
+      167    0.001    0.000    0.015    0.000 iostream.py:123(_flush_from_subprocesses)
+      167    0.002    0.000    0.913    0.005 iostream.py:151(flush)
+     1468    0.007    0.000    1.145    0.001 iostream.py:207(write)
+      167    0.001    0.000    0.047    0.000 iostream.py:238(_flush_buffer)
+      167    0.001    0.000    0.001    0.000 iostream.py:247(_new_buffer)
+     1802    0.002    0.000    0.002    0.000 iostream.py:93(_is_master_process)
+      167    0.001    0.000    0.001    0.000 iostream.py:96(_is_master_thread)
+      656    0.002    0.000    0.368    0.001 jsonapi.py:31(dumps)
+       12    0.000    0.000    0.000    0.000 jsonapi.py:47(loads)
+       18    0.000    0.000    0.000    0.000 jsonutil.py:30(parse_date)
+     24/6    0.000    0.000    0.000    0.000 jsonutil.py:50(extract_dates)
+      328    0.000    0.000    0.001    0.000 jsonutil.py:75(date_default)
+      9/3    0.000    0.000    0.000    0.000 jsonutil.py:96(json_clean)
+        3    0.000    0.000    6.011    2.004 kernelbase.py:663(raw_input)
+        3    0.000    0.000    6.011    2.004 kernelbase.py:680(_input_request)
+        3    0.000    0.000    0.000    0.000 locale.py:363(normalize)
+        3    0.000    0.000    0.000    0.000 locale.py:447(_parse_localename)
+        3    0.000    0.000    0.000    0.000 locale.py:546(getlocale)
+      167    0.001    0.000    0.012    0.000 poll.py:77(poll)
+      167    0.000    0.000    0.000    0.000 py3compat.py:12(no_code)
+        3    0.000    0.000    0.000    0.000 py3compat.py:19(encode)
+        9    0.000    0.000    0.000    0.000 py3compat.py:243(iteritems)
+       74    0.000    0.000    0.000    0.000 random.py:273(choice)
+      164    0.000    0.000    0.002    0.000 session.py:206(msg_header)
+      164    0.001    0.000    0.001    0.000 session.py:211(extract_header)
+      164    0.001    0.000    0.009    0.000 session.py:452(msg_id)
+      164    0.001    0.000    0.013    0.000 session.py:504(msg_header)
+      164    0.001    0.000    0.015    0.000 session.py:507(msg)
+      167    0.001    0.000    0.006    0.000 session.py:526(sign)
+      164    0.002    0.000    0.379    0.002 session.py:541(serialize)
+      164    0.003    0.000    0.845    0.005 session.py:600(send)
+        3    0.000    0.000    6.009    2.003 session.py:714(recv)
+        3    0.000    0.000    0.000    0.000 session.py:748(feed_identities)
+        3    0.000    0.000    0.000    0.000 session.py:785(_add_digest)
+        3    0.000    0.000    0.001    0.000 session.py:809(deserialize)
+      656    0.001    0.000    0.370    0.001 session.py:94(<lambda>)
+       12    0.000    0.000    0.000    0.000 session.py:97(<lambda>)
+      164    0.002    0.000    0.448    0.003 socket.py:289(send_multipart)
+        6    0.000    0.000    6.009    1.001 socket.py:333(recv_multipart)
+      167    0.000    0.000    0.000    0.000 threading.py:1152(currentThread)
+      167    0.000    0.000    0.000    0.000 threading.py:983(ident)
+     2195    0.002    0.000    0.002    0.000 traitlets.py:420(__get__)
+     1468    0.001    0.000    0.004    0.000 utf_8.py:15(decode)
+      164    0.004    0.000    0.005    0.000 uuid.py:101(__init__)
+      164    0.001    0.000    0.001    0.000 uuid.py:197(__str__)
+      164    0.002    0.000    0.008    0.000 uuid.py:579(uuid4)
+        3    0.000    0.000    0.000    0.000 {_codecs.charmap_decode}
+        3    0.000    0.000    0.000    0.000 {_codecs.charmap_encode}
+     1468    0.002    0.000    0.002    0.000 {_codecs.utf_8_decode}
+        3    0.000    0.000    0.000    0.000 {_locale.setlocale}
+ 94235862   18.420    0.000   18.420    0.000 {built-in method __new__ of type object at 0x000000001E2A0670}
+      164    0.001    0.000    0.001    0.000 {built-in method now}
+        3    0.000    0.000    0.000    0.000 {built-in method strptime}
+188471885   78.756    0.000   78.756    0.000 {getattr}
+341464859  233.364    0.000  233.366    0.000 {hasattr}
+-1100959119  447.890   -0.000  447.890   -0.000 {id}
+282718841   55.553    0.000   55.553    0.000 {isinstance}
+ 94235862   21.956    0.000   21.956    0.000 {issubclass}
+1206209950   81.335    0.000   81.335    0.000 {len}
+      164    0.000    0.000    0.000    0.000 {locals}
+3749723/1305239   39.592    0.000 12434.432    0.010 {map}
+      164    0.000    0.000    0.000    0.000 {max}
+ 94235862  400.040    0.000  400.040    0.000 {method '__reduce_ex__' of 'object' objects}
+        3    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+179841958  455.630    0.000  455.630    0.000 {method 'append' of 'list' objects}
+      656    0.000    0.000    0.000    0.000 {method 'clear' of 'dict' objects}
+      167    0.000    0.000    0.000    0.000 {method 'close' of '_io.StringIO' objects}
+      501    0.001    0.000    0.001    0.000 {method 'copy' of '_hashlib.HASH' objects}
+      164    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+  2043852    0.432    0.000    0.449    0.000 {method 'count' of 'list' objects}
+     1471    0.003    0.000    0.007    0.000 {method 'decode' of 'str' objects}
+      167    0.000    0.000    0.000    0.000 {method 'digest' of '_hashlib.HASH' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        3    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+      656    0.075    0.000    0.075    0.000 {method 'encode' of 'unicode' objects}
+       27    0.000    0.000    0.000    0.000 {method 'end' of '_sre.SRE_Match' objects}
+      331    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+841783797  160.944    0.000  160.944    0.000 {method 'find' of 'str' objects}
+-2053720261  689.691   -0.000  689.691   -0.000 {method 'get' of 'dict' objects}
+        6    0.000    0.000    0.000    0.000 {method 'get' of 'dictproxy' objects}
+       21    0.000    0.000    0.000    0.000 {method 'get' of 'zmq.backend.cython.socket.Socket' objects}
+      167    0.046    0.000    0.046    0.000 {method 'getvalue' of '_io.StringIO' objects}
+     1110    0.000    0.000    0.000    0.000 {method 'group' of '_sre.SRE_Match' objects}
+        3    0.000    0.000    0.000    0.000 {method 'groupdict' of '_sre.SRE_Match' objects}
+        3    0.000    0.000    0.000    0.000 {method 'groups' of '_sre.SRE_Match' objects}
+      167    0.000    0.000    0.000    0.000 {method 'hexdigest' of '_hashlib.HASH' objects}
+        3    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}
+      328    0.001    0.000    0.001    0.000 {method 'isoformat' of 'datetime.datetime' objects}
+156043077   34.603    0.000   34.603    0.000 {method 'iteritems' of 'dict' objects}
+        3    0.000    0.000    0.000    0.000 {method 'iterkeys' of 'dict' objects}
+      656    0.000    0.000    0.000    0.000 {method 'join' of 'unicode' objects}
+   519126    0.121    0.000    0.121    0.000 {method 'lower' of 'str' objects}
+       45    0.000    0.000    0.000    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+       74    0.000    0.000    0.000    0.000 {method 'random' of '_random.Random' objects}
+       24    6.008    0.250    6.008    0.250 {method 'recv' of 'zmq.backend.cython.socket.Socket' objects}
+ 79735427   23.897    0.000   33.346    0.000 {method 'remove' of 'list' objects}
+     3444    0.002    0.000    0.002    0.000 {method 'search' of '_sre.SRE_Pattern' objects}
+     1148    0.446    0.000    0.446    0.000 {method 'send' of 'zmq.backend.cython.socket.Socket' objects}
+        3    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+     4589    0.139    0.000    0.140    0.000 {method 'sub' of '_sre.SRE_Pattern' objects}
+        6    0.000    0.000    0.000    0.000 {method 'toordinal' of 'datetime.date' objects}
+        3    0.000    0.000    0.000    0.000 {method 'translate' of 'str' objects}
+      835    0.002    0.000    0.002    0.000 {method 'update' of '_hashlib.HASH' objects}
+156043068   90.877    0.000   90.877    0.000 {method 'update' of 'dict' objects}
+721086507   64.250    0.000   64.250    0.000 {method 'upper' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'weekday' of 'datetime.date' objects}
+     1468    0.214    0.000    0.214    0.000 {method 'write' of '_io.StringIO' objects}
+     1966    0.000    0.000    0.000    0.000 {nt.getpid}
+      164    0.001    0.000    0.001    0.000 {nt.urandom}
+    69183    0.595    0.000    0.595    0.000 {numpy.core.multiarray.array}
+        3    0.000    0.000    0.000    0.000 {operator._compare_digest}
+       12    0.000    0.000    0.000    0.000 {ord}
+390987764  116.917    0.000  116.917    0.000 {range}
+      167    0.000    0.000    0.000    0.000 {thread.get_ident}
+     1468    0.002    0.000    0.002    0.000 {time.time}
+      167    0.011    0.000    0.011    0.000 {zmq.backend.cython._poll.zmq_poll}
+        3    0.000    0.000    0.000    0.000 {zmq.backend.cython.error.strerror}

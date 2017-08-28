@@ -6,6 +6,7 @@ Created on Fri Aug 25 11:08:21 2017
 """
 import numpy as np
 import References as Ref
+import time
 np.set_printoptions(threshold=np.nan)
 
 class Chessboard:
@@ -29,11 +30,68 @@ class Chessboard:
             self.gameboard[0,3]         = Ref.Black*Ref.QueenID
             self.gameboard[0,4]         = Ref.Black*Ref.KingID
             self.gameboard[1,range(8)]  = Ref.Black*Ref.PawnID
+                           
+            self.EP = EP #tuple that says what square can be taken by en passant
+            self.WC = WC #white castle rights as a binary second bit is left first bit is right
+            self.BC = BC #black castle rights as a binary second bit is left first bit is right
+        elif type(gameboard)==str:
+            #Make gameboard from FEN
+            fields = gameboard.split(" ")
+            #Castling Rights
+            self.BC = 0
+            self.WC = 0
+            self.EP = None
+#            print (fields[2])
+            if "K" in fields[2]:
+                self.WC |= 1
+            if "k" in fields[2]:
+                self.BC |= 1
+            if "Q" in fields[2]:
+                self.WC |= 2
+            if "q" in fields[2]:
+                self.BC |= 2
+            #En Passant Rights
+            if fields[3]!="-":
+                cols = "abcdefgh"
+                rows = "87654321"
+                self.EP = (rows.find(fields[3][1]),cols.find(fields[3][0]))
+            self.gameboard = np.zeros((8,8),dtype=int)
+            currPos = (0,0)
+            for char in fields[0]:
+#                print (char)
+#                print (currPos)
+                if char=="/":
+                    currPos = (currPos[0]+1,0)
+                elif str.isnumeric(char):
+                    currPos = (currPos[0],currPos[1]+int(char))
+                else:
+                    if str.isupper(char):
+                        player = Ref.White
+                    else:
+                        player = Ref.Black
+                    pieceType = char.lower()
+                    if pieceType=="k":
+                        piece = 6
+                    elif pieceType=="q":
+                        piece = 5
+                    elif pieceType=="r":
+                        piece = 4
+                    elif pieceType=="b":
+                        piece = 3
+                    elif pieceType=="n":
+                        piece = 2
+                    elif pieceType=="p":
+                        piece = 1
+                    self.gameboard[currPos] = player*piece
+                    currPos = (currPos[0],currPos[1]+1)
+            
+            
         else:
             self.gameboard = gameboard
-        self.EP = EP #tuple that says what square can be taken by en passant
-        self.WC = WC #white castle rights as a binary second bit is left first bit is right
-        self.BC = BC #black castle rights as a binary second bit is left first bit is right
+            
+            self.EP = EP #tuple that says what square can be taken by en passant
+            self.WC = WC #white castle rights as a binary second bit is left first bit is right
+            self.BC = BC #black castle rights as a binary second bit is left first bit is right
         
         #May need to reconsider how to implement these
         self.white_moves_unvalidated = None
@@ -163,14 +221,14 @@ class Chessboard:
                 move_array[range(pad_start[0]+1,pad_start[0]+1+relIndOfFirstObj),\
                            range(pad_start[1]+1,pad_start[1]+1+relIndOfFirstObj)] = 1
                 obj_coord = (pad_start[0]+1+relIndOfFirstObj,pad_start[1]+1+relIndOfFirstObj)
-                if obj_coord[0]<=9 and obj_coord[1]<=9 and self.padded_board[obj_coord]!=np.sign(self.padded_board[pad_start]):
+                if obj_coord[0]<=9 and obj_coord[1]<=9 and np.sign(self.padded_board[obj_coord])!=np.sign(self.padded_board[pad_start]):
                     move_array[obj_coord] = 1
                 #decreasing direction
                 relIndOfFirstObj = curr_pos - np.argwhere(self.padded_board.diagonal(offset=diag_offset)[:curr_pos]!=0)[-1][0]
                 move_array[range(pad_start[0]-relIndOfFirstObj+1,pad_start[0]),\
                            range(pad_start[1]-relIndOfFirstObj+1,pad_start[1])] = 1
                 obj_coord = (pad_start[0]-relIndOfFirstObj,pad_start[1]-relIndOfFirstObj)
-                if obj_coord[0]>=2 and obj_coord[1]>=2 and self.padded_board[obj_coord]!=np.sign(self.padded_board[pad_start]):
+                if obj_coord[0]>=2 and obj_coord[1]>=2 and np.sign(self.padded_board[obj_coord])!=np.sign(self.padded_board[pad_start]):
                     move_array[obj_coord] = 1
                 #Upper right to lower left diagonal
                 move_array = np.fliplr(move_array)
@@ -185,14 +243,14 @@ class Chessboard:
                 move_array[range(pad_start[0]+1,pad_start[0]+1+relIndOfFirstObj),\
                            range(pad_start[1]+1,pad_start[1]+1+relIndOfFirstObj)] = 1
                 obj_coord = (pad_start[0]+1+relIndOfFirstObj,pad_start[1]+1+relIndOfFirstObj)
-                if obj_coord[0]<=9 and obj_coord[1]<=9 and flip_padded_board[obj_coord]!=np.sign(flip_padded_board[pad_start]):
+                if obj_coord[0]<=9 and obj_coord[1]<=9 and np.sign(flip_padded_board[obj_coord])!=np.sign(flip_padded_board[pad_start]):
                     move_array[obj_coord] = 1
                 #decreasing direction
                 relIndOfFirstObj = curr_pos - np.argwhere(flip_padded_board.diagonal(offset=diag_offset)[:curr_pos]!=0)[-1][0]
                 move_array[range(pad_start[0]-relIndOfFirstObj+1,pad_start[0]),\
                            range(pad_start[1]-relIndOfFirstObj+1,pad_start[1])] = 1
                 obj_coord = (pad_start[0]-relIndOfFirstObj,pad_start[1]-relIndOfFirstObj)
-                if obj_coord[0]>=2 and obj_coord[1]>=2 and flip_padded_board[obj_coord]!=np.sign(flip_padded_board[pad_start]):
+                if obj_coord[0]>=2 and obj_coord[1]>=2 and np.sign(flip_padded_board[obj_coord])!=np.sign(flip_padded_board[pad_start]):
                     move_array[obj_coord] = 1
                 move_array = np.fliplr(move_array)
                 start = start[0],7-start[1]
@@ -235,7 +293,7 @@ class Chessboard:
                     extra_moves.add((start,(new_row,start[1]-1),"PR"))
                     extra_moves.add((start,(new_row,start[1]-1),"PB"))
                     extra_moves.add((start,(new_row,start[1]-1),"PN"))
-                    threatened.add((new_row,start[1]+1))
+                    
                 else:
                     move_array[new_row+2,start[1]+1] = 1
                 
@@ -246,12 +304,12 @@ class Chessboard:
                     extra_moves.add((start,(new_row,start[1]+1),"PR"))
                     extra_moves.add((start,(new_row,start[1]+1),"PB"))
                     extra_moves.add((start,(new_row,start[1]+1),"PN"))
-                    threatened.add((new_row,start[1]+1))
                 else:
                     move_array[new_row+2,start[1]+3] = 1
-                
+            threatened.add((new_row,start[1]-1))
+            threatened.add((new_row,start[1]+1))    
             #Double Move Forward
-            if ((start[0]==1 and player==Ref.Black) or (start[0]==6 and player==Ref.White)) and self.gameboard[new_row2,start[1]]==0:
+            if ((start[0]==1 and player==Ref.Black) or (start[0]==6 and player==Ref.White)) and self.gameboard[new_row2,start[1]]==0 and self.gameboard[new_row,start[1]]==0:
                 #don't use move_array for this because this move aren't threats
                 extra_moves.add((start,(new_row2,start[1])))
                 
@@ -309,7 +367,7 @@ class Chessboard:
             newBoard = self.gameboard.copy()
             newBoard[move[0]],newBoard[move[1]] = 0,newBoard[move[0]]
             if len(move)==3:
-                flag = move[3]
+                flag = move[2]
                 if flag=="CK":
                     newBoard[move[0][0],7],newBoard[move[0][0],5] = 0,np.sign(newBoard[move[1]])*Ref.RookID
                 elif flag=="CQ":
@@ -368,14 +426,15 @@ class Chessboard:
         
         #Can't castle through,out of, or into check
         if len(move)==3 and (move[2]=="CK" or move[2]=="CQ"):
+#            print ("move:",move)
             if player==Ref.White:
                 op_moves = self.get_black_moves()
             elif player==Ref.Black:
                 op_moves = self.get_white_moves()
             if move[2]=="CK":
-                squares = set([(move[0],4),(move[0],5),(move[0],6),(move[0],7)])
+                squares = set([(move[0][0],4),(move[0][0],5),(move[0][0],6)]) #,(move[0][0],7)
             elif move[2]=="CQ":
-                squares = set([(move[0],0),(move[0],1),(move[0],2),(move[0],3),(move[0],4)])
+                squares = set([(move[0][0],2),(move[0][0],3),(move[0][0],4)]) #(move[0][0],0),(move[0][0],1),
             if len(squares.intersection(op_moves['threatened_squares'])):
                 return False
             return True
@@ -386,6 +445,7 @@ class Chessboard:
         elif player==Ref.Black:
             op_moves = tBoard.get_white_moves()
 #        print (tBoard)
+    
         king_pos = tuple(np.argwhere(tBoard.gameboard==player*Ref.KingID)[0])
         if king_pos in op_moves['threatened_squares']:
             return False
@@ -418,143 +478,119 @@ class Chessboard:
         board[np.where(self.gameboard==Ref.Black*Ref.PawnID)]   = "p"
         
         #Empty squares to keep it all in line
-        board[np.where(self.gameboard==0)] = " "
+        board[np.where(self.gameboard==0)] = "."
         return str(board)
     def __repr__(self):
         return "\n"+self.__str__()+"\n"
         
-def perft(depth,player=Ref.White,game=Chessboard()):
-    if depth == 0:
-        return 1
-    
-    numBoards = 0
-    moves = game.get_valid_moves(player)
-    for move in moves:
-        tGame,_ = game.make_move(player,move)
-        numBoards += perft(depth-1,-player,tGame)
-    return numBoards
-def perft2(depth,player=Ref.White,game=Chessboard()):
+def perft(depth,player=Ref.White,game=Chessboard(),should_print=True):
     perft_dict = {}
     def inner_perft(depth,player,game):
-        if depth == 0:
-            return 1
-        elif game in perft_dict:
-            return perft_dict[game]
-        numBoards = 0
-        moves = game.get_valid_moves(player)
-        for move in moves:
-            tGame,_ = game.make_move(player,move)
-            numBoards += inner_perft(depth-1,-player,tGame)
-        perft_dict[game] = numBoards
-        return numBoards
-    return inner_perft(depth,player,game)
-def perft3(depth,player=Ref.White,game=Chessboard()):
-    if depth == 0:
-        return 1,1
-    
-    numBoards = 0
-    numNodes = 1
-    moves = game.get_valid_moves(player)
-    for move in moves:
-        tGame,_ = game.make_move(player,move)
-        v1,v2 = perft3(depth-1,-player,tGame)
-        numBoards += v1
-        numNodes += v2
-    return numBoards,numNodes
-def perft4(depth,player=Ref.White,game=Chessboard()):
-    perft_dict = {}
-    def inner_perft(depth,player,game):
+#        print (game,player)
         if depth == 0:
             return 1,1
-        elif game in perft_dict:
-            return perft_dict[game]
+        elif (game,depth) in perft_dict:
+            return perft_dict[(game,depth)]
         numBoards = 0
         numNodes = 1
         moves = game.get_valid_moves(player)
+        if len(moves)==0:
+            return 0,1
         for move in moves:
             tGame,_ = game.make_move(player,move)
             v1,v2 = inner_perft(depth-1,-player,tGame)
             numBoards += v1
             numNodes += v2   
-        perft_dict[game] = numBoards,numNodes
-        return perft_dict[game]
-    return inner_perft(depth,player,game)
+        perft_dict[(game,depth)] = numBoards,numNodes
+        return perft_dict[(game,depth)]
+    start = time.time()
+    numBoards,numNodes = inner_perft(depth,player,game)
+    end = time.time()
+    if should_print:
+        print (numBoards,"boards at depth",depth)
+        print (numNodes,"nodes seen")
+        print (numNodes/(end-start),"nodes per second")
+        print (numBoards/(end-start),"boards per second")
+        print ("This took",(end-start)//60,"min",(end-start)%60,"sec")
+    return numBoards,numNodes
 
+def divide(depth,player=Ref.White,game=Chessboard(),should_print=True):
+    start = time.time()
+    numBoards = 0
+    numNodes = 1
+    moves = game.get_valid_moves(player)
+    cols = "abcdefgh"
+    rows = "87654321"
+#    print (moves)
+    i=0
+    for move in moves:
+        
+        tGame,_ = game.make_move(player,move)
+        v1,v2 = perft(depth-1,-player,tGame,should_print=False)
+        tMoveName = cols[move[0][1]] + rows[move[0][0]] + cols[move[1][1]] + rows[move[1][0]]
+        if len(move)==3:
+            tMoveName += move[2][1]
+        print (tMoveName,":",v1)
+        if i==0:
+            i+=1
+        numBoards += v1
+        numNodes += v2
+        
+    end = time.time()
+    if should_print:
+        print (numBoards,"boards at depth",depth)
+        print (numNodes,"nodes seen")
+        print (numNodes/(end-start),"nodes per second")
+        print ("This took",(end-start)//60,"min",(end-start)%60,"sec")
+    return numBoards,numNodes
+def test():
+    inputStr = "1k6/1b6/8/8/7R/8/8/4K2R b K - 0 1; perft 5 = 1063513"
+    test_single(inputStr)
+    inputStr = "3k4/3p4/8/K1P4r/8/8/8/8 b - - 0 1; perft 6 = 1134888"
+    test_single(inputStr)
+    inputStr = "8/8/4k3/8/2p5/8/B2P2K1/8 w - - 0 1; perft 6 = 1015133"
+    test_single(inputStr)
+    inputStr = "8/8/1k6/2b5/2pP4/8/5K2/8 b - d3 0 1; perft 6 = 1440467"
+    test_single(inputStr)
+    inputStr = "5k2/8/8/8/8/8/8/4K2R w K - 0 1; perft 6 = 661072"
+    test_single(inputStr)
+    inputStr = "3k4/8/8/8/8/8/8/R3K3 w Q - 0 1; perft 6 = 803711"
+    test_single(inputStr)
+    inputStr = "4k3/1P6/8/8/8/8/K7/8 w - - 0 1; perft 6 = 217342"
+    test_single(inputStr)
+    inputStr = "8/P1k5/K7/8/8/8/8/8 w - - 0 1; perft 6 = 92683"
+    test_single(inputStr)
+    inputStr = "8/k1P5/8/1K6/8/8/8/8 w - - 0 1; perft 7 = 567584"
+    test_single(inputStr)
+    inputStr = "K1k5/8/P7/8/8/8/8/8 w - - 0 1; perft 6 = 2217"
+    test_single(inputStr)
+    inputStr = "8/8/2k5/5q2/5n2/8/5K2/8 b - - 0 1; perft 4 = 23527"
+    test_single(inputStr)
+    
+def test_single(inputStr):
+    fields = inputStr.split(";")
+    fen = fields[0]
+    player = 1
+    if fen.split(" ")[1]!="w":
+        player = -player
+    fields2 = fields[1].split(" ")
+    expectedNumMoves = int(fields2[4])
+    depth = int(fields2[2])
+    
+    b = Chessboard(fen)
+    print (fen)
+    print (b)
+    numBoards,numNodes = perft(depth,player,b,True)
+    if numBoards!=expectedNumMoves:
+        print ("Failed")
+        print ("Expected:",expectedNumMoves,"Got:",numBoards)
+        numBoards,numNodes = divide(depth,player,b)
+    else:
+        print ("Passed")
+    print ("---------------------------",flush=True)
+    
 if __name__=="__main__":
-#    tBoard = np.zeros((12,12),int);
-#    tBoard[(3,4,3,3,5,1),(3,3,6,7,5,5)] = 6;
-#    tBoard[0:2,:] = 9
-#    tBoard[:,0:2] = 9
-#    tBoard[:,10:12] = 9
-#    tBoard[10:12,:] = 9  
-#    start = (3,3)
-#    print (tBoard)
-#
-    #Sliding Pieces
-    #Test rook moves
-#    b = Chessboard()
-#    b.gameboard[(0,0,1),(1,2,0)] = 0
-#    b.padded_board[(2,2,3),(3,4,2)] = 0
-#    b.gameboard[5,3] = -4
-#    b.padded_board[7,5] = -4
-#    print (b)
-##    print (b.padded_board)
-#    moves,threats = b.get_moves_from_start((5,3))
-#    print (moves)
-#    moves,threats = b.get_moves_from_start((0,0))
-#    print (moves)
-#    print ("xxxxxxxxxxxxxxxxxxxxx")
-#    #Test bishop moves
-#    b = Chessboard()
-#    b.gameboard[(0,0,1),(1,2,0)] = 0
-#    b.padded_board[(2,2,3),(3,4,2)] = 0
-#    b.gameboard[(0,5),(0,3)] = -3
-#    b.padded_board[(2,7),(2,5)] = -3
-#    print (b)
-##    print (b.padded_board)
-#    moves,threats = b.get_moves_from_start((5,3))
-#    print (moves)
-#    moves,threats = b.get_moves_from_start((0,0))
-#    print (moves)
-#    print ("xxxxxxxxxxxxxxxxxxxxx")
-#    #Test queen moves
-#    b = Chessboard()
-#    b.gameboard[(0,0,1),(1,2,0)] = 0
-#    b.padded_board[(2,2,3),(3,4,2)] = 0
-#    b.gameboard[(0,5),(0,3)] = -5
-#    b.padded_board[(2,7),(2,5)] = -5
-#    print (b)
-##    print (b.padded_board)
-#    moves,threats = b.get_moves_from_start((5,3))
-#    print (moves)
-#    moves,threats = b.get_moves_from_start((0,0))
-#    print (moves)
-#    print ("xxxxxxxxxxxxxxxxxxxxx")
-#    
-#    #Move Map Pieces
-#    #Test Knight moves
-#    b = Chessboard()
-#    b.gameboard[(0,0,1),(1,2,0)] = 0
-#    b.padded_board[(2,2,3),(3,4,2)] = 0
-#    b.gameboard[(0,5),(0,3)] = -2
-#    b.padded_board[(2,7),(2,5)] = -2
-#    print (b)
 
-#    moves,threats = b.get_moves_from_start((5,3))
-#    print (moves)
-#    moves,threats = b.get_moves_from_start((0,0))
-#    print (moves)
-#    print ("xxxxxxxxxxxxxxxxxxxxx")
-#    #Test King moves
-#    b = Chessboard()
-#    b.gameboard[(0,0,0,1),(1,2,3,0)] = 0
-#    b.padded_board[(2,2,2,3),(3,4,5,2)] = 0
-#    print (b)
-#    moves,threats = b.get_moves_from_start((0,4))
-#    print ("moves",moves)
-#    print("threats",threats)
-#    print ("xxxxxxxxxxxxxxxxxxxxx")
-#    b = Chessboard()
     pass
 #    perft(2)
 #    perft2(3)
@@ -563,15 +599,32 @@ if __name__=="__main__":
 #    b,_ = b.make_move(-1,((1,4),(3,4)))
 #    print (b)
 #    print(perft(2,1,b))
-    import time
-    start = time.time()
-    numBoards,numNodes = perft4(4)
     
-    end = time.time()
-    print (numBoards,"boards at specified depth")
-    print (numNodes,"nodes seen")
-    print (numNodes/(end-start),"nodes per second")
-
+#    numBoards,numNodes = perft(2)
+#    numBoards,numNodes = divide(3)
+#    print ("--------------------------")
+#    b = Chessboard()
+#    b,_ = b.make_move(1,((7,6),(5,5)))
+#    b,_ = b.make_move(-1,((1,1),(2,1)))
+#    print (b)
+#    divide(1,1,b)
+#    fen = "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq c6 0 2"
+#    b = Chessboard(fen)
+#    print (b)
+#    print (b.EP)
+#    print (b.WC)
+#    print (b.BC)
+    test()
+#    b = Chessboard("1k6/1b6/8/8/7R/8/8/4K2R b K - 0 1")
+#    b,_ = b.make_move(-1,((1,1),(2,0)))
+#    print (b)
+#    divide(4,1,b)
+#    b,_ = b.make_move(1,((4,7),(3,7)))
+#    print (b)
+#    divide(3,-1,b)
+#    b,_ = b.make_move(-1,((2,0),(1,1)))
+#    print (b)
+#    divide(2,1,b)
 #import timeit
 #%timeit b = Chessboard();b.get_black_moves;
 #%timeit b = Chessboard();b.get_black_moves2;

@@ -1,0 +1,28 @@
+[Event "Computer chess game"]
+[Site "DESKTOP-BJTTROD"]
+[Date "2017.01.05"]
+[Round "?"]
+[White "arinz"]
+[Black "ArinzeV15e"]
+[Result "1-0"]
+[BlackElo "2200"]
+[ECO "C00"]
+[Opening "French"]
+[Time "21:24:42"]
+[Variation "2.Nc3"]
+[WhiteElo "2400"]
+[Termination "normal"]
+[PlyCount "53"]
+[WhiteType "human"]
+[BlackType "program"]
+
+1. e4 e6 {-1.22/4 2} 2. Nc3 a6 {-1.26/4 6} 3. f3 Be7 {-0.85/4 3} 4. g3 h5
+{-0.81/4 3} 5. h4 Bd6 {-0.57/4 3} 6. Nge2 Nc6 {-0.83/4 3} 7. d4 Nge7
+{-1.27/4 3} 8. Bg5 f6 {-0.92/4 2} 9. Be3 Nb4 {-0.99/4 4} 10. a3 Nbc6
+{-1.30/4 3} 11. g4 hxg4 {-0.72/4 3} 12. fxg4 g5 {-1.15/4 10} 13. h5 Na5
+{-1.38/4 7} 14. Qd3 b5 {-1.49/4 5} 15. b3 Bb7 {-1.25/4 7} 16. Bg2 Nc8
+{-1.49/4 12} 17. O-O-O Bxa3+ {+0.05/4 6} 18. Kb1 Rb8 {+0.04/4 8} 19. Rdf1
+Be7 {-0.27/4 9} 20. d5 Bxd5 {-0.70/4 3} 21. exd5 Bb4 {-4.27/4 3} 22. dxe6
+d5 {-6.24/4 6} 23. Nxd5 Rg8 {-7.72/4 9} 24. Nxf6+ Ke7 {-19.73/4 1} 25.
+Nxg8+ Kxe6 {-M2/4 1} 26. Qf5+ Kd6 {-M1/4 0} 27. Qd5# 1-0
+
