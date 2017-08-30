@@ -231,69 +231,51 @@ public class Moves {
 			}
 			return possibleK(WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK);
 		}
-		/*
+		
 		else if (Long.bitCount(captureMask)==1){
 			long oppSlide;
-			if (WhiteToMove){
-				OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
-				EMPTY = ~OCCUPIED;
-				UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
-				NOT_MY_PIECES = ~(WP|WN|WB|WR|WQ|WK|BK); //Added BK to avoid illegal capture
-				MY_PIECES = WP|WN|WB|WR|WQ;//omitted WK to avoid illegal capture
-				oppSlide = BR|BQ|BB;
-			}
-			else {
-				OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
-				EMPTY = ~OCCUPIED;
-				UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
-				NOT_MY_PIECES = ~(BP|BN|BB|BR|BQ|BK|WK); //Added WK to avoid illegal capture
-				MY_PIECES = BP|BN|BB|BR|BQ;//omitted WK to avoid illegal capture
-				oppSlide = WR|WQ|WB;
-			}
-
-			if ((oppSlide&captureMask)!=0) {
-				//Checking piece is a rook bishop or queen
-				//GenerateMoves that have pieces that land either in pushMask or on captureMask
-			}
-			else {
+			if ((WhiteToMove&&(((BR|BQ|BB)&captureMask)==0))||(!WhiteToMove && (((WR|WQ|WB)&captureMask)==0))){
 				//Checking piece is a knight or pawn
 				//GenerateMoves that have pieces that capture in captureMask
+				pushMask = 0;
 			}
+
 		}
-		*/
+		
+		else {					 
+			pushMask = 0b1111111111111111111111111111111111111111111111111111111111111111L;
+			captureMask = 0b1111111111111111111111111111111111111111111111111111111111111111L;
+		}
+		OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
+		EMPTY = ~OCCUPIED;
+		UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
+		if (WhiteToMove){
+			NOT_MY_PIECES = ~(WP|WN|WB|WR|WQ|WK|BK); //Added BK to avoid illegal capture
+			MY_PIECES = WP|WN|WB|WR|WQ;//omitted WK to avoid illegal capture
+			list = possibleWP(WP,BP,EP,captureMask,pushMask)+
+					possibleCW(WR,CWK,CWQ,WK)+
+					possibleN(OCCUPIED,WN,captureMask|pushMask)+
+					possibleB(OCCUPIED,WB,captureMask|pushMask)+
+					possibleR(OCCUPIED,WR,captureMask|pushMask)+
+					possibleQ(OCCUPIED,WQ,captureMask|pushMask);
+		}
 		else {
-			if (WhiteToMove){
-				OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
-				EMPTY = ~OCCUPIED;
-				UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
-				NOT_MY_PIECES = ~(WP|WN|WB|WR|WQ|WK|BK); //Added BK to avoid illegal capture
-				MY_PIECES = WP|WN|WB|WR|WQ;//omitted WK to avoid illegal capture
-				list = possibleWP(WP,BP,EP)+
-						possibleCW(WR,CWK,CWQ,WK)+
-						possibleN(OCCUPIED,WN)+
-						possibleB(OCCUPIED,WB)+
-						possibleR(OCCUPIED,WR)+
-						possibleQ(OCCUPIED,WQ);
-			}
-			else {
-				OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
-				EMPTY = ~OCCUPIED;
-				UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
-				NOT_MY_PIECES = ~(BP|BN|BB|BR|BQ|BK|WK); //Added WK to avoid illegal capture
-				MY_PIECES = BP|BN|BB|BR|BQ;//omitted WK to avoid illegal capture
-				list = possibleBP(BP,WP,EP)+
-						possibleCB(BR,CBK,CBQ,BK)+
-						possibleN(OCCUPIED,BN)+
-						possibleB(OCCUPIED,BB)+
-						possibleR(OCCUPIED,BR)+
-						possibleQ(OCCUPIED,BQ);
-			}
-			
-			
-			String finalList = filterMoves2(list,WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK,EP);
-			finalList += possibleK(WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK);
-			return finalList;
+
+			NOT_MY_PIECES = ~(BP|BN|BB|BR|BQ|BK|WK); //Added WK to avoid illegal capture
+			MY_PIECES = BP|BN|BB|BR|BQ;//omitted WK to avoid illegal capture
+			list = possibleBP(BP,WP,EP,captureMask,pushMask)+
+					possibleCB(BR,CBK,CBQ,BK)+
+					possibleN(OCCUPIED,BN,captureMask|pushMask)+
+					possibleB(OCCUPIED,BB,captureMask|pushMask)+
+					possibleR(OCCUPIED,BR,captureMask|pushMask)+
+					possibleQ(OCCUPIED,BQ,captureMask|pushMask);
 		}
+		
+		
+		list = filterMoves2(list,WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK,EP);
+		list += possibleK(WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK);
+		return list;
+		
 	}
 
 	//Get Pawn Moves - Dependent on Color
@@ -621,6 +603,315 @@ public class Moves {
             }
             K&=~i;
             i=K&~(K-1);
+        }
+        return list;
+    }
+    //PreCheckFiltered
+	//Get Pawn Moves - Dependent on Color
+	public static String possibleWP(long WP,long BP,long EP,long captureMask,long pushMask){
+		String list="";
+		//x1,y1,x2,y2
+		//Capture Right
+		Long PAWN_MOVES  = ((WP& ~FILE_H) <<9) & NOT_MY_PIECES & OCCUPIED & ~RANK_8;
+		PAWN_MOVES &= (captureMask|pushMask);
+        long possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8-1)+(i/8-1)+(i%8)+(i/8);
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Capture Left
+		PAWN_MOVES  = ((WP& ~FILE_A) <<7) & NOT_MY_PIECES & OCCUPIED & ~RANK_8;
+		PAWN_MOVES &= (captureMask|pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8+1)+(i/8-1)+(i%8)+(i/8);
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Move 1 Forward
+		PAWN_MOVES  =  (WP<<8) & EMPTY & ~RANK_8;
+		PAWN_MOVES &= (pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8)+(i/8-1)+(i%8)+(i/8);
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Move 2 Forward
+		PAWN_MOVES  =  WP<<16 & EMPTY & (EMPTY<<8) & RANK_4;
+		PAWN_MOVES &= (pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8)+(i/8-2)+(i%8)+(i/8);
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//x1,x2,Promotion Type,"P"
+		//Capture Right
+		PAWN_MOVES  = ((WP& ~FILE_H) <<9) & NOT_MY_PIECES & OCCUPIED & RANK_8;
+		PAWN_MOVES &= (captureMask|pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8-1)+(i%8)+"QP"+(i%8-1)+(i%8)+"RP"+(i%8-1)+(i%8)+"BP"+(i%8-1)+(i%8)+"NP";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Capture Left
+		PAWN_MOVES  = ((WP& ~FILE_A) <<7) & NOT_MY_PIECES & OCCUPIED & RANK_8;
+		PAWN_MOVES &= (captureMask|pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8+1)+(i%8)+"QP"+(i%8+1)+(i%8)+"RP"+(i%8+1)+(i%8)+"BP"+(i%8+1)+(i%8)+"NP";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Move 1 Forward
+		PAWN_MOVES  =  (WP<<8) & EMPTY & RANK_8;
+		PAWN_MOVES &= (pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8)+(i%8)+"QP"+(i%8)+(i%8)+"RP"+(i%8)+(i%8)+"BP"+(i%8)+(i%8)+"NP";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//x1,x2,"WE"
+		//en passant right
+		possibility  =  (WP<<1)&BP&RANK_5 &~FILE_A&EP;
+        if (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8-1)+(i%8)+"WE";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//en passant left
+		possibility  =  (WP>>>1)&BP&RANK_5 &~FILE_H&EP;
+        if (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8+1)+(i%8)+"WE";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		return list;
+	}
+	public static String possibleBP(long BP,long WP,long EP,long captureMask,long pushMask){
+		String list="";
+		//x1,y1,x2,y2
+		//Capture Right
+		Long PAWN_MOVES  = ((BP& ~FILE_H) >>>7) & NOT_MY_PIECES & OCCUPIED & ~RANK_1;
+		PAWN_MOVES &= (captureMask|pushMask);
+        long possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8-1)+(i/8+1)+(i%8)+(i/8);
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Capture Left
+		PAWN_MOVES  = ((BP& ~FILE_A) >>>9) & NOT_MY_PIECES & OCCUPIED & ~RANK_1;
+		PAWN_MOVES &= (captureMask|pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8+1)+(i/8+1)+(i%8)+(i/8);
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Move 1 Forward
+		PAWN_MOVES  =  (BP>>>8) & EMPTY & ~RANK_1;
+		PAWN_MOVES &= (pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8)+(i/8+1)+(i%8)+(i/8);
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Move 2 Forward
+		PAWN_MOVES  =  BP>>>16 & EMPTY & (EMPTY>>>8) & RANK_5;
+		PAWN_MOVES &= (pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8)+(i/8+2)+(i%8)+(i/8);
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//x1,x2,Promotion Type,"P"
+		//Capture Right
+		PAWN_MOVES = ((BP& ~FILE_H) >>>7) & NOT_MY_PIECES & OCCUPIED & RANK_1;
+		PAWN_MOVES &= (captureMask|pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8-1)+(i%8)+"qP"+(i%8-1)+(i%8)+"rP"+(i%8-1)+(i%8)+"bP"+(i%8-1)+(i%8)+"nP";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Capture Left
+		PAWN_MOVES = ((BP& ~FILE_A) >>>9) & NOT_MY_PIECES & OCCUPIED & RANK_1;
+		PAWN_MOVES &= (captureMask|pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8+1)+(i%8)+"qP"+(i%8+1)+(i%8)+"rP"+(i%8+1)+(i%8)+"bP"+(i%8+1)+(i%8)+"nP";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//Move 1 Forward
+		PAWN_MOVES  =  (BP>>>8) & EMPTY & RANK_1;
+		PAWN_MOVES &= (pushMask);
+		possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        while (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8)+(i%8)+"qP"+(i%8)+(i%8)+"rP"+(i%8)+(i%8)+"bP"+(i%8)+(i%8)+"nP";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//x1,x2,"bE"
+      //en passant right
+		possibility  =  (BP<<1)&WP&RANK_4 &~FILE_A&EP;
+        if (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8-1)+(i%8)+"bE";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		//en passant left
+		possibility  =  (BP>>>1)&WP&RANK_4 &~FILE_H&EP;
+        if (possibility != 0)
+        {
+            int i=Long.numberOfTrailingZeros(possibility);
+            list+= ""+(i%8+1)+(i%8)+"bE";
+            PAWN_MOVES&=~(possibility);
+            possibility=PAWN_MOVES&~(PAWN_MOVES-1);
+        }
+		return list;
+	}
+
+    public static String possibleB(long OCCUPIED, long B,long checkMask){
+        String list="";
+        long i=B&~(B-1);
+        long possibility;
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            possibility=DAndAntiDMoves(iLocation)&NOT_MY_PIECES;
+            possibility &=checkMask;
+            long j=possibility&~(possibility-1);
+            while (j != 0)
+            {
+                int index=Long.numberOfTrailingZeros(j);
+                list+=""+(iLocation%8)+(iLocation/8)+(index%8)+(index/8);
+                possibility&=~j;
+                j=possibility&~(possibility-1);
+            }
+            B&=~i;
+            i=B&~(B-1);
+        }
+        return list;
+    }
+    public static String possibleR(long OCCUPIED, long R,long checkMask){
+        String list="";
+        long i=R&~(R-1);
+        long possibility;
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            possibility=HAndVMoves(iLocation)&NOT_MY_PIECES;
+            possibility &=checkMask;
+            long j=possibility&~(possibility-1);
+            while (j != 0)
+            {
+                int index=Long.numberOfTrailingZeros(j);
+                list+=""+(iLocation%8)+(iLocation/8)+(index%8)+(index/8);
+                possibility&=~j;
+                j=possibility&~(possibility-1);
+            }
+            R&=~i;
+            i=R&~(R-1);
+        }
+        return list;
+    }
+    public static String possibleQ(long OCCUPIED, long Q,long checkMask){
+        String list="";
+        long i=Q&~(Q-1);
+        long possibility;
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            possibility=(HAndVMoves(iLocation)|DAndAntiDMoves(iLocation))&NOT_MY_PIECES;
+            possibility &=checkMask;
+            long j=possibility&~(possibility-1);
+            while (j != 0)
+            {
+                int index=Long.numberOfTrailingZeros(j);
+                list+=""+(iLocation%8)+(iLocation/8)+(index%8)+(index/8);
+                possibility&=~j;
+                j=possibility&~(possibility-1);
+            }
+            Q&=~i;
+            i=Q&~(Q-1);
+        }
+        return list;
+    }
+    public static String possibleN(long OCCUPIED, long N,long checkMask){
+        String list="";
+        long i=N&~(N-1);
+        long possibility;
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            
+            if (iLocation>18)
+            {
+                possibility=KNIGHT_SPAN<<(iLocation-18);
+            }
+            else {
+                possibility=KNIGHT_SPAN>>(18-iLocation);
+            }
+            if (iLocation%8<4)
+            {
+                possibility &=~FILE_GH&NOT_MY_PIECES;
+            }
+            else {
+                possibility &=~FILE_AB&NOT_MY_PIECES;
+            }
+            possibility &=checkMask;
+            long j=possibility&~(possibility-1);
+            while (j != 0)
+            {
+                int index=Long.numberOfTrailingZeros(j);
+                list+=""+(iLocation%8)+(iLocation/8)+(index%8)+(index/8);
+                possibility&=~j;
+                j=possibility&~(possibility-1);
+            }
+            N&=~i;
+            i=N&~(N-1);
         }
         return list;
     }
