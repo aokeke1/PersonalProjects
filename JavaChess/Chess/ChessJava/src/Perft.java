@@ -66,8 +66,7 @@ public class Perft {
             if ((((1L<<start)|(1L<<end))&WR&(1L))!=0) {CWQt=false;}
             if ((((1L<<start)|(1L<<end))&BR&(1L<<63))!=0) {CBKt=false;}
             if ((((1L<<start)|(1L<<end))&BR&(1L<<56))!=0) {CBQt=false;}
-            if (((WKt&Moves.unsafeForWhite(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt))==0 && WhiteToMove) ||
-                    ((BKt&Moves.unsafeForBlack(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt))==0 && !WhiteToMove)) {
+            if (!Moves.IsInCheck(WhiteToMove,WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt)) {
                 perft2(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt,EPt,CWKt,CWQt,CBKt,CBQt,!WhiteToMove,depth+1);
                 if(shouldPrint){
                 	System.out.println(moveToAlgebra(moves.substring(i,i+4))+" "+perftMoveCounter);
@@ -128,8 +127,7 @@ public class Perft {
                     if (((1L<<start)&BR&(1L<<63))!=0) {CBKt=false;}
                     if (((1L<<start)&BR&(1L<<56))!=0) {CBQt=false;}
                 }
-                if (((WKt&Moves.unsafeForWhite(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt))==0 && WhiteToMove) ||
-                        ((BKt&Moves.unsafeForBlack(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt))==0 && !WhiteToMove)) {
+                if (!Moves.IsInCheck(WhiteToMove,WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt)) {
                     
                     //else{System.out.println("Move count for "+algebraToMove(moves.substring(i, i+4))+":");}
                     //long[] givenBoardInformation = {WKt,WQt,WBt,WNt,WRt,WPt,BKt,BQt,BBt,BNt,BRt,BPt};
@@ -173,9 +171,10 @@ public class Perft {
                     if (((1L<<start)&BR&(1L<<63))!=0) {CBKt=false;}
                     if (((1L<<start)&BR&(1L<<56))!=0) {CBQt=false;}
                 }
+                if (!Moves.IsInCheck(WhiteToMove,WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt)) {
                     
-                perft2(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt,EPt,CWKt,CWQt,CBKt,CBQt,!WhiteToMove,depth+1);
-                
+                    perft2(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt,EPt,CWKt,CWQt,CBKt,CBQt,!WhiteToMove,depth+1);
+                }
 
             }
         }

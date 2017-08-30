@@ -233,13 +233,11 @@ public class Moves {
 		}
 		
 		else if (Long.bitCount(captureMask)==1){
-			long oppSlide;
 			if ((WhiteToMove&&(((BR|BQ|BB)&captureMask)==0))||(!WhiteToMove && (((WR|WQ|WB)&captureMask)==0))){
 				//Checking piece is a knight or pawn
 				//GenerateMoves that have pieces that capture in captureMask
 				pushMask = 0;
 			}
-
 		}
 		
 		else {					 
@@ -272,7 +270,7 @@ public class Moves {
 		}
 		
 		
-		list = filterMoves2(list,WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK,EP);
+		//list = filterMoves2(list,WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK,EP);
 		list += possibleK(WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK);
 		return list;
 		
@@ -1367,8 +1365,7 @@ public class Moves {
                     BQt=Moves.makeMove(BQ, moves.substring(i,i+4), 'q'), BKt=Moves.makeMove(BK, moves.substring(i,i+4), 'k');
             WRt=Moves.makeMoveCastle(WRt, WK|BK, moves.substring(i,i+4), 'R');
             BRt=Moves.makeMoveCastle(BRt, WK|BK, moves.substring(i,i+4), 'r');
-            if ((WhiteToMove&&((WKt&Moves.unsafeForWhite(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt))==0))||
-                    (!WhiteToMove &&((BKt&Moves.unsafeForBlack(WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt))==0))) {
+            if (!IsInCheck(WhiteToMove,WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt)) {
             	safeMoves +=moves.substring(i, i+4);
             }
             

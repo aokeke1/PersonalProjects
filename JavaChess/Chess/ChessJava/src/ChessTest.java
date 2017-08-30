@@ -10,7 +10,7 @@ public class ChessTest {
 		
 	}
 	// Tests
-	
+	/*
 	@Test
 	public void testMoves1() {
 		String fenString = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
@@ -45,7 +45,7 @@ public class ChessTest {
 		Perft.perftRoot(Orion.WP, Orion.WN, Orion.WB, Orion.WR, Orion.WQ, Orion.WK, Orion.BP, Orion.BN, Orion.BB, Orion.BR, Orion.BQ, Orion.BK, Orion.EP, Orion.CWK, Orion.CWQ, Orion.CBK, Orion.CBQ, Orion.WhiteToMove, 0,false);
 		assert(Perft.perftTotalMoveCounter==706045033);
 	}
-	
+	*/
 	@Test
 	public void testMoves5() {
 		String fenString = "1k6/1b6/8/8/7R/8/8/4K2R b K - 0 1";
