@@ -41,6 +41,7 @@ public class Moves {
 	static long EMPTY;
 	static long OCCUPIED;
 	static long UNSAFE;
+	static long OCCUPIEDNOKING;
 	
 	//Masks for sliding pieces
 	static long[]	FileMasks8 = {FILE_A,FILE_B,FILE_C,FILE_D,FILE_E,FILE_F,FILE_G,FILE_H};
@@ -192,7 +193,8 @@ public class Moves {
 		possibleB(OCCUPIED,WB)+
 		possibleR(OCCUPIED,WR)+
 		possibleQ(OCCUPIED,WQ)+
-		possibleK(OCCUPIED,WK)+
+		possibleK(true,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK)+
+		//possibleK(OCCUPIED,WK)+
 		possibleCW(WR,CWK,CWQ,WK);
 		//unsafeForBlack(WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
 		return list;
@@ -208,12 +210,92 @@ public class Moves {
 		possibleB(OCCUPIED,BB)+
 		possibleR(OCCUPIED,BR)+
 		possibleQ(OCCUPIED,BQ)+
-		possibleK(OCCUPIED,BK)+
+		possibleK(false,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK)+
+		//possibleK(OCCUPIED,BK)+
 		possibleCB(BR,CBK,CBQ,BK);
 		//unsafeForWhite(WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
 		return list;
 	}
 	
+	public static String possibleMoves(boolean WhiteToMove,long WP,long WN,long WB,long WR,long WQ,long WK,long BP,long BN,long BB,long BR,long BQ,long BK,long EP,boolean CWK,boolean CWQ,boolean CBK,boolean CBQ){
+		String list = "";
+		long[] masks = GetThreatsMask(WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK);
+		long captureMask = masks[0];
+		long pushMask = masks[1];
+		if (Long.bitCount(captureMask)>1){
+			if (WhiteToMove) {
+				NOT_MY_PIECES = ~(WP|WN|WB|WR|WQ|WK|BK); //Added BK to avoid illegal capture
+			}
+			else {
+				NOT_MY_PIECES = ~(BP|BN|BB|BR|BQ|BK|WK); //Added WK to avoid illegal capture
+			}
+			return possibleK(WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK);
+		}
+		/*
+		else if (Long.bitCount(captureMask)==1){
+			long oppSlide;
+			if (WhiteToMove){
+				OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
+				EMPTY = ~OCCUPIED;
+				UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
+				NOT_MY_PIECES = ~(WP|WN|WB|WR|WQ|WK|BK); //Added BK to avoid illegal capture
+				MY_PIECES = WP|WN|WB|WR|WQ;//omitted WK to avoid illegal capture
+				oppSlide = BR|BQ|BB;
+			}
+			else {
+				OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
+				EMPTY = ~OCCUPIED;
+				UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
+				NOT_MY_PIECES = ~(BP|BN|BB|BR|BQ|BK|WK); //Added WK to avoid illegal capture
+				MY_PIECES = BP|BN|BB|BR|BQ;//omitted WK to avoid illegal capture
+				oppSlide = WR|WQ|WB;
+			}
+
+			if ((oppSlide&captureMask)!=0) {
+				//Checking piece is a rook bishop or queen
+				//GenerateMoves that have pieces that land either in pushMask or on captureMask
+			}
+			else {
+				//Checking piece is a knight or pawn
+				//GenerateMoves that have pieces that capture in captureMask
+			}
+		}
+		*/
+		else {
+			if (WhiteToMove){
+				OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
+				EMPTY = ~OCCUPIED;
+				UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
+				NOT_MY_PIECES = ~(WP|WN|WB|WR|WQ|WK|BK); //Added BK to avoid illegal capture
+				MY_PIECES = WP|WN|WB|WR|WQ;//omitted WK to avoid illegal capture
+				list = possibleWP(WP,BP,EP)+
+						possibleCW(WR,CWK,CWQ,WK)+
+						possibleN(OCCUPIED,WN)+
+						possibleB(OCCUPIED,WB)+
+						possibleR(OCCUPIED,WR)+
+						possibleQ(OCCUPIED,WQ);
+			}
+			else {
+				OCCUPIED = WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
+				EMPTY = ~OCCUPIED;
+				UNSAFE = unsafeForKing(WhiteToMove,WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
+				NOT_MY_PIECES = ~(BP|BN|BB|BR|BQ|BK|WK); //Added WK to avoid illegal capture
+				MY_PIECES = BP|BN|BB|BR|BQ;//omitted WK to avoid illegal capture
+				list = possibleBP(BP,WP,EP)+
+						possibleCB(BR,CBK,CBQ,BK)+
+						possibleN(OCCUPIED,BN)+
+						possibleB(OCCUPIED,BB)+
+						possibleR(OCCUPIED,BR)+
+						possibleQ(OCCUPIED,BQ);
+			}
+			
+			
+			String finalList = filterMoves2(list,WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK,EP);
+			finalList += possibleK(WhiteToMove,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK);
+			return finalList;
+		}
+	}
+
 	//Get Pawn Moves - Dependent on Color
 	public static String possibleWP(long WP,long BP,long EP){
 		String list="";
@@ -308,33 +390,6 @@ public class Moves {
             PAWN_MOVES&=~(possibility);
             possibility=PAWN_MOVES&~(PAWN_MOVES-1);
         }
-
-        /*
-        if (history.length()>=4){
-        	if ( (history.charAt(history.length()-4) == history.charAt(history.length()-2)) && (Math.abs(history.charAt(history.length()-1)-history.charAt(history.length()-3))==2) ){
-        		int eFile=history.charAt(history.length()-2)-'0';
-        		//en passant right
-        		possibility  =  (WP<<1)&BP&RANK_5 &~FILE_A&FileMasks8[eFile];
-                if (possibility != 0)
-                {
-                    int i=Long.numberOfTrailingZeros(possibility);
-                    list+= ""+(i%8-1)+(i%8)+" E";
-                    PAWN_MOVES&=~(possibility);
-                    possibility=PAWN_MOVES&~(PAWN_MOVES-1);
-                }
-        		//en passant left
-        		possibility  =  (WP>>>1)&BP&RANK_5 &~FILE_H&FileMasks8[eFile];
-                if (possibility != 0)
-                {
-                    int i=Long.numberOfTrailingZeros(possibility);
-                    list+= ""+(i%8+1)+(i%8)+" E";
-                    PAWN_MOVES&=~(possibility);
-                    possibility=PAWN_MOVES&~(PAWN_MOVES-1);
-                }
-        	}
-        }
-        */
-        
 		return list;
 	}
 	public static String possibleBP(long BP,long WP,long EP){
@@ -430,32 +485,6 @@ public class Moves {
             PAWN_MOVES&=~(possibility);
             possibility=PAWN_MOVES&~(PAWN_MOVES-1);
         }
-        /*
-        if (history.length()>=4){
-        	if ( (history.charAt(history.length()-4) == history.charAt(history.length()-2)) && (Math.abs(history.charAt(history.length()-1)-history.charAt(history.length()-3))==2) ){
-        		int eFile=history.charAt(history.length()-2)-'0';
-        		//en passant right
-        		possibility  =  (BP<<1)&WP&RANK_4 &~FILE_A&FileMasks8[eFile];
-                if (possibility != 0)
-                {
-                    int i=Long.numberOfTrailingZeros(possibility);
-                    list+= ""+(i%8-1)+(i%8)+"bE";
-                    PAWN_MOVES&=~(possibility);
-                    possibility=PAWN_MOVES&~(PAWN_MOVES-1);
-                }
-        		//en passant left
-        		possibility  =  (BP>>>1)&WP&RANK_4 &~FILE_H&FileMasks8[eFile];
-                if (possibility != 0)
-                {
-                    int i=Long.numberOfTrailingZeros(possibility);
-                    list+= ""+(i%8+1)+(i%8)+"bE";
-                    PAWN_MOVES&=~(possibility);
-                    possibility=PAWN_MOVES&~(PAWN_MOVES-1);
-                }
-        	}
-        }
-         */
-        
 		return list;
 	}
 	
@@ -778,6 +807,263 @@ public class Moves {
         return unsafe;
     }
     
+    public static long unsafeForKing(boolean isWhite,long WP,long WN,long WB,long WR,long WQ,long WK,long BP,long BN,long BB,long BR,long BQ,long BK)
+    {
+        long unsafe;
+        long P,N,B,R,Q,K;
+        if (isWhite) {
+        	P = BP;
+        	N = BN;
+        	B = BB;
+        	R = BR;
+        	Q = BQ;
+        	K = BK;
+        }
+        else {
+        	P = WP;
+        	N = WN;
+        	B = WB;
+        	R = WR;
+        	Q = WQ;
+        	K = WK;
+        }
+        OCCUPIED=WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
+        //pawn
+        if (isWhite) {
+            unsafe=((P>>>7)&~FILE_A);//pawn capture right
+            unsafe|=((P>>>9)&~FILE_H);//pawn capture left
+        }
+        else {
+            unsafe=((P<<9)&~FILE_A);//pawn capture right
+            unsafe|=((P<<7)&~FILE_H);//pawn capture left
+        }
+        long possibility;
+        //knight
+        long i=N&~(N-1);
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            if (iLocation>18)
+            {
+                possibility=KNIGHT_SPAN<<(iLocation-18);
+            }
+            else {
+                possibility=KNIGHT_SPAN>>(18-iLocation);
+            }
+            if (iLocation%8<4)
+            {
+                possibility &=~FILE_GH;
+            }
+            else {
+                possibility &=~FILE_AB;
+            }
+            unsafe |= possibility;
+            N&=~i;
+            i=N&~(N-1);
+        }
+        //bishop/queen
+        long QB=Q|B;
+        i=QB&~(QB-1);
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            possibility=DAndAntiDMoves(iLocation);
+            unsafe |= possibility;
+            QB&=~i;
+            i=QB&~(QB-1);
+        }
+        //rook/queen
+        long QR=Q|R;
+        i=QR&~(QR-1);
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            possibility=HAndVMoves(iLocation);
+            unsafe |= possibility;
+            QR&=~i;
+            i=QR&~(QR-1);
+        }
+        //king
+        int iLocation=Long.numberOfTrailingZeros(K);
+        if (iLocation>9)
+        {
+            possibility=KING_SPAN<<(iLocation-9);
+        }
+        else {
+            possibility=KING_SPAN>>(9-iLocation);
+        }
+        if (iLocation%8<4)
+        {
+            possibility &=~FILE_GH;
+        }
+        else {
+            possibility &=~FILE_AB;
+        }
+        unsafe |= possibility;
+        return unsafe;
+    }
+    
+    public static String possibleK(boolean isWhite,long WP,long WN,long WB,long WR,long WQ,long WK,long BP,long BN,long BB,long BR,long BQ,long BK){
+        String list="";
+        long K;
+        if (isWhite) {
+        	K = WK;
+        }
+        else {
+        	K = BK;
+        }
+        long i=K&~(K-1);
+        long possibility;
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            
+            if (iLocation>9)
+            {
+                possibility=KING_SPAN<<(iLocation-9);
+            }
+            else {
+                possibility=KING_SPAN>>(9-iLocation);
+            }
+            if (iLocation%8<4)
+            {
+                possibility &=~FILE_GH&NOT_MY_PIECES;
+            }
+            else {
+                possibility &=~FILE_AB&NOT_MY_PIECES;
+            }
+            long unsafe = CheckUnsafe2(isWhite,WP,WN,WB,WR,WQ,WK,BP,BN,BB,BR,BQ,BK);
+            possibility &= ~unsafe;
+            
+            long j=possibility&~(possibility-1);
+            while (j != 0)
+            {
+                int index=Long.numberOfTrailingZeros(j);
+                list+=""+(iLocation%8)+(iLocation/8)+(index%8)+(index/8);
+                possibility&=~j;
+                j=possibility&~(possibility-1);
+            }
+            K&=~i;
+            i=K&~(K-1);
+        }
+        return list;
+    }
+    static long HAndVMoves2(int s){
+		//(((o&m)-2*s) ^ ((o&m)'-2s')')&m;
+		long binaryS = 1L<<s;
+		long possibilitiesHorizontal = (OCCUPIEDNOKING - 2*binaryS) ^ Long.reverse(Long.reverse(OCCUPIEDNOKING)-2*Long.reverse(binaryS));
+		long possibilitiesVertical = ((OCCUPIEDNOKING&FileMasks8[s%8]) - (2*binaryS)) ^ Long.reverse(Long.reverse(OCCUPIEDNOKING&FileMasks8[s%8]) - (2*Long.reverse(binaryS)));
+		return ((possibilitiesHorizontal&RankMasks8[s/8])|(possibilitiesVertical&FileMasks8[s%8]));
+	}
+	static long DAndAntiDMoves2(int s){
+        long binaryS=1L<<s;
+        long possibilitiesA8H1 = ((OCCUPIEDNOKING&A8H1DiagMasks15[(s / 8) + (s % 8)]) - (2 * binaryS)) ^ Long.reverse(Long.reverse(OCCUPIEDNOKING&A8H1DiagMasks15[(s / 8) + (s % 8)]) - (2 * Long.reverse(binaryS)));
+        long possibilitiesA1H8 = ((OCCUPIEDNOKING&A1H8DiagMasks15[(s / 8) + 7 - (s % 8)]) - (2 * binaryS)) ^ Long.reverse(Long.reverse(OCCUPIEDNOKING&A1H8DiagMasks15[(s / 8) + 7 - (s % 8)]) - (2 * Long.reverse(binaryS)));
+        return (possibilitiesA8H1&A8H1DiagMasks15[(s / 8) + (s % 8)]) | (possibilitiesA1H8&A1H8DiagMasks15[(s / 8) + 7 - (s % 8)]);
+	}
+    
+    //returns a long that shows all the squares that are unsafe for a color
+    public static long CheckUnsafe2(boolean isWhite,long WP,long WN,long WB,long WR,long WQ,long WK,long BP,long BN,long BB,long BR,long BQ,long BK)
+    {
+        long unsafe;
+        long P,N,B,R,Q,K;
+        if (isWhite) {
+        	OCCUPIEDNOKING=WP|WN|WB|WR|WQ|BP|BN|BB|BR|BQ|BK;
+        	P = BP;
+        	N = BN;
+        	B = BB;
+        	R = BR;
+        	Q = BQ;
+        	K = BK;
+        }
+        else {
+        	OCCUPIEDNOKING=WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ;
+        	P = WP;
+        	N = WN;
+        	B = WB;
+        	R = WR;
+        	Q = WQ;
+        	K = WK;
+        }
+        
+        //pawn
+        if (isWhite) {
+            unsafe=((P>>>7)&~FILE_A);//pawn capture right
+            unsafe|=((P>>>9)&~FILE_H);//pawn capture left
+        }
+        else {
+            unsafe=((P<<9)&~FILE_A);//pawn capture right
+            unsafe|=((P<<7)&~FILE_H);//pawn capture left
+        }
+
+        long possibility;
+        //knight
+        long i=N&~(N-1);
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            if (iLocation>18)
+            {
+                possibility=KNIGHT_SPAN<<(iLocation-18);
+            }
+            else {
+                possibility=KNIGHT_SPAN>>(18-iLocation);
+            }
+            if (iLocation%8<4)
+            {
+                possibility &=~FILE_GH;
+            }
+            else {
+                possibility &=~FILE_AB;
+            }
+            unsafe |= possibility;
+            N&=~i;
+            i=N&~(N-1);
+        }
+        //bishop/queen
+        long QB=Q|B;
+        i=QB&~(QB-1);
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            possibility=DAndAntiDMoves2(iLocation);
+            unsafe |= possibility;
+            QB&=~i;
+            i=QB&~(QB-1);
+        }
+        //rook/queen
+        long QR=Q|R;
+        i=QR&~(QR-1);
+        while(i != 0)
+        {
+            int iLocation=Long.numberOfTrailingZeros(i);
+            possibility=HAndVMoves2(iLocation);
+            unsafe |= possibility;
+            QR&=~i;
+            i=QR&~(QR-1);
+        }
+        //king
+        int iLocation=Long.numberOfTrailingZeros(K);
+        if (iLocation>9)
+        {
+            possibility=KING_SPAN<<(iLocation-9);
+        }
+        else {
+            possibility=KING_SPAN>>(9-iLocation);
+        }
+        if (iLocation%8<4)
+        {
+            possibility &=~FILE_GH;
+        }
+        else {
+            possibility &=~FILE_AB;
+        }
+        unsafe |= possibility;
+        //System.out.println();
+        //drawBitboard(unsafe);
+        return unsafe;
+    }
+	
     //Filter Unsafe Moves
     public static String filterMoves(String moves,boolean WhiteToMove,long WP,long WN,long WB,long WR,long WQ,long WK,long BP,long BN,long BB,long BR,long BQ,long BK,long EP){
     	String safeMoves = "";
@@ -799,6 +1085,177 @@ public class Moves {
 		return safeMoves;
     }
     
+    public static boolean IsInCheck(boolean WhiteToMove,long WP,long WN,long WB,long WR,long WQ,long WK,long BP,long BN,long BB,long BR,long BQ,long BK){
+    	long myK,oppP,oppN,oppB,oppR,oppQ;
+    	if (WhiteToMove) {
+    		myK=WK;oppP=BP;oppN=BN;oppB=BB;oppR=BR;oppQ=BQ;
+    	}
+    	else {
+    		myK=BK;oppP=WP;oppN=WN;oppB=WB;oppR=WR;oppQ=WQ;
+    	}
+    	
+        OCCUPIED=WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
+        int iLocation=Long.numberOfTrailingZeros(myK);
+        
+        //pawn
+        long unsafe;
+    	if (oppP!=0) {
+            if (!WhiteToMove) {
+                unsafe=((myK>>>7)&~FILE_A);//pawn capture right
+                unsafe|=((myK>>>9)&~FILE_H);//pawn capture left
+            }
+            else {
+                unsafe=((myK<<9)&~FILE_A);//pawn capture right
+                unsafe|=((myK<<7)&~FILE_H);//pawn capture left
+            }
+            if ((unsafe&oppP)!=0) {
+            	return true;
+            }
+    	}
+    	//knight
+    	long possibility;
+    	if (oppN!=0) {
+    		
+            if (iLocation>18)
+            {
+                possibility=KNIGHT_SPAN<<(iLocation-18);
+            }
+            else {
+                possibility=KNIGHT_SPAN>>(18-iLocation);
+            }
+            if (iLocation%8<4)
+            {
+                possibility &=~FILE_GH;
+            }
+            else {
+                possibility &=~FILE_AB;
+            }
+            if ((possibility&oppN)!=0) {
+            	return true;
+            }
+    	}
+    	//sliding pieces
+        long possibleVH=0;
+        long possibleDA=0;
+        if (oppR!=0||oppQ!=0) {
+        	possibleVH = HAndVMoves(iLocation);
+        }
+        if (oppB!=0||oppQ!=0) {
+        	possibleDA = DAndAntiDMoves(iLocation);
+        }
+        
+    	if (oppB!=0) {
+    		if ((possibleDA&oppB)!=0) {
+            	return true;
+            }
+    	}
+    	if (oppR!=0) {
+    		if ((possibleVH&oppR)!=0) {
+            	return true;
+            }
+    	}
+    	if (oppQ!=0) {
+    		if (((possibleVH|possibleDA)&oppQ)!=0) {
+            	return true;
+            }
+    	}
+		return false;
+    }
+    public static long[] GetThreatsMask(boolean WhiteToMove,long WP,long WN,long WB,long WR,long WQ,long WK,long BP,long BN,long BB,long BR,long BQ,long BK){
+    	long myK,oppP,oppN,oppB,oppR,oppQ;
+    	if (WhiteToMove) {
+    		myK=WK;oppP=BP;oppN=BN;oppB=BB;oppR=BR;oppQ=BQ;
+    	}
+    	else {
+    		myK=BK;oppP=WP;oppN=WN;oppB=WB;oppR=WR;oppQ=WQ;
+    	}
+    	
+        OCCUPIED=WP|WN|WB|WR|WQ|WK|BP|BN|BB|BR|BQ|BK;
+        int iLocation=Long.numberOfTrailingZeros(myK);
+        long captureMask=0;
+        long pushMask=0;
+        //pawn
+        long unsafe;
+    	if (oppP!=0) {
+            if (!WhiteToMove) {
+                unsafe=((myK>>>7)&~FILE_A);//pawn capture right
+                unsafe|=((myK>>>9)&~FILE_H);//pawn capture left
+            }
+            else {
+                unsafe=((myK<<9)&~FILE_A);//pawn capture right
+                unsafe|=((myK<<7)&~FILE_H);//pawn capture left
+            }
+            captureMask |= (unsafe&oppP);
+    	}
+    	//knight
+    	long possibility;
+    	if (oppN!=0) {
+    		
+            if (iLocation>18)
+            {
+                possibility=KNIGHT_SPAN<<(iLocation-18);
+            }
+            else {
+                possibility=KNIGHT_SPAN>>(18-iLocation);
+            }
+            if (iLocation%8<4)
+            {
+                possibility &=~FILE_GH;
+            }
+            else {
+                possibility &=~FILE_AB;
+            }
+            captureMask|=(possibility&oppN);
+    	}
+    	//sliding pieces
+        long possibleVH=0;
+        long possibleDA=0;
+        if (oppR!=0||oppQ!=0) {
+        	possibleVH = HAndVMoves(iLocation);
+        }
+        if (oppB!=0||oppQ!=0) {
+        	possibleDA = DAndAntiDMoves(iLocation);
+        }
+        
+    	if (oppB!=0) {
+    		if ((possibleDA&~oppB)!=0) {
+    			captureMask|=(possibleDA&oppB);
+    			pushMask|=(possibleDA&~oppB);
+    		}
+    	}
+    	if (oppR!=0) {
+    		if ((possibleVH&oppR)!=0) {
+    			captureMask|=(possibleVH&oppR);
+    			pushMask |= (possibleVH&~oppR);
+    		}
+    	}
+    	if (oppQ!=0) {
+    		if (((possibleVH|possibleDA)&oppQ)!=0) {
+    			captureMask|=((possibleVH|possibleDA)&oppQ);
+    			pushMask |= ((possibleVH|possibleDA)&~oppQ);
+    		}
+    		
+    	}
+    	long[] masks = {captureMask,pushMask};
+		return masks;
+    }
+    public static String filterMoves2(String moves,boolean WhiteToMove,long WP,long WN,long WB,long WR,long WQ,long WK,long BP,long BN,long BB,long BR,long BQ,long BK,long EP){
+    	String safeMoves = "";
+    	for (int i=0;i<moves.length();i+=4){
+            long WPt=Moves.makeMove(WP, moves.substring(i,i+4), 'P'), WNt=Moves.makeMove(WN, moves.substring(i,i+4), 'N'),
+                    WBt=Moves.makeMove(WB, moves.substring(i,i+4), 'B'), WRt=Moves.makeMove(WR, moves.substring(i,i+4), 'R'),
+                    WQt=Moves.makeMove(WQ, moves.substring(i,i+4), 'Q'), WKt=Moves.makeMove(WK, moves.substring(i,i+4), 'K'),
+                    BPt=Moves.makeMove(BP, moves.substring(i,i+4), 'p'), BNt=Moves.makeMove(BN, moves.substring(i,i+4), 'n'),
+                    BBt=Moves.makeMove(BB, moves.substring(i,i+4), 'b'), BRt=Moves.makeMove(BR, moves.substring(i,i+4), 'r'),
+                    BQt=Moves.makeMove(BQ, moves.substring(i,i+4), 'q'), BKt=Moves.makeMove(BK, moves.substring(i,i+4), 'k');
+            WRt=Moves.makeMoveCastle(WRt, WK|BK, moves.substring(i,i+4), 'R');
+            BRt=Moves.makeMoveCastle(BRt, WK|BK, moves.substring(i,i+4), 'r');
+            if (!IsInCheck(WhiteToMove,WPt,WNt,WBt,WRt,WQt,WKt,BPt,BNt,BBt,BRt,BQt,BKt)){
+            	safeMoves +=moves.substring(i, i+4);
+            }
+    	}
+		return safeMoves;
+    }
     //Helper functions for debugging
 	public static void drawBitboard(long bitBoard){
 		String[][] chessBoard = new String [8][8];

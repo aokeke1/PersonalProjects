@@ -46,7 +46,6 @@ public class ChessTest {
 		assert(Perft.perftTotalMoveCounter==706045033);
 	}
 	
-	
 	@Test
 	public void testMoves5() {
 		String fenString = "1k6/1b6/8/8/7R/8/8/4K2R b K - 0 1";
@@ -181,7 +180,7 @@ public class ChessTest {
 		assert(Perft.perftTotalMoveCounter==2874505);
 	}
 	
-	
+	/*
 	//Testing fen generation
 	@Test
 	public void testMoves21() {
@@ -225,5 +224,5 @@ public class ChessTest {
 		String output = BoardGeneration.makeHistoryFEN(Orion.WP, Orion.WN, Orion.WB, Orion.WR, Orion.WQ, Orion.WK, Orion.BP, Orion.BN, Orion.BB, Orion.BR, Orion.BQ, Orion.BK, Orion.EP, Orion.CWK, Orion.CWQ, Orion.CBK, Orion.CBQ, Orion.WhiteToMove, Orion.fiftyMoveCounter, Orion.moveCounter);
 		assert(fenString.startsWith(output));
 	}
-	
+	*/
 }
